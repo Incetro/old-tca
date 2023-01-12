@@ -39,6 +39,11 @@
 		DEEDB7EA2970718E00CB20F3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7E22970718E00CB20F3 /* ActivityIndicator.swift */; };
 		DEEDB7EB2970718E00CB20F3 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7E32970718E00CB20F3 /* ProgressRingView.swift */; };
 		DEEDB7EC2970718E00CB20F3 /* UIViewRepresented.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7E42970718E00CB20F3 /* UIViewRepresented.swift */; };
+		DEEDB83129707C0200CB20F3 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB82729707C0200CB20F3 /* MainReducer.swift */; };
+		DEEDB83229707C0200CB20F3 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB82929707C0200CB20F3 /* MainState.swift */; };
+		DEEDB83329707C0200CB20F3 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB82B29707C0200CB20F3 /* MainAction.swift */; };
+		DEEDB83429707C0200CB20F3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB82D29707C0200CB20F3 /* MainView.swift */; };
+		DEEDB83529707C0200CB20F3 /* MainEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB82F29707C0200CB20F3 /* MainEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +80,11 @@
 		DEEDB7E22970718E00CB20F3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		DEEDB7E32970718E00CB20F3 /* ProgressRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
 		DEEDB7E42970718E00CB20F3 /* UIViewRepresented.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewRepresented.swift; sourceTree = "<group>"; };
+		DEEDB82729707C0200CB20F3 /* MainReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
+		DEEDB82929707C0200CB20F3 /* MainState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+		DEEDB82B29707C0200CB20F3 /* MainAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
+		DEEDB82D29707C0200CB20F3 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DEEDB82F29707C0200CB20F3 /* MainEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +295,7 @@
 		DEEDB7D62970718E00CB20F3 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				DEEDB82329707C0200CB20F3 /* Main */,
 				DEEDB7D72970718E00CB20F3 /* Advanced */,
 				DEEDB7D82970718E00CB20F3 /* Pre-Intermediate */,
 				DEEDB7D92970718E00CB20F3 /* Upper-Intermediate */,
@@ -380,6 +391,59 @@
 			path = ../../SharedFiles/ApplicationLayer;
 			sourceTree = "<group>";
 		};
+		DEEDB82329707C0200CB20F3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DEEDB82629707C0200CB20F3 /* Reducer */,
+				DEEDB82829707C0200CB20F3 /* State */,
+				DEEDB82A29707C0200CB20F3 /* Action */,
+				DEEDB82C29707C0200CB20F3 /* View */,
+				DEEDB82E29707C0200CB20F3 /* Environment */,
+			);
+			name = Main;
+			path = ../../Main;
+			sourceTree = "<group>";
+		};
+		DEEDB82629707C0200CB20F3 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				DEEDB82729707C0200CB20F3 /* MainReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		DEEDB82829707C0200CB20F3 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DEEDB82929707C0200CB20F3 /* MainState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		DEEDB82A29707C0200CB20F3 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				DEEDB82B29707C0200CB20F3 /* MainAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		DEEDB82C29707C0200CB20F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEEDB82D29707C0200CB20F3 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEEDB82E29707C0200CB20F3 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				DEEDB82F29707C0200CB20F3 /* MainEnvironment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -450,13 +514,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEDB83329707C0200CB20F3 /* MainAction.swift in Sources */,
 				DEEDB7E62970718E00CB20F3 /* CGFloat.swift in Sources */,
 				DEEDB7262970631200CB20F3 /* User.swift in Sources */,
 				DEEDB7882970709700CB20F3 /* NewsServiceImplementation.swift in Sources */,
 				DEEDB7842970709700CB20F3 /* ScrambleService.swift in Sources */,
 				DEEDB7EA2970718E00CB20F3 /* ActivityIndicator.swift in Sources */,
 				DEEDB77F2970709700CB20F3 /* PaletteService.swift in Sources */,
+				DEEDB83429707C0200CB20F3 /* MainView.swift in Sources */,
 				DEEDB7E92970718E00CB20F3 /* BlurView.swift in Sources */,
+				DEEDB83529707C0200CB20F3 /* MainEnvironment.swift in Sources */,
 				DEEDB7812970709700CB20F3 /* ImageServiceImplementation.swift in Sources */,
 				DEEDB7EC2970718E00CB20F3 /* UIViewRepresented.swift in Sources */,
 				DEEDB7E72970718E00CB20F3 /* Text.swift in Sources */,
@@ -471,11 +538,13 @@
 				DEEDB7272970631200CB20F3 /* Book.swift in Sources */,
 				DEEDB78A2970709700CB20F3 /* NumberFactService.swift in Sources */,
 				DEEDB7E82970718E00CB20F3 /* Color.swift in Sources */,
+				DEEDB83229707C0200CB20F3 /* MainState.swift in Sources */,
 				DEEDB7EB2970718E00CB20F3 /* ProgressRingView.swift in Sources */,
 				DEEDB7292970631200CB20F3 /* News.swift in Sources */,
 				DEEDB7E52970718E00CB20F3 /* Unifont.swift in Sources */,
 				DEEDB7282970631200CB20F3 /* LoremPicsumImage.swift in Sources */,
 				DEEDB7802970709700CB20F3 /* ImageService.swift in Sources */,
+				DEEDB83129707C0200CB20F3 /* MainReducer.swift in Sources */,
 				DEEDB78B2970709700CB20F3 /* NumberFactServiceImplementation.swift in Sources */,
 				DEEDB73D2970707D00CB20F3 /* String.swift in Sources */,
 				DEEDB7852970709700CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
