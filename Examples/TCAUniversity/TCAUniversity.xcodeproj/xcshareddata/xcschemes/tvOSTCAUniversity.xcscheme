@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1240"
+   LastUpgradeVersion = "1320"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC4C6EA62450DD380066A05D"
-               BuildableName = "UIKitCaseStudies.app"
-               BlueprintName = "UIKitCaseStudies"
-               ReferencedContainer = "container:CaseStudies.xcodeproj">
+               BlueprintIdentifier = "CAF88E6F24B8E26D00539345"
+               BuildableName = "tvOSTCAUniversity.app"
+               BlueprintName = "tvOSTCAUniversity"
+               ReferencedContainer = "container:TCAUniversity.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC4C6EBB2450DD390066A05D"
-               BuildableName = "UIKitCaseStudiesTests.xctest"
-               BlueprintName = "UIKitCaseStudiesTests"
-               ReferencedContainer = "container:CaseStudies.xcodeproj">
+               BlueprintIdentifier = "CAF88E8224B8E26E00539345"
+               BuildableName = "tvOSTCAUniversityTests.xctest"
+               BlueprintName = "tvOSTCAUniversityTests"
+               ReferencedContainer = "container:TCAUniversity.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -54,10 +54,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC4C6EA62450DD380066A05D"
-            BuildableName = "UIKitCaseStudies.app"
-            BlueprintName = "UIKitCaseStudies"
-            ReferencedContainer = "container:CaseStudies.xcodeproj">
+            BlueprintIdentifier = "CAF88E6F24B8E26D00539345"
+            BuildableName = "tvOSTCAUniversity.app"
+            BlueprintName = "tvOSTCAUniversity"
+            ReferencedContainer = "container:TCAUniversity.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -71,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC4C6EA62450DD380066A05D"
-            BuildableName = "UIKitCaseStudies.app"
-            BlueprintName = "UIKitCaseStudies"
-            ReferencedContainer = "container:CaseStudies.xcodeproj">
+            BlueprintIdentifier = "CAF88E6F24B8E26D00539345"
+            BuildableName = "tvOSTCAUniversity.app"
+            BlueprintName = "tvOSTCAUniversity"
+            ReferencedContainer = "container:TCAUniversity.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
