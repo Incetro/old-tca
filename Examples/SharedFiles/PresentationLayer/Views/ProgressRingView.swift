@@ -1,9 +1,8 @@
 //
 //  ProgressRingView.swift
-//  verse-examples
+//  tca-examples
 //
-//  Created by incetro on 06/11/2021.
-//  Copyright © 2021 Incetro Inc. All rights reserved.
+//  Created by incetro on 12/12/23.
 //
 
 import VERSE
