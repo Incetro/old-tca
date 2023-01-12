@@ -5,7 +5,6 @@
 //  Created by incetro on 12/12/23.
 //
 
-import VERSE
 import SwiftUI
 
 // MARK: - ProgressRingView
