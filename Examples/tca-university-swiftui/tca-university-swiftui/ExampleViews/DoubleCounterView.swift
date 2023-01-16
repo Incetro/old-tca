@@ -62,7 +62,7 @@ extension DoubleCounterView {
 
         static let summary = """
         This screen demonstrates how to take small features and compose them into bigger ones using the \
-        `pullback` and `combine` operators on reducers, and the `scope` operator on stores.
+        `combine` operators on reducers and the `Scope` builder on stores.
 
         It reuses the domain of the counter screen and embeds it, twice, in a larger domain.
         

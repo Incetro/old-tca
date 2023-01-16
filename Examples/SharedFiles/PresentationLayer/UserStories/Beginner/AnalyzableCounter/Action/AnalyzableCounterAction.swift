@@ -23,7 +23,7 @@ public enum AnalyzableCounterAction: Equatable {
     
     /// Child action for `Counter` module.
     ///
-    /// It's necessary as we use `pullback` operator in current module's reducer.
+    /// It's necessary as we use `Scope` builder in current module's reducer.
     /// In short, the `counter` case means that every action in `Counter` module
     /// will be sent to current module through it
     case counter(CounterAction)
