@@ -27,5 +27,8 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.doubleCounter, action: /MainAction.doubleCounter) {
             DoubleCounterFeature()
         }
+        Scope(state: \.analyzableCounter, action: /MainAction.analyzableCounter) {
+            AnalyzableCounterFeature()
+        }
     }
 }

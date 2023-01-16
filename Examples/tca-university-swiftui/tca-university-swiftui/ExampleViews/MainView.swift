@@ -43,6 +43,16 @@ public struct MainView: View {
                         ) {
                             Text("Double counter").standard
                         }
+                        NavigationLink(
+                            destination: AnalyzableCounterView(
+                                store: store.scope(
+                                    state: \.analyzableCounter,
+                                    action: MainAction.analyzableCounter
+                                )
+                            )
+                        ) {
+                            Text("Analyzable counter").standard
+                        }
                     }
                     Section(header: Text("💡 Elementary")) {
                     }

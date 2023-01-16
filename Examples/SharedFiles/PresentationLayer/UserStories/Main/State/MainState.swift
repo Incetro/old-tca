@@ -22,4 +22,7 @@ public struct MainState: Equatable {
     
     /// DoubleCounterState instance
     var doubleCounter = DoubleCounterState()
+    
+    /// AnalyzableCounterState instance
+    var analyzableCounter = AnalyzableCounterState()
 }
