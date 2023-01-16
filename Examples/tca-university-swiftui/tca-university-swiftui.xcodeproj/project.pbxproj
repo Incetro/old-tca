@@ -18,6 +18,10 @@
 		DEBD8D152975690500E6FE89 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D0F2975690500E6FE89 /* MainState.swift */; };
 		DEBD8D162975690500E6FE89 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D112975690500E6FE89 /* MainAction.swift */; };
 		DEBD8D2E2975697600E6FE89 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D2D2975697600E6FE89 /* MainView.swift */; };
+		DEBD8D3B2975824000E6FE89 /* DoubleCounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D352975824000E6FE89 /* DoubleCounterReducer.swift */; };
+		DEBD8D3C2975824000E6FE89 /* DoubleCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D372975824000E6FE89 /* DoubleCounterState.swift */; };
+		DEBD8D3D2975824000E6FE89 /* DoubleCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D392975824000E6FE89 /* DoubleCounterAction.swift */; };
+		DEBD8D3F2975828300E6FE89 /* DoubleCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D3E2975828300E6FE89 /* DoubleCounterView.swift */; };
 		DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7042970628300CB20F3 /* TCAUniversitySwiftUIApp.swift */; };
 		DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7062970628300CB20F3 /* ContentView.swift */; };
 		DEEDB7092970628400CB20F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB7082970628400CB20F3 /* Assets.xcassets */; };
@@ -63,6 +67,10 @@
 		DEBD8D0F2975690500E6FE89 /* MainState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
 		DEBD8D112975690500E6FE89 /* MainAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
 		DEBD8D2D2975697600E6FE89 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = "tca-university-swiftui/ExampleViews/MainView.swift"; sourceTree = SOURCE_ROOT; };
+		DEBD8D352975824000E6FE89 /* DoubleCounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleCounterReducer.swift; sourceTree = "<group>"; };
+		DEBD8D372975824000E6FE89 /* DoubleCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleCounterState.swift; sourceTree = "<group>"; };
+		DEBD8D392975824000E6FE89 /* DoubleCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleCounterAction.swift; sourceTree = "<group>"; };
+		DEBD8D3E2975828300E6FE89 /* DoubleCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoubleCounterView.swift; path = "tca-university-swiftui/ExampleViews/DoubleCounterView.swift"; sourceTree = SOURCE_ROOT; };
 		DEEDB7012970628300CB20F3 /* tca-university-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tca-university-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEDB7042970628300CB20F3 /* TCAUniversitySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAUniversitySwiftUIApp.swift; sourceTree = "<group>"; };
 		DEEDB7062970628300CB20F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -201,6 +209,49 @@
 			isa = PBXGroup;
 			children = (
 				DEBD8D2D2975697600E6FE89 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEBD8D332975824000E6FE89 /* DoubleCounter */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D342975824000E6FE89 /* Reducer */,
+				DEBD8D362975824000E6FE89 /* State */,
+				DEBD8D382975824000E6FE89 /* Action */,
+				DEBD8D3A2975824000E6FE89 /* View */,
+			);
+			path = DoubleCounter;
+			sourceTree = "<group>";
+		};
+		DEBD8D342975824000E6FE89 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D352975824000E6FE89 /* DoubleCounterReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		DEBD8D362975824000E6FE89 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D372975824000E6FE89 /* DoubleCounterState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		DEBD8D382975824000E6FE89 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D392975824000E6FE89 /* DoubleCounterAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		DEBD8D3A2975824000E6FE89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D3E2975828300E6FE89 /* DoubleCounterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -455,6 +506,7 @@
 		DEEDB7BE2970718800CB20F3 /* Beginner */ = {
 			isa = PBXGroup;
 			children = (
+				DEBD8D332975824000E6FE89 /* DoubleCounter */,
 				DEBD8CF32975652F00E6FE89 /* Counter */,
 			);
 			path = Beginner;
@@ -593,6 +645,7 @@
 				DEEDB75D2970708F00CB20F3 /* BookService.swift in Sources */,
 				DEEDB719297062F700CB20F3 /* Palette.swift in Sources */,
 				DEEDB7612970708F00CB20F3 /* UserService.swift in Sources */,
+				DEBD8D3F2975828300E6FE89 /* DoubleCounterView.swift in Sources */,
 				DEBD8D152975690500E6FE89 /* MainState.swift in Sources */,
 				DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */,
 				DEEDB7642970708F00CB20F3 /* NewsService.swift in Sources */,
@@ -600,9 +653,12 @@
 				DEEDB7592970708F00CB20F3 /* PaletteServiceImplementation.swift in Sources */,
 				DEEDB71B297062F700CB20F3 /* Book.swift in Sources */,
 				DEEDB7652970708F00CB20F3 /* NumberFactService.swift in Sources */,
+				DEBD8D3D2975824000E6FE89 /* DoubleCounterAction.swift in Sources */,
 				DEEDB7CA2970718800CB20F3 /* Color.swift in Sources */,
+				DEBD8D3B2975824000E6FE89 /* DoubleCounterReducer.swift in Sources */,
 				DEEDB7CD2970718800CB20F3 /* ProgressRingView.swift in Sources */,
 				DEBD8D162975690500E6FE89 /* MainAction.swift in Sources */,
+				DEBD8D3C2975824000E6FE89 /* DoubleCounterState.swift in Sources */,
 				DEEDB71D297062F700CB20F3 /* News.swift in Sources */,
 				DEEDB7C72970718800CB20F3 /* Unifont.swift in Sources */,
 				DEEDB71C297062F700CB20F3 /* LoremPicsumImage.swift in Sources */,

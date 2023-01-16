@@ -25,10 +25,23 @@ public struct MainView: View {
                     Section(header: Text("👶🏻 Beginner")) {
                         NavigationLink(
                             destination: CounterExampleView(
-                                store: store.scope(state: \.counter, action: MainAction.counter)
+                                store: store.scope(
+                                    state: \.counter,
+                                    action: MainAction.counter
+                                )
                             )
                         ) {
                             Text("Basics").standard
+                        }
+                        NavigationLink(
+                            destination: DoubleCounterView(
+                                store: store.scope(
+                                    state: \.doubleCounter,
+                                    action: MainAction.doubleCounter
+                                )
+                            )
+                        ) {
+                            Text("Double counter").standard
                         }
                     }
                     Section(header: Text("💡 Elementary")) {

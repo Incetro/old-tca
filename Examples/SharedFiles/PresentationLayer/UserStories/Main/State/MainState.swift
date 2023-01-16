@@ -19,4 +19,7 @@ public struct MainState: Equatable {
     
     /// CounterState instance
     var counter = CounterState(count: 13)
+    
+    /// DoubleCounterState instance
+    var doubleCounter = DoubleCounterState()
 }
