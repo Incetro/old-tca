@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEBD8CEC29755F3700E6FE89 /* TCA in Frameworks */ = {isa = PBXBuildFile; productRef = DEBD8CEB29755F3700E6FE89 /* TCA */; };
+		DEBD8D032975652F00E6FE89 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CF72975652F00E6FE89 /* CounterFeature.swift */; };
+		DEBD8D042975652F00E6FE89 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CF92975652F00E6FE89 /* CounterState.swift */; };
+		DEBD8D052975652F00E6FE89 /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CFB2975652F00E6FE89 /* CounterAction.swift */; };
+		DEBD8D062975652F00E6FE89 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CFD2975652F00E6FE89 /* StepperView.swift */; };
+		DEBD8D072975652F00E6FE89 /* CounterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CFE2975652F00E6FE89 /* CounterExampleView.swift */; };
+		DEBD8D082975652F00E6FE89 /* SimpleCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CFF2975652F00E6FE89 /* SimpleCounterView.swift */; };
+		DEBD8D142975690500E6FE89 /* MainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D0D2975690500E6FE89 /* MainFeature.swift */; };
+		DEBD8D152975690500E6FE89 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D0F2975690500E6FE89 /* MainState.swift */; };
+		DEBD8D162975690500E6FE89 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D112975690500E6FE89 /* MainAction.swift */; };
+		DEBD8D2E2975697600E6FE89 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D2D2975697600E6FE89 /* MainView.swift */; };
 		DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7042970628300CB20F3 /* TCAUniversitySwiftUIApp.swift */; };
 		DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7062970628300CB20F3 /* ContentView.swift */; };
 		DEEDB7092970628400CB20F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB7082970628400CB20F3 /* Assets.xcassets */; };
@@ -39,14 +50,19 @@
 		DEEDB7CC2970718800CB20F3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7C42970718800CB20F3 /* ActivityIndicator.swift */; };
 		DEEDB7CD2970718800CB20F3 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7C52970718800CB20F3 /* ProgressRingView.swift */; };
 		DEEDB7CE2970718800CB20F3 /* UIViewRepresented.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7C62970718800CB20F3 /* UIViewRepresented.swift */; };
-		DEEDB81E29707BF000CB20F3 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB81429707BF000CB20F3 /* MainReducer.swift */; };
-		DEEDB81F29707BF000CB20F3 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB81629707BF000CB20F3 /* MainState.swift */; };
-		DEEDB82029707BF000CB20F3 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB81829707BF000CB20F3 /* MainAction.swift */; };
-		DEEDB82129707BF000CB20F3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB81A29707BF000CB20F3 /* MainView.swift */; };
-		DEEDB82229707BF000CB20F3 /* MainEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB81C29707BF000CB20F3 /* MainEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DEBD8CF72975652F00E6FE89 /* CounterFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
+		DEBD8CF92975652F00E6FE89 /* CounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
+		DEBD8CFB2975652F00E6FE89 /* CounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
+		DEBD8CFD2975652F00E6FE89 /* StepperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
+		DEBD8CFE2975652F00E6FE89 /* CounterExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterExampleView.swift; sourceTree = "<group>"; };
+		DEBD8CFF2975652F00E6FE89 /* SimpleCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCounterView.swift; sourceTree = "<group>"; };
+		DEBD8D0D2975690500E6FE89 /* MainFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeature.swift; sourceTree = "<group>"; };
+		DEBD8D0F2975690500E6FE89 /* MainState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+		DEBD8D112975690500E6FE89 /* MainAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
+		DEBD8D2D2975697600E6FE89 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = "tca-university-swiftui/ExampleViews/MainView.swift"; sourceTree = SOURCE_ROOT; };
 		DEEDB7012970628300CB20F3 /* tca-university-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tca-university-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEDB7042970628300CB20F3 /* TCAUniversitySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAUniversitySwiftUIApp.swift; sourceTree = "<group>"; };
 		DEEDB7062970628300CB20F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,11 +96,6 @@
 		DEEDB7C42970718800CB20F3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		DEEDB7C52970718800CB20F3 /* ProgressRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
 		DEEDB7C62970718800CB20F3 /* UIViewRepresented.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewRepresented.swift; sourceTree = "<group>"; };
-		DEEDB81429707BF000CB20F3 /* MainReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
-		DEEDB81629707BF000CB20F3 /* MainState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
-		DEEDB81829707BF000CB20F3 /* MainAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
-		DEEDB81A29707BF000CB20F3 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		DEEDB81C29707BF000CB20F3 /* MainEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,17 +103,114 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBD8CEC29755F3700E6FE89 /* TCA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DEBD8CEA29755F3700E6FE89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEBD8CF32975652F00E6FE89 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8CF62975652F00E6FE89 /* Reducer */,
+				DEBD8CF82975652F00E6FE89 /* State */,
+				DEBD8CFA2975652F00E6FE89 /* Action */,
+				DEBD8CFC2975652F00E6FE89 /* View */,
+			);
+			path = Counter;
+			sourceTree = "<group>";
+		};
+		DEBD8CF62975652F00E6FE89 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8CF72975652F00E6FE89 /* CounterFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		DEBD8CF82975652F00E6FE89 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8CF92975652F00E6FE89 /* CounterState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		DEBD8CFA2975652F00E6FE89 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8CFB2975652F00E6FE89 /* CounterAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		DEBD8CFC2975652F00E6FE89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8CFD2975652F00E6FE89 /* StepperView.swift */,
+				DEBD8CFE2975652F00E6FE89 /* CounterExampleView.swift */,
+				DEBD8CFF2975652F00E6FE89 /* SimpleCounterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEBD8D0A2975690500E6FE89 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D0C2975690500E6FE89 /* Reducer */,
+				DEBD8D0E2975690500E6FE89 /* State */,
+				DEBD8D102975690500E6FE89 /* Action */,
+				DEBD8D122975690500E6FE89 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DEBD8D0C2975690500E6FE89 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D0D2975690500E6FE89 /* MainFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		DEBD8D0E2975690500E6FE89 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D0F2975690500E6FE89 /* MainState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		DEBD8D102975690500E6FE89 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D112975690500E6FE89 /* MainAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		DEBD8D122975690500E6FE89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D2D2975697600E6FE89 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DEEDB6F82970628200CB20F3 = {
 			isa = PBXGroup;
 			children = (
 				DEEDB7032970628300CB20F3 /* tca-university-swiftui */,
 				DEEDB7022970628300CB20F3 /* Products */,
+				DEBD8CEA29755F3700E6FE89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,7 +403,7 @@
 		DEEDB7B82970718800CB20F3 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
-				DEEDB81029707BF000CB20F3 /* Main */,
+				DEBD8D0A2975690500E6FE89 /* Main */,
 				DEEDB7B92970718800CB20F3 /* Advanced */,
 				DEEDB7BA2970718800CB20F3 /* Pre-Intermediate */,
 				DEEDB7BB2970718800CB20F3 /* Upper-Intermediate */,
@@ -347,6 +455,7 @@
 		DEEDB7BE2970718800CB20F3 /* Beginner */ = {
 			isa = PBXGroup;
 			children = (
+				DEBD8CF32975652F00E6FE89 /* Counter */,
 			);
 			path = Beginner;
 			sourceTree = "<group>";
@@ -391,59 +500,6 @@
 			path = ../../SharedFiles/ApplicationLayer;
 			sourceTree = "<group>";
 		};
-		DEEDB81029707BF000CB20F3 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB81329707BF000CB20F3 /* Reducer */,
-				DEEDB81529707BF000CB20F3 /* State */,
-				DEEDB81729707BF000CB20F3 /* Action */,
-				DEEDB81929707BF000CB20F3 /* View */,
-				DEEDB81B29707BF000CB20F3 /* Environment */,
-			);
-			name = Main;
-			path = ../../Main;
-			sourceTree = "<group>";
-		};
-		DEEDB81329707BF000CB20F3 /* Reducer */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB81429707BF000CB20F3 /* MainReducer.swift */,
-			);
-			path = Reducer;
-			sourceTree = "<group>";
-		};
-		DEEDB81529707BF000CB20F3 /* State */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB81629707BF000CB20F3 /* MainState.swift */,
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
-		DEEDB81729707BF000CB20F3 /* Action */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB81829707BF000CB20F3 /* MainAction.swift */,
-			);
-			path = Action;
-			sourceTree = "<group>";
-		};
-		DEEDB81929707BF000CB20F3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB81A29707BF000CB20F3 /* MainView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DEEDB81B29707BF000CB20F3 /* Environment */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB81C29707BF000CB20F3 /* MainEnvironment.swift */,
-			);
-			path = Environment;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -460,6 +516,9 @@
 			dependencies = (
 			);
 			name = "tca-university-swiftui";
+			packageProductDependencies = (
+				DEBD8CEB29755F3700E6FE89 /* TCA */,
+			);
 			productName = "tca-university-swiftui";
 			productReference = DEEDB7012970628300CB20F3 /* tca-university-swiftui.app */;
 			productType = "com.apple.product-type.application";
@@ -514,23 +573,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEEDB82029707BF000CB20F3 /* MainAction.swift in Sources */,
+				DEBD8D062975652F00E6FE89 /* StepperView.swift in Sources */,
+				DEBD8D072975652F00E6FE89 /* CounterExampleView.swift in Sources */,
 				DEEDB7C82970718800CB20F3 /* CGFloat.swift in Sources */,
 				DEEDB71A297062F700CB20F3 /* User.swift in Sources */,
+				DEBD8D142975690500E6FE89 /* MainFeature.swift in Sources */,
 				DEEDB7632970708F00CB20F3 /* NewsServiceImplementation.swift in Sources */,
 				DEEDB75F2970708F00CB20F3 /* ScrambleService.swift in Sources */,
 				DEEDB7CC2970718800CB20F3 /* ActivityIndicator.swift in Sources */,
 				DEEDB75A2970708F00CB20F3 /* PaletteService.swift in Sources */,
-				DEEDB82129707BF000CB20F3 /* MainView.swift in Sources */,
+				DEBD8D052975652F00E6FE89 /* CounterAction.swift in Sources */,
 				DEEDB7CB2970718800CB20F3 /* BlurView.swift in Sources */,
-				DEEDB82229707BF000CB20F3 /* MainEnvironment.swift in Sources */,
+				DEBD8D042975652F00E6FE89 /* CounterState.swift in Sources */,
 				DEEDB75C2970708F00CB20F3 /* ImageServiceImplementation.swift in Sources */,
 				DEEDB7CE2970718800CB20F3 /* UIViewRepresented.swift in Sources */,
 				DEEDB7C92970718800CB20F3 /* Text.swift in Sources */,
 				DEEDB7622970708F00CB20F3 /* UserServiceImplementation.swift in Sources */,
+				DEBD8D032975652F00E6FE89 /* CounterFeature.swift in Sources */,
 				DEEDB75D2970708F00CB20F3 /* BookService.swift in Sources */,
 				DEEDB719297062F700CB20F3 /* Palette.swift in Sources */,
 				DEEDB7612970708F00CB20F3 /* UserService.swift in Sources */,
+				DEBD8D152975690500E6FE89 /* MainState.swift in Sources */,
 				DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */,
 				DEEDB7642970708F00CB20F3 /* NewsService.swift in Sources */,
 				DEEDB75E2970708F00CB20F3 /* BookServiceImplementation.swift in Sources */,
@@ -538,16 +601,17 @@
 				DEEDB71B297062F700CB20F3 /* Book.swift in Sources */,
 				DEEDB7652970708F00CB20F3 /* NumberFactService.swift in Sources */,
 				DEEDB7CA2970718800CB20F3 /* Color.swift in Sources */,
-				DEEDB81F29707BF000CB20F3 /* MainState.swift in Sources */,
 				DEEDB7CD2970718800CB20F3 /* ProgressRingView.swift in Sources */,
+				DEBD8D162975690500E6FE89 /* MainAction.swift in Sources */,
 				DEEDB71D297062F700CB20F3 /* News.swift in Sources */,
 				DEEDB7C72970718800CB20F3 /* Unifont.swift in Sources */,
 				DEEDB71C297062F700CB20F3 /* LoremPicsumImage.swift in Sources */,
+				DEBD8D2E2975697600E6FE89 /* MainView.swift in Sources */,
 				DEEDB75B2970708F00CB20F3 /* ImageService.swift in Sources */,
-				DEEDB81E29707BF000CB20F3 /* MainReducer.swift in Sources */,
 				DEEDB7662970708F00CB20F3 /* NumberFactServiceImplementation.swift in Sources */,
 				DEEDB7392970707800CB20F3 /* String.swift in Sources */,
 				DEEDB7602970708F00CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
+				DEBD8D082975652F00E6FE89 /* SimpleCounterView.swift in Sources */,
 				DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -749,6 +813,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEBD8CEB29755F3700E6FE89 /* TCA */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCA;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEEDB6F92970628200CB20F3 /* Project object */;
 }

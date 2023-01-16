@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        MainView()
+        MainView(store: .init(initialState: .init(), reducer: MainFeature()))
     }
 }
 

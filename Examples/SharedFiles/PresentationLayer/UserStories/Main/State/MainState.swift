@@ -16,4 +16,7 @@ import Foundation
 public struct MainState: Equatable {
 
     // MARK: - Properties
+    
+    /// CounterState instance
+    var counter = CounterState(count: 13)
 }

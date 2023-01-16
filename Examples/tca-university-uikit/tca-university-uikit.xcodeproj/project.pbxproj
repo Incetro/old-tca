@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEBD8CEF29755FFE00E6FE89 /* TCA in Frameworks */ = {isa = PBXBuildFile; productRef = DEBD8CEE29755FFE00E6FE89 /* TCA */; };
+		DEBD8D1F2975693800E6FE89 /* MainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D192975693800E6FE89 /* MainFeature.swift */; };
+		DEBD8D202975693800E6FE89 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D1B2975693800E6FE89 /* MainState.swift */; };
+		DEBD8D212975693800E6FE89 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D1D2975693800E6FE89 /* MainAction.swift */; };
+		DEBD8D302975699C00E6FE89 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D2F2975699C00E6FE89 /* MainView.swift */; };
 		DEEDB6EB2970626400CB20F3 /* TCAUniversityUIKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB6EA2970626400CB20F3 /* TCAUniversityUIKitApp.swift */; };
 		DEEDB6ED2970626400CB20F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB6EC2970626400CB20F3 /* ContentView.swift */; };
 		DEEDB6EF2970626500CB20F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB6EE2970626500CB20F3 /* Assets.xcassets */; };
@@ -39,14 +44,13 @@
 		DEEDB7EA2970718E00CB20F3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7E22970718E00CB20F3 /* ActivityIndicator.swift */; };
 		DEEDB7EB2970718E00CB20F3 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7E32970718E00CB20F3 /* ProgressRingView.swift */; };
 		DEEDB7EC2970718E00CB20F3 /* UIViewRepresented.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7E42970718E00CB20F3 /* UIViewRepresented.swift */; };
-		DEEDB83129707C0200CB20F3 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB82729707C0200CB20F3 /* MainReducer.swift */; };
-		DEEDB83229707C0200CB20F3 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB82929707C0200CB20F3 /* MainState.swift */; };
-		DEEDB83329707C0200CB20F3 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB82B29707C0200CB20F3 /* MainAction.swift */; };
-		DEEDB83429707C0200CB20F3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB82D29707C0200CB20F3 /* MainView.swift */; };
-		DEEDB83529707C0200CB20F3 /* MainEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB82F29707C0200CB20F3 /* MainEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DEBD8D192975693800E6FE89 /* MainFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeature.swift; sourceTree = "<group>"; };
+		DEBD8D1B2975693800E6FE89 /* MainState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+		DEBD8D1D2975693800E6FE89 /* MainAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
+		DEBD8D2F2975699C00E6FE89 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = ExampleViews/MainView.swift; sourceTree = SOURCE_ROOT; };
 		DEEDB6E72970626400CB20F3 /* tca-university-uikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tca-university-uikit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEDB6EA2970626400CB20F3 /* TCAUniversityUIKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAUniversityUIKitApp.swift; sourceTree = "<group>"; };
 		DEEDB6EC2970626400CB20F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,11 +84,6 @@
 		DEEDB7E22970718E00CB20F3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		DEEDB7E32970718E00CB20F3 /* ProgressRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
 		DEEDB7E42970718E00CB20F3 /* UIViewRepresented.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewRepresented.swift; sourceTree = "<group>"; };
-		DEEDB82729707C0200CB20F3 /* MainReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
-		DEEDB82929707C0200CB20F3 /* MainState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
-		DEEDB82B29707C0200CB20F3 /* MainAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
-		DEEDB82D29707C0200CB20F3 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		DEEDB82F29707C0200CB20F3 /* MainEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,17 +91,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBD8CEF29755FFE00E6FE89 /* TCA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DEBD8CED29755FFE00E6FE89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEBD8D172975693800E6FE89 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D182975693800E6FE89 /* Reducer */,
+				DEBD8D1A2975693800E6FE89 /* State */,
+				DEBD8D1C2975693800E6FE89 /* Action */,
+				DEBD8D1E2975693800E6FE89 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DEBD8D182975693800E6FE89 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D192975693800E6FE89 /* MainFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		DEBD8D1A2975693800E6FE89 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D1B2975693800E6FE89 /* MainState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		DEBD8D1C2975693800E6FE89 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D1D2975693800E6FE89 /* MainAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		DEBD8D1E2975693800E6FE89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D2F2975699C00E6FE89 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DEEDB6DE2970626400CB20F3 = {
 			isa = PBXGroup;
 			children = (
 				DEEDB6E92970626400CB20F3 /* tca-university-uikit */,
 				DEEDB6E82970626400CB20F3 /* Products */,
+				DEBD8CED29755FFE00E6FE89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,7 +346,7 @@
 		DEEDB7D62970718E00CB20F3 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
-				DEEDB82329707C0200CB20F3 /* Main */,
+				DEBD8D172975693800E6FE89 /* Main */,
 				DEEDB7D72970718E00CB20F3 /* Advanced */,
 				DEEDB7D82970718E00CB20F3 /* Pre-Intermediate */,
 				DEEDB7D92970718E00CB20F3 /* Upper-Intermediate */,
@@ -391,59 +442,6 @@
 			path = ../../SharedFiles/ApplicationLayer;
 			sourceTree = "<group>";
 		};
-		DEEDB82329707C0200CB20F3 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB82629707C0200CB20F3 /* Reducer */,
-				DEEDB82829707C0200CB20F3 /* State */,
-				DEEDB82A29707C0200CB20F3 /* Action */,
-				DEEDB82C29707C0200CB20F3 /* View */,
-				DEEDB82E29707C0200CB20F3 /* Environment */,
-			);
-			name = Main;
-			path = ../../Main;
-			sourceTree = "<group>";
-		};
-		DEEDB82629707C0200CB20F3 /* Reducer */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB82729707C0200CB20F3 /* MainReducer.swift */,
-			);
-			path = Reducer;
-			sourceTree = "<group>";
-		};
-		DEEDB82829707C0200CB20F3 /* State */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB82929707C0200CB20F3 /* MainState.swift */,
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
-		DEEDB82A29707C0200CB20F3 /* Action */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB82B29707C0200CB20F3 /* MainAction.swift */,
-			);
-			path = Action;
-			sourceTree = "<group>";
-		};
-		DEEDB82C29707C0200CB20F3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB82D29707C0200CB20F3 /* MainView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DEEDB82E29707C0200CB20F3 /* Environment */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB82F29707C0200CB20F3 /* MainEnvironment.swift */,
-			);
-			path = Environment;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -460,6 +458,9 @@
 			dependencies = (
 			);
 			name = "tca-university-uikit";
+			packageProductDependencies = (
+				DEBD8CEE29755FFE00E6FE89 /* TCA */,
+			);
 			productName = "tca-university-uikit";
 			productReference = DEEDB6E72970626400CB20F3 /* tca-university-uikit.app */;
 			productType = "com.apple.product-type.application";
@@ -514,37 +515,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEEDB83329707C0200CB20F3 /* MainAction.swift in Sources */,
 				DEEDB7E62970718E00CB20F3 /* CGFloat.swift in Sources */,
 				DEEDB7262970631200CB20F3 /* User.swift in Sources */,
 				DEEDB7882970709700CB20F3 /* NewsServiceImplementation.swift in Sources */,
 				DEEDB7842970709700CB20F3 /* ScrambleService.swift in Sources */,
 				DEEDB7EA2970718E00CB20F3 /* ActivityIndicator.swift in Sources */,
 				DEEDB77F2970709700CB20F3 /* PaletteService.swift in Sources */,
-				DEEDB83429707C0200CB20F3 /* MainView.swift in Sources */,
 				DEEDB7E92970718E00CB20F3 /* BlurView.swift in Sources */,
-				DEEDB83529707C0200CB20F3 /* MainEnvironment.swift in Sources */,
 				DEEDB7812970709700CB20F3 /* ImageServiceImplementation.swift in Sources */,
 				DEEDB7EC2970718E00CB20F3 /* UIViewRepresented.swift in Sources */,
 				DEEDB7E72970718E00CB20F3 /* Text.swift in Sources */,
 				DEEDB7872970709700CB20F3 /* UserServiceImplementation.swift in Sources */,
+				DEBD8D302975699C00E6FE89 /* MainView.swift in Sources */,
 				DEEDB7822970709700CB20F3 /* BookService.swift in Sources */,
 				DEEDB7252970631200CB20F3 /* Palette.swift in Sources */,
+				DEBD8D1F2975693800E6FE89 /* MainFeature.swift in Sources */,
 				DEEDB7862970709700CB20F3 /* UserService.swift in Sources */,
 				DEEDB6ED2970626400CB20F3 /* ContentView.swift in Sources */,
+				DEBD8D202975693800E6FE89 /* MainState.swift in Sources */,
 				DEEDB7892970709700CB20F3 /* NewsService.swift in Sources */,
 				DEEDB7832970709700CB20F3 /* BookServiceImplementation.swift in Sources */,
 				DEEDB77E2970709700CB20F3 /* PaletteServiceImplementation.swift in Sources */,
 				DEEDB7272970631200CB20F3 /* Book.swift in Sources */,
 				DEEDB78A2970709700CB20F3 /* NumberFactService.swift in Sources */,
 				DEEDB7E82970718E00CB20F3 /* Color.swift in Sources */,
-				DEEDB83229707C0200CB20F3 /* MainState.swift in Sources */,
 				DEEDB7EB2970718E00CB20F3 /* ProgressRingView.swift in Sources */,
 				DEEDB7292970631200CB20F3 /* News.swift in Sources */,
 				DEEDB7E52970718E00CB20F3 /* Unifont.swift in Sources */,
+				DEBD8D212975693800E6FE89 /* MainAction.swift in Sources */,
 				DEEDB7282970631200CB20F3 /* LoremPicsumImage.swift in Sources */,
 				DEEDB7802970709700CB20F3 /* ImageService.swift in Sources */,
-				DEEDB83129707C0200CB20F3 /* MainReducer.swift in Sources */,
 				DEEDB78B2970709700CB20F3 /* NumberFactServiceImplementation.swift in Sources */,
 				DEEDB73D2970707D00CB20F3 /* String.swift in Sources */,
 				DEEDB7852970709700CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
@@ -749,6 +749,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEBD8CEE29755FFE00E6FE89 /* TCA */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCA;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEEDB6DF2970626400CB20F3 /* Project object */;
 }
