@@ -15,7 +15,8 @@ struct ScramblerView: View {
 
     // MARK: - Properties
 
-    let store: StoreOf<ScramblerFeature>
+    /// The store powering the `Scrambler` feature
+    public let store: StoreOf<ScramblerFeature>
 
     // MARK: - View
 

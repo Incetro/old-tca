@@ -17,16 +17,21 @@ import Foundation
 public struct AnalyzableCounterState: Equatable {
 
     // MARK: - Properties
-
-    /// Current value
-    var counter = CounterState()
+    
+    /// `CounterState` instance
+    ///
+    /// It's an instance of `Counter` submodule.
+    /// We use it here to be able to integrate `Counter` feature into a current module logic.
+    /// All necessary processing is placed inside current reducer. Also, if you change the state
+    /// inside the `Counter` module all changes will be saved here.
+    public var counter = CounterState()
 
     /// Maximum tracked value
-    var max = 0
+    public var max = 0
 
     /// Min tracked value
-    var min = 0
+    public var min = 0
 
     /// Counter events count
-    var eventsCount = 0
+    public var eventsCount = 0
 }

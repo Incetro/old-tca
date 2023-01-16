@@ -18,6 +18,19 @@ public struct DoubleCounterState: Equatable {
 
     // MARK: - Properties
 
-    var counter1 = CounterState()
-    var counter2 = CounterState()
+    /// `CounterState` instance
+    ///
+    /// It's an instance of `counter` submodule.
+    /// We use it here to be able to integrate `counter` feature into a current module logic.
+    /// All necessary processing is placed inside current reducer. Also, if you change the state
+    /// inside the `counter` module all changes will be saved here.
+    public var counter1 = CounterState()
+    
+    /// `CounterState` instance
+    ///
+    /// It's an instance of `counter` submodule.
+    /// We use it here to be able to integrate `counter` feature into a current module logic.
+    /// All necessary processing is placed inside current reducer. Also, if you change the state
+    /// inside the `counter` module all changes will be saved here.
+    public var counter2 = CounterState()
 }

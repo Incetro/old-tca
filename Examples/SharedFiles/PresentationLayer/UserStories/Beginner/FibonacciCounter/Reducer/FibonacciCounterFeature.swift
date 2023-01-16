@@ -24,9 +24,7 @@ public struct FibonacciCounterFeature: ReducerProtocol {
                     state.fibonacchiText = "🚓"
                     return .none
                 }
-                state.fibonacchiText = state.counter.count.isFibonacci
-                    ? "✅"
-                    : "❌"
+                state.fibonacchiText = state.counter.count.isFibonacci ? "✅" : "❌"
             }
             return .none
         }

@@ -23,7 +23,8 @@ public struct SimpleCounterView: View {
 
     // MARK: - Properties
 
-    let store: StoreOf<CounterFeature>
+    /// The store powering the `Counter` feature
+    public let store: StoreOf<CounterFeature>
 
     // MARK: - View
 

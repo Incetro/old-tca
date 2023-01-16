@@ -15,7 +15,8 @@ public struct DoubleCounterView: View {
 
     // MARK: - Properties
 
-    let store: StoreOf<DoubleCounterFeature>
+    /// The store powering the `DoubleCounter` feature
+    public let store: StoreOf<DoubleCounterFeature>
 
     // MARK: - View
 

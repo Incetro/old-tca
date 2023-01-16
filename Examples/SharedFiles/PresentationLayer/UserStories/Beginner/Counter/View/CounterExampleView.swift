@@ -15,7 +15,8 @@ public struct CounterExampleView: View {
 
     // MARK: - Properties
 
-    let store: StoreOf<CounterFeature>
+    /// The store powering the `Counter` feature
+    public let store: StoreOf<CounterFeature>
 
     // MARK: - View
 
@@ -38,7 +39,7 @@ extension CounterExampleView {
     enum Constants {
 
         static let summary = """
-        This screen shows the simplest example of the VERSE architecture based on a regular counter.
+        This screen shows the simplest example of the TCA architecture based on a regular counter.
 
         The business logic of the application is designed using simple data types that can change the state \
         of the application and any actions that may affect this state or the outside world.

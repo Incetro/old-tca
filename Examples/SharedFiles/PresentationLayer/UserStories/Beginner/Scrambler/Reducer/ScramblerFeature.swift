@@ -13,7 +13,7 @@ import Foundation
 
 public struct ScramblerFeature: ReducerProtocol {
     
-    public func scramble(_ length: Int) -> String {
+    func scramble(_ length: Int) -> String {
         let notations = ["F", "B", "R", "U", "D", "L"].map {
             [$0, $0 + "'", $0 + "2"]
         }

@@ -15,7 +15,8 @@ public struct FibonacciCounterView: View {
 
     // MARK: - Properties
 
-    let store: StoreOf<FibonacciCounterFeature>
+    /// The store powering the `FibonacciCounter` feature
+    public let store: StoreOf<FibonacciCounterFeature>
 
     // MARK: - View
 
@@ -54,8 +55,7 @@ extension FibonacciCounterView {
     enum Constants {
 
         static let summary = """
-        This screen demonstrates how to take small features and compose them into bigger ones using the \
-        `pullback` and `combine` operators on reducers, and the `scope` operator on stores.
+        This screen demonstrates how to take small features and compose them into bigger ones using the `scope` operator on stores and reducers.
 
         It reuses the domain of the counter screen and embeds it in other domain with its own logic:
         checks if current number is a Fibonacci number.

@@ -17,10 +17,7 @@ public struct AnalyzableCounterFeature: ReducerProtocol {
             CounterFeature()
         }
         Reduce { state, action in
-            switch action {
-            case .counter:
-                state.eventsCount += 1
-            }
+            state.eventsCount += 1
             state.max = max(state.max, state.counter.count)
             state.min = min(state.min, state.counter.count)
             return .none

@@ -20,8 +20,8 @@ public struct FibonacciCounterState: Equatable {
 
     /// ❌ when current value is not fibonacci number,
     /// ✅ otherwise
-    var fibonacchiText = "❌"
+    public var fibonacchiText = "❌"
 
     /// CounterState instance
-    var counter = CounterState()
+    public var counter = CounterState()
 }

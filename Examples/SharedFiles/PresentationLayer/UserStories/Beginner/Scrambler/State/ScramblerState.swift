@@ -19,8 +19,8 @@ public struct ScramblerState: Equatable {
     // MARK: - Properties
 
     /// Current scramble string
-    var scramble: String?
+    public var scramble: String?
 
     /// Current scramble moves count
-    var currentScrambleLength = 10
+    public var currentScrambleLength = 10
 }

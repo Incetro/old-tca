@@ -19,8 +19,5 @@ public struct DoubleCounterFeature: ReducerProtocol {
         Scope(state: \.counter2, action: /DoubleCounterAction.counter2) {
             CounterFeature()
         }
-        Reduce { state, action in
-            .none
-        }
     }
 }

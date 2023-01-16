@@ -15,7 +15,8 @@ public struct AnalyzableCounterView: View {
 
     // MARK: - Properties
 
-    let store: StoreOf<AnalyzableCounterFeature>
+    /// The store powering the `AnalyzableCounter` feature
+    public let store: StoreOf<AnalyzableCounterFeature>
 
     // MARK: - View
 

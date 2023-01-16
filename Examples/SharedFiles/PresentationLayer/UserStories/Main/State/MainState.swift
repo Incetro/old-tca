@@ -18,17 +18,17 @@ public struct MainState: Equatable {
     // MARK: - Properties
     
     /// CounterState instance
-    var counter = CounterState(count: 13)
+    public var counter = CounterState(count: 13)
     
     /// DoubleCounterState instance
-    var doubleCounter = DoubleCounterState()
+    public var doubleCounter = DoubleCounterState()
     
     /// AnalyzableCounterState instance
-    var analyzableCounter = AnalyzableCounterState()
+    public var analyzableCounter = AnalyzableCounterState()
     
     /// FibonacciCounterState instance
-    var fibonacciCounter = FibonacciCounterState()
+    public var fibonacciCounter = FibonacciCounterState()
     
     /// ScramblerState instance
-    var scrambler = ScramblerState()
+    public var scrambler = ScramblerState()
 }

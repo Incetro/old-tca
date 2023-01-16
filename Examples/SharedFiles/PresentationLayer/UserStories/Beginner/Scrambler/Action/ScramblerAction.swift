@@ -23,7 +23,12 @@ public enum ScramblerAction: Equatable {
 
     // MARK: - Cases
 
+    /// An action that calls when user taps on the `plus` button
     case plusButtonTapped
+    
+    /// An action that calls when user taps on the `minus` button
     case minusButtonTapped
+    
+    /// An action that calls when user taps on the `generate` button
     case generateButtonTapped
 }
