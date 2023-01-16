@@ -30,5 +30,8 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.analyzableCounter, action: /MainAction.analyzableCounter) {
             AnalyzableCounterFeature()
         }
+        Scope(state: \.fibonacciCounter, action: /MainAction.fibonacciCounter) {
+            FibonacciCounterFeature()
+        }
     }
 }

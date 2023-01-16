@@ -26,6 +26,10 @@
 		DEBD8D49297586F000E6FE89 /* AnalyzableCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D44297586EF00E6FE89 /* AnalyzableCounterState.swift */; };
 		DEBD8D4A297586F000E6FE89 /* AnalyzableCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D46297586F000E6FE89 /* AnalyzableCounterAction.swift */; };
 		DEBD8D4C2975870C00E6FE89 /* AnalyzableCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D4B2975870C00E6FE89 /* AnalyzableCounterView.swift */; };
+		DEBD8D5529758A6D00E6FE89 /* FibonacciCounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D4F29758A6D00E6FE89 /* FibonacciCounterFeature.swift */; };
+		DEBD8D5629758A6D00E6FE89 /* FibonacciCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D5129758A6D00E6FE89 /* FibonacciCounterState.swift */; };
+		DEBD8D5729758A6D00E6FE89 /* FibonacciCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D5329758A6D00E6FE89 /* FibonacciCounterAction.swift */; };
+		DEBD8D5929758A9100E6FE89 /* FibonacciCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D5829758A9100E6FE89 /* FibonacciCounterView.swift */; };
 		DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7042970628300CB20F3 /* TCAUniversitySwiftUIApp.swift */; };
 		DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7062970628300CB20F3 /* ContentView.swift */; };
 		DEEDB7092970628400CB20F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB7082970628400CB20F3 /* Assets.xcassets */; };
@@ -79,6 +83,10 @@
 		DEBD8D44297586EF00E6FE89 /* AnalyzableCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterState.swift; sourceTree = "<group>"; };
 		DEBD8D46297586F000E6FE89 /* AnalyzableCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyzableCounterAction.swift; sourceTree = "<group>"; };
 		DEBD8D4B2975870C00E6FE89 /* AnalyzableCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnalyzableCounterView.swift; path = "tca-university-swiftui/ExampleViews/AnalyzableCounterView.swift"; sourceTree = SOURCE_ROOT; };
+		DEBD8D4F29758A6D00E6FE89 /* FibonacciCounterFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciCounterFeature.swift; sourceTree = "<group>"; };
+		DEBD8D5129758A6D00E6FE89 /* FibonacciCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciCounterState.swift; sourceTree = "<group>"; };
+		DEBD8D5329758A6D00E6FE89 /* FibonacciCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciCounterAction.swift; sourceTree = "<group>"; };
+		DEBD8D5829758A9100E6FE89 /* FibonacciCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciCounterView.swift; path = "tca-university-swiftui/ExampleViews/FibonacciCounterView.swift"; sourceTree = SOURCE_ROOT; };
 		DEEDB7012970628300CB20F3 /* tca-university-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tca-university-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEDB7042970628300CB20F3 /* TCAUniversitySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAUniversitySwiftUIApp.swift; sourceTree = "<group>"; };
 		DEEDB7062970628300CB20F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -303,6 +311,49 @@
 			isa = PBXGroup;
 			children = (
 				DEBD8D4B2975870C00E6FE89 /* AnalyzableCounterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEBD8D4D29758A6D00E6FE89 /* FibonacciCounter */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D4E29758A6D00E6FE89 /* Reducer */,
+				DEBD8D5029758A6D00E6FE89 /* State */,
+				DEBD8D5229758A6D00E6FE89 /* Action */,
+				DEBD8D5429758A6D00E6FE89 /* View */,
+			);
+			path = FibonacciCounter;
+			sourceTree = "<group>";
+		};
+		DEBD8D4E29758A6D00E6FE89 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D4F29758A6D00E6FE89 /* FibonacciCounterFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		DEBD8D5029758A6D00E6FE89 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D5129758A6D00E6FE89 /* FibonacciCounterState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		DEBD8D5229758A6D00E6FE89 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D5329758A6D00E6FE89 /* FibonacciCounterAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		DEBD8D5429758A6D00E6FE89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D5829758A9100E6FE89 /* FibonacciCounterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -557,6 +608,7 @@
 		DEEDB7BE2970718800CB20F3 /* Beginner */ = {
 			isa = PBXGroup;
 			children = (
+				DEBD8D4D29758A6D00E6FE89 /* FibonacciCounter */,
 				DEBD8D40297586EF00E6FE89 /* AnalyzableCounter */,
 				DEBD8D332975824000E6FE89 /* DoubleCounter */,
 				DEBD8CF32975652F00E6FE89 /* Counter */,
@@ -678,6 +730,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEBD8D062975652F00E6FE89 /* StepperView.swift in Sources */,
+				DEBD8D5629758A6D00E6FE89 /* FibonacciCounterState.swift in Sources */,
 				DEBD8D072975652F00E6FE89 /* CounterExampleView.swift in Sources */,
 				DEBD8D48297586F000E6FE89 /* AnalyzableCounterFeature.swift in Sources */,
 				DEEDB7C82970718800CB20F3 /* CGFloat.swift in Sources */,
@@ -694,14 +747,17 @@
 				DEEDB7CE2970718800CB20F3 /* UIViewRepresented.swift in Sources */,
 				DEEDB7C92970718800CB20F3 /* Text.swift in Sources */,
 				DEBD8D4A297586F000E6FE89 /* AnalyzableCounterAction.swift in Sources */,
+				DEBD8D5929758A9100E6FE89 /* FibonacciCounterView.swift in Sources */,
 				DEEDB7622970708F00CB20F3 /* UserServiceImplementation.swift in Sources */,
 				DEBD8D032975652F00E6FE89 /* CounterFeature.swift in Sources */,
 				DEEDB75D2970708F00CB20F3 /* BookService.swift in Sources */,
 				DEBD8D4C2975870C00E6FE89 /* AnalyzableCounterView.swift in Sources */,
 				DEEDB719297062F700CB20F3 /* Palette.swift in Sources */,
 				DEEDB7612970708F00CB20F3 /* UserService.swift in Sources */,
+				DEBD8D5529758A6D00E6FE89 /* FibonacciCounterFeature.swift in Sources */,
 				DEBD8D3F2975828300E6FE89 /* DoubleCounterView.swift in Sources */,
 				DEBD8D152975690500E6FE89 /* MainState.swift in Sources */,
+				DEBD8D5729758A6D00E6FE89 /* FibonacciCounterAction.swift in Sources */,
 				DEBD8D49297586F000E6FE89 /* AnalyzableCounterState.swift in Sources */,
 				DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */,
 				DEEDB7642970708F00CB20F3 /* NewsService.swift in Sources */,

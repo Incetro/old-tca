@@ -25,4 +25,7 @@ public struct MainState: Equatable {
     
     /// AnalyzableCounterState instance
     var analyzableCounter = AnalyzableCounterState()
+    
+    /// FibonacciCounterState instance
+    var fibonacciCounter = FibonacciCounterState()
 }

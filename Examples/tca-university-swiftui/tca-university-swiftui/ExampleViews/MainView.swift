@@ -53,6 +53,16 @@ public struct MainView: View {
                         ) {
                             Text("Analyzable counter").standard
                         }
+                        NavigationLink(
+                            destination: FibonacciCounterView(
+                                store: store.scope(
+                                    state: \.fibonacciCounter,
+                                    action: MainAction.fibonacciCounter
+                                )
+                            )
+                        ) {
+                            Text("Fibonacci counter").standard
+                        }
                     }
                     Section(header: Text("💡 Elementary")) {
                     }

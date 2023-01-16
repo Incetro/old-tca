@@ -13,6 +13,9 @@ import TCA
 public struct AnalyzableCounterFeature: ReducerProtocol {
     
     public var body: some ReducerProtocol<AnalyzableCounterState, AnalyzableCounterAction> {
+        Scope(state: \.counter, action: /AnalyzableCounterAction.counter) {
+            CounterFeature()
+        }
         Reduce { state, action in
             switch action {
             case .counter:
@@ -21,9 +24,6 @@ public struct AnalyzableCounterFeature: ReducerProtocol {
             state.max = max(state.max, state.counter.count)
             state.min = min(state.min, state.counter.count)
             return .none
-        }
-        Scope(state: \.counter, action: /AnalyzableCounterAction.counter) {
-            CounterFeature()
-        }
+        } 
     }
 }
