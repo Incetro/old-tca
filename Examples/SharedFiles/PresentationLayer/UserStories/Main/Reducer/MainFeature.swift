@@ -12,15 +12,6 @@ import TCA
 public struct MainFeature: ReducerProtocol {
     
     public var body: some ReducerProtocol<MainState, MainAction> {
-        Reduce { state, action in
-            switch action {
-            case .onAppear:
-                state = .init()
-            default:
-                break
-            }
-            return .none
-        }
         Scope(state: \.counter, action: /MainAction.counter) {
             CounterFeature()
         }
@@ -32,6 +23,18 @@ public struct MainFeature: ReducerProtocol {
         }
         Scope(state: \.fibonacciCounter, action: /MainAction.fibonacciCounter) {
             FibonacciCounterFeature()
+        }
+        Scope(state: \.scrambler, action: /MainAction.scrambler) {
+            ScramblerFeature()
+        }
+        Reduce { state, action in
+            switch action {
+            case .onAppear:
+                state = .init()
+            default:
+                break
+            }
+            return .none
         }
     }
 }

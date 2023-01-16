@@ -30,6 +30,10 @@
 		DEBD8D5629758A6D00E6FE89 /* FibonacciCounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D5129758A6D00E6FE89 /* FibonacciCounterState.swift */; };
 		DEBD8D5729758A6D00E6FE89 /* FibonacciCounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D5329758A6D00E6FE89 /* FibonacciCounterAction.swift */; };
 		DEBD8D5929758A9100E6FE89 /* FibonacciCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D5829758A9100E6FE89 /* FibonacciCounterView.swift */; };
+		DEBD8D622975A43F00E6FE89 /* ScramblerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D5C2975A43F00E6FE89 /* ScramblerFeature.swift */; };
+		DEBD8D632975A43F00E6FE89 /* ScramblerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D5E2975A43F00E6FE89 /* ScramblerState.swift */; };
+		DEBD8D642975A43F00E6FE89 /* ScramblerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D602975A43F00E6FE89 /* ScramblerAction.swift */; };
+		DEBD8D662975A46700E6FE89 /* ScramblerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D652975A46700E6FE89 /* ScramblerView.swift */; };
 		DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7042970628300CB20F3 /* TCAUniversitySwiftUIApp.swift */; };
 		DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7062970628300CB20F3 /* ContentView.swift */; };
 		DEEDB7092970628400CB20F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB7082970628400CB20F3 /* Assets.xcassets */; };
@@ -87,6 +91,10 @@
 		DEBD8D5129758A6D00E6FE89 /* FibonacciCounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciCounterState.swift; sourceTree = "<group>"; };
 		DEBD8D5329758A6D00E6FE89 /* FibonacciCounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FibonacciCounterAction.swift; sourceTree = "<group>"; };
 		DEBD8D5829758A9100E6FE89 /* FibonacciCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FibonacciCounterView.swift; path = "tca-university-swiftui/ExampleViews/FibonacciCounterView.swift"; sourceTree = SOURCE_ROOT; };
+		DEBD8D5C2975A43F00E6FE89 /* ScramblerFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScramblerFeature.swift; sourceTree = "<group>"; };
+		DEBD8D5E2975A43F00E6FE89 /* ScramblerState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScramblerState.swift; sourceTree = "<group>"; };
+		DEBD8D602975A43F00E6FE89 /* ScramblerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScramblerAction.swift; sourceTree = "<group>"; };
+		DEBD8D652975A46700E6FE89 /* ScramblerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScramblerView.swift; path = "tca-university-swiftui/ExampleViews/ScramblerView.swift"; sourceTree = SOURCE_ROOT; };
 		DEEDB7012970628300CB20F3 /* tca-university-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tca-university-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEDB7042970628300CB20F3 /* TCAUniversitySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAUniversitySwiftUIApp.swift; sourceTree = "<group>"; };
 		DEEDB7062970628300CB20F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -358,6 +366,49 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DEBD8D5A2975A43F00E6FE89 /* Scrambler */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D5B2975A43F00E6FE89 /* Reducer */,
+				DEBD8D5D2975A43F00E6FE89 /* State */,
+				DEBD8D5F2975A43F00E6FE89 /* Action */,
+				DEBD8D612975A43F00E6FE89 /* View */,
+			);
+			path = Scrambler;
+			sourceTree = "<group>";
+		};
+		DEBD8D5B2975A43F00E6FE89 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D5C2975A43F00E6FE89 /* ScramblerFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		DEBD8D5D2975A43F00E6FE89 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D5E2975A43F00E6FE89 /* ScramblerState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		DEBD8D5F2975A43F00E6FE89 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D602975A43F00E6FE89 /* ScramblerAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		DEBD8D612975A43F00E6FE89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D652975A46700E6FE89 /* ScramblerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DEEDB6F82970628200CB20F3 = {
 			isa = PBXGroup;
 			children = (
@@ -563,7 +614,6 @@
 				DEEDB7BC2970718800CB20F3 /* Composable */,
 				DEEDB7BE2970718800CB20F3 /* Beginner */,
 				DEEDB7BF2970718800CB20F3 /* Intermediate */,
-				DEEDB7C02970718800CB20F3 /* Main */,
 				DEEDB7C12970718800CB20F3 /* Elementary */,
 			);
 			path = UserStories;
@@ -608,6 +658,7 @@
 		DEEDB7BE2970718800CB20F3 /* Beginner */ = {
 			isa = PBXGroup;
 			children = (
+				DEBD8D5A2975A43F00E6FE89 /* Scrambler */,
 				DEBD8D4D29758A6D00E6FE89 /* FibonacciCounter */,
 				DEBD8D40297586EF00E6FE89 /* AnalyzableCounter */,
 				DEBD8D332975824000E6FE89 /* DoubleCounter */,
@@ -621,13 +672,6 @@
 			children = (
 			);
 			path = Intermediate;
-			sourceTree = "<group>";
-		};
-		DEEDB7C02970718800CB20F3 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		DEEDB7C12970718800CB20F3 /* Elementary */ = {
@@ -740,6 +784,7 @@
 				DEEDB75F2970708F00CB20F3 /* ScrambleService.swift in Sources */,
 				DEEDB7CC2970718800CB20F3 /* ActivityIndicator.swift in Sources */,
 				DEEDB75A2970708F00CB20F3 /* PaletteService.swift in Sources */,
+				DEBD8D622975A43F00E6FE89 /* ScramblerFeature.swift in Sources */,
 				DEBD8D052975652F00E6FE89 /* CounterAction.swift in Sources */,
 				DEEDB7CB2970718800CB20F3 /* BlurView.swift in Sources */,
 				DEBD8D042975652F00E6FE89 /* CounterState.swift in Sources */,
@@ -772,14 +817,17 @@
 				DEBD8D162975690500E6FE89 /* MainAction.swift in Sources */,
 				DEBD8D3C2975824000E6FE89 /* DoubleCounterState.swift in Sources */,
 				DEEDB71D297062F700CB20F3 /* News.swift in Sources */,
+				DEBD8D662975A46700E6FE89 /* ScramblerView.swift in Sources */,
 				DEEDB7C72970718800CB20F3 /* Unifont.swift in Sources */,
 				DEEDB71C297062F700CB20F3 /* LoremPicsumImage.swift in Sources */,
 				DEBD8D2E2975697600E6FE89 /* MainView.swift in Sources */,
 				DEEDB75B2970708F00CB20F3 /* ImageService.swift in Sources */,
 				DEEDB7662970708F00CB20F3 /* NumberFactServiceImplementation.swift in Sources */,
+				DEBD8D632975A43F00E6FE89 /* ScramblerState.swift in Sources */,
 				DEEDB7392970707800CB20F3 /* String.swift in Sources */,
 				DEEDB7602970708F00CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
 				DEBD8D082975652F00E6FE89 /* SimpleCounterView.swift in Sources */,
+				DEBD8D642975A43F00E6FE89 /* ScramblerAction.swift in Sources */,
 				DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

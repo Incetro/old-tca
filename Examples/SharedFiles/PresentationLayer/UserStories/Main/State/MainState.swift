@@ -28,4 +28,7 @@ public struct MainState: Equatable {
     
     /// FibonacciCounterState instance
     var fibonacciCounter = FibonacciCounterState()
+    
+    /// ScramblerState instance
+    var scrambler = ScramblerState()
 }

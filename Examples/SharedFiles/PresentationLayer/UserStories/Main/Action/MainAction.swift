@@ -21,8 +21,14 @@ import Foundation
 public enum MainAction: Equatable {
 
     case onAppear
+    
+    // MARK: - Beginner
+
     case counter(CounterAction)
     case doubleCounter(DoubleCounterAction)
     case analyzableCounter(AnalyzableCounterAction)
     case fibonacciCounter(FibonacciCounterAction)
+    case scrambler(ScramblerAction)
+    
+    // MARK: - Elementary
 }

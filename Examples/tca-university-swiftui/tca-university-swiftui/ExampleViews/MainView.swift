@@ -63,6 +63,16 @@ public struct MainView: View {
                         ) {
                             Text("Fibonacci counter").standard
                         }
+                        NavigationLink(
+                            destination: ScramblerView(
+                                store: store.scope(
+                                    state: \.scrambler,
+                                    action: MainAction.scrambler
+                                )
+                            )
+                        ) {
+                            Text("Scrambler").standard
+                        }
                     }
                     Section(header: Text("💡 Elementary")) {
                     }
