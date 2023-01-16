@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DEEDB7052970628300CB20F3 /* SwiftUITCAUniversityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7042970628300CB20F3 /* SwiftUITCAUniversityApp.swift */; };
+		DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7042970628300CB20F3 /* TCAUniversitySwiftUIApp.swift */; };
 		DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB7062970628300CB20F3 /* ContentView.swift */; };
 		DEEDB7092970628400CB20F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB7082970628400CB20F3 /* Assets.xcassets */; };
 		DEEDB70C2970628400CB20F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB70B2970628400CB20F3 /* Preview Assets.xcassets */; };
@@ -47,8 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DEEDB7012970628300CB20F3 /* SwiftUITCAUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITCAUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEEDB7042970628300CB20F3 /* SwiftUITCAUniversityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITCAUniversityApp.swift; sourceTree = "<group>"; };
+		DEEDB7012970628300CB20F3 /* tca-university-swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tca-university-swiftui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEEDB7042970628300CB20F3 /* TCAUniversitySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAUniversitySwiftUIApp.swift; sourceTree = "<group>"; };
 		DEEDB7062970628300CB20F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEEDB7082970628400CB20F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEEDB70B2970628400CB20F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		DEEDB6F82970628200CB20F3 = {
 			isa = PBXGroup;
 			children = (
-				DEEDB7032970628300CB20F3 /* SwiftUITCAUniversity */,
+				DEEDB7032970628300CB20F3 /* tca-university-swiftui */,
 				DEEDB7022970628300CB20F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,15 +109,15 @@
 		DEEDB7022970628300CB20F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEEDB7012970628300CB20F3 /* SwiftUITCAUniversity.app */,
+				DEEDB7012970628300CB20F3 /* tca-university-swiftui.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEEDB7032970628300CB20F3 /* SwiftUITCAUniversity */ = {
+		DEEDB7032970628300CB20F3 /* tca-university-swiftui */ = {
 			isa = PBXGroup;
 			children = (
-				DEEDB7042970628300CB20F3 /* SwiftUITCAUniversityApp.swift */,
+				DEEDB7042970628300CB20F3 /* TCAUniversitySwiftUIApp.swift */,
 				DEEDB7062970628300CB20F3 /* ContentView.swift */,
 				DEEDB80B297071D900CB20F3 /* ApplicationLayer */,
 				DEEDB7B12970718800CB20F3 /* PresentationLayer */,
@@ -127,7 +127,7 @@
 				DEEDB7082970628400CB20F3 /* Assets.xcassets */,
 				DEEDB70A2970628400CB20F3 /* Preview Content */,
 			);
-			path = SwiftUITCAUniversity;
+			path = "tca-university-swiftui";
 			sourceTree = "<group>";
 		};
 		DEEDB70A2970628400CB20F3 /* Preview Content */ = {
@@ -447,9 +447,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEEDB7002970628300CB20F3 /* SwiftUITCAUniversity */ = {
+		DEEDB7002970628300CB20F3 /* tca-university-swiftui */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEEDB70F2970628400CB20F3 /* Build configuration list for PBXNativeTarget "SwiftUITCAUniversity" */;
+			buildConfigurationList = DEEDB70F2970628400CB20F3 /* Build configuration list for PBXNativeTarget "tca-university-swiftui" */;
 			buildPhases = (
 				DEEDB6FD2970628300CB20F3 /* Sources */,
 				DEEDB6FE2970628300CB20F3 /* Frameworks */,
@@ -459,9 +459,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUITCAUniversity;
-			productName = SwiftUITCAUniversity;
-			productReference = DEEDB7012970628300CB20F3 /* SwiftUITCAUniversity.app */;
+			name = "tca-university-swiftui";
+			productName = "tca-university-swiftui";
+			productReference = DEEDB7012970628300CB20F3 /* tca-university-swiftui.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -479,7 +479,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DEEDB6FC2970628200CB20F3 /* Build configuration list for PBXProject "SwiftUITCAUniversity" */;
+			buildConfigurationList = DEEDB6FC2970628200CB20F3 /* Build configuration list for PBXProject "tca-university-swiftui" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -492,7 +492,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEEDB7002970628300CB20F3 /* SwiftUITCAUniversity */,
+				DEEDB7002970628300CB20F3 /* tca-university-swiftui */,
 			);
 		};
 /* End PBXProject section */
@@ -548,7 +548,7 @@
 				DEEDB7662970708F00CB20F3 /* NumberFactServiceImplementation.swift in Sources */,
 				DEEDB7392970707800CB20F3 /* String.swift in Sources */,
 				DEEDB7602970708F00CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
-				DEEDB7052970628300CB20F3 /* SwiftUITCAUniversityApp.swift in Sources */,
+				DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,7 +676,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITCAUniversity/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tca-university-swiftui/Preview Content\"";
 				DEVELOPMENT_TEAM = PM34MLKL7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -690,7 +690,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.swiftui-tca-university.SwiftUITCAUniversity";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.swiftui-tca-university.tca-university-swiftui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -705,7 +705,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUITCAUniversity/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tca-university-swiftui/Preview Content\"";
 				DEVELOPMENT_TEAM = PM34MLKL7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -719,7 +719,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.swiftui-tca-university.SwiftUITCAUniversity";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.swiftui-tca-university.tca-university-swiftui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -730,7 +730,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEEDB6FC2970628200CB20F3 /* Build configuration list for PBXProject "SwiftUITCAUniversity" */ = {
+		DEEDB6FC2970628200CB20F3 /* Build configuration list for PBXProject "tca-university-swiftui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEEDB70D2970628400CB20F3 /* Debug */,
@@ -739,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEEDB70F2970628400CB20F3 /* Build configuration list for PBXNativeTarget "SwiftUITCAUniversity" */ = {
+		DEEDB70F2970628400CB20F3 /* Build configuration list for PBXNativeTarget "tca-university-swiftui" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEEDB7102970628400CB20F3 /* Debug */,

@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  tvOS-TCAUniversity
+//  tca-university-uikit
 //
 //  Created by Alexander Lezya on 12.01.2023.
 //
@@ -9,9 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            MainView()
-        }
+        MainView()
     }
 }
 

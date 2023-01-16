@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DEEDB6E62970626400CB20F3"
-               BuildableName = "UIKitTCAUniversity.app"
-               BlueprintName = "UIKitTCAUniversity"
-               ReferencedContainer = "container:UIKitTCAUniversity.xcodeproj">
+               BuildableName = "tca-university-uikit.app"
+               BlueprintName = "tca-university-uikit"
+               ReferencedContainer = "container:tca-university-uikit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEEDB6E62970626400CB20F3"
-            BuildableName = "UIKitTCAUniversity.app"
-            BlueprintName = "UIKitTCAUniversity"
-            ReferencedContainer = "container:UIKitTCAUniversity.xcodeproj">
+            BuildableName = "tca-university-uikit.app"
+            BlueprintName = "tca-university-uikit"
+            ReferencedContainer = "container:tca-university-uikit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEEDB6E62970626400CB20F3"
-            BuildableName = "UIKitTCAUniversity.app"
-            BlueprintName = "UIKitTCAUniversity"
-            ReferencedContainer = "container:UIKitTCAUniversity.xcodeproj">
+            BuildableName = "tca-university-uikit.app"
+            BlueprintName = "tca-university-uikit"
+            ReferencedContainer = "container:tca-university-uikit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

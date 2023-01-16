@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DEEDB6CC2970620400CB20F3"
-               BuildableName = "tvOS-TCAUniversity.app"
-               BlueprintName = "tvOS-TCAUniversity"
-               ReferencedContainer = "container:tvOS-TCAUniversity.xcodeproj">
+               BuildableName = "tca-university-tvos.app"
+               BlueprintName = "tca-university-tvos"
+               ReferencedContainer = "container:tca-university-tvos.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEEDB6CC2970620400CB20F3"
-            BuildableName = "tvOS-TCAUniversity.app"
-            BlueprintName = "tvOS-TCAUniversity"
-            ReferencedContainer = "container:tvOS-TCAUniversity.xcodeproj">
+            BuildableName = "tca-university-tvos.app"
+            BlueprintName = "tca-university-tvos"
+            ReferencedContainer = "container:tca-university-tvos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEEDB6CC2970620400CB20F3"
-            BuildableName = "tvOS-TCAUniversity.app"
-            BlueprintName = "tvOS-TCAUniversity"
-            ReferencedContainer = "container:tvOS-TCAUniversity.xcodeproj">
+            BuildableName = "tca-university-tvos.app"
+            BlueprintName = "tca-university-tvos"
+            ReferencedContainer = "container:tca-university-tvos.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,6 +1,6 @@
 //
-//  SwiftUITCAUniversityApp.swift
-//  SwiftUITCAUniversity
+//  TCAUniversityTVOSApp.swift
+//  tca-university-tvos
 //
 //  Created by Alexander Lezya on 12.01.2023.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct SwiftUITCAUniversityApp: App {
+struct TCAUniversityTVOSApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

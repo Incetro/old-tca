@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  SwiftUITCAUniversity
+//  tca-university-swiftui
 //
 //  Created by Alexander Lezya on 12.01.2023.
 //

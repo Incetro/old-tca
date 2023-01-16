@@ -2,13 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Examples/SwiftUITCAUniversity/SwiftUITCAUniversity.xcodeproj">
+      location = "group:Examples/tca-university-swiftui/tca-university-swiftui.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Examples/UIKitTCAUniversity/UIKitTCAUniversity.xcodeproj">
+      location = "group:Examples/tca-university-uikit/tca-university-uikit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Examples/tvOS-TCAUniversity/tvOS-TCAUniversity.xcodeproj">
+      location = "group:Examples/tca-university-tvos/tca-university-tvos.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:">

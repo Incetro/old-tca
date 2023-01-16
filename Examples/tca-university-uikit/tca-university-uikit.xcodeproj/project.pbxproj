@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DEEDB6EB2970626400CB20F3 /* UIKitTCAUniversityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB6EA2970626400CB20F3 /* UIKitTCAUniversityApp.swift */; };
+		DEEDB6EB2970626400CB20F3 /* TCAUniversityUIKitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB6EA2970626400CB20F3 /* TCAUniversityUIKitApp.swift */; };
 		DEEDB6ED2970626400CB20F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB6EC2970626400CB20F3 /* ContentView.swift */; };
 		DEEDB6EF2970626500CB20F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB6EE2970626500CB20F3 /* Assets.xcassets */; };
 		DEEDB6F22970626500CB20F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB6F12970626500CB20F3 /* Preview Assets.xcassets */; };
@@ -47,8 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DEEDB6E72970626400CB20F3 /* UIKitTCAUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitTCAUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEEDB6EA2970626400CB20F3 /* UIKitTCAUniversityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTCAUniversityApp.swift; sourceTree = "<group>"; };
+		DEEDB6E72970626400CB20F3 /* tca-university-uikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tca-university-uikit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEEDB6EA2970626400CB20F3 /* TCAUniversityUIKitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAUniversityUIKitApp.swift; sourceTree = "<group>"; };
 		DEEDB6EC2970626400CB20F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEEDB6EE2970626500CB20F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEEDB6F12970626500CB20F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		DEEDB6DE2970626400CB20F3 = {
 			isa = PBXGroup;
 			children = (
-				DEEDB6E92970626400CB20F3 /* UIKitTCAUniversity */,
+				DEEDB6E92970626400CB20F3 /* tca-university-uikit */,
 				DEEDB6E82970626400CB20F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,15 +109,15 @@
 		DEEDB6E82970626400CB20F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEEDB6E72970626400CB20F3 /* UIKitTCAUniversity.app */,
+				DEEDB6E72970626400CB20F3 /* tca-university-uikit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEEDB6E92970626400CB20F3 /* UIKitTCAUniversity */ = {
+		DEEDB6E92970626400CB20F3 /* tca-university-uikit */ = {
 			isa = PBXGroup;
 			children = (
-				DEEDB6EA2970626400CB20F3 /* UIKitTCAUniversityApp.swift */,
+				DEEDB6EA2970626400CB20F3 /* TCAUniversityUIKitApp.swift */,
 				DEEDB6EC2970626400CB20F3 /* ContentView.swift */,
 				DEEDB80C297071DD00CB20F3 /* ApplicationLayer */,
 				DEEDB7CF2970718E00CB20F3 /* PresentationLayer */,
@@ -127,7 +127,7 @@
 				DEEDB6EE2970626500CB20F3 /* Assets.xcassets */,
 				DEEDB6F02970626500CB20F3 /* Preview Content */,
 			);
-			path = UIKitTCAUniversity;
+			path = "tca-university-uikit";
 			sourceTree = "<group>";
 		};
 		DEEDB6F02970626500CB20F3 /* Preview Content */ = {
@@ -447,9 +447,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEEDB6E62970626400CB20F3 /* UIKitTCAUniversity */ = {
+		DEEDB6E62970626400CB20F3 /* tca-university-uikit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEEDB6F52970626500CB20F3 /* Build configuration list for PBXNativeTarget "UIKitTCAUniversity" */;
+			buildConfigurationList = DEEDB6F52970626500CB20F3 /* Build configuration list for PBXNativeTarget "tca-university-uikit" */;
 			buildPhases = (
 				DEEDB6E32970626400CB20F3 /* Sources */,
 				DEEDB6E42970626400CB20F3 /* Frameworks */,
@@ -459,9 +459,9 @@
 			);
 			dependencies = (
 			);
-			name = UIKitTCAUniversity;
-			productName = UIKitTCAUniversity;
-			productReference = DEEDB6E72970626400CB20F3 /* UIKitTCAUniversity.app */;
+			name = "tca-university-uikit";
+			productName = "tca-university-uikit";
+			productReference = DEEDB6E72970626400CB20F3 /* tca-university-uikit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -479,7 +479,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DEEDB6E22970626400CB20F3 /* Build configuration list for PBXProject "UIKitTCAUniversity" */;
+			buildConfigurationList = DEEDB6E22970626400CB20F3 /* Build configuration list for PBXProject "tca-university-uikit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -492,7 +492,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEEDB6E62970626400CB20F3 /* UIKitTCAUniversity */,
+				DEEDB6E62970626400CB20F3 /* tca-university-uikit */,
 			);
 		};
 /* End PBXProject section */
@@ -548,7 +548,7 @@
 				DEEDB78B2970709700CB20F3 /* NumberFactServiceImplementation.swift in Sources */,
 				DEEDB73D2970707D00CB20F3 /* String.swift in Sources */,
 				DEEDB7852970709700CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
-				DEEDB6EB2970626400CB20F3 /* UIKitTCAUniversityApp.swift in Sources */,
+				DEEDB6EB2970626400CB20F3 /* TCAUniversityUIKitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,7 +676,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UIKitTCAUniversity/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tca-university-uikit/Preview Content\"";
 				DEVELOPMENT_TEAM = PM34MLKL7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -690,7 +690,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.uikit-tca-university.UIKitTCAUniversity";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.uikit-tca-university.tca-university-uikit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -705,7 +705,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"UIKitTCAUniversity/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tca-university-uikit/Preview Content\"";
 				DEVELOPMENT_TEAM = PM34MLKL7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -719,7 +719,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.uikit-tca-university.UIKitTCAUniversity";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.uikit-tca-university.tca-university-uikit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -730,7 +730,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEEDB6E22970626400CB20F3 /* Build configuration list for PBXProject "UIKitTCAUniversity" */ = {
+		DEEDB6E22970626400CB20F3 /* Build configuration list for PBXProject "tca-university-uikit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEEDB6F32970626500CB20F3 /* Debug */,
@@ -739,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEEDB6F52970626500CB20F3 /* Build configuration list for PBXNativeTarget "UIKitTCAUniversity" */ = {
+		DEEDB6F52970626500CB20F3 /* Build configuration list for PBXNativeTarget "tca-university-uikit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEEDB6F62970626500CB20F3 /* Debug */,

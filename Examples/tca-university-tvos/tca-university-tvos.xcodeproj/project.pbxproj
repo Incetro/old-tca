@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DEEDB6D12970620500CB20F3 /* tvOS_TCAUniversityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB6D02970620500CB20F3 /* tvOS_TCAUniversityApp.swift */; };
+		DEEDB6D12970620500CB20F3 /* TCAUniversityTVOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB6D02970620500CB20F3 /* TCAUniversityTVOSApp.swift */; };
 		DEEDB6D32970620500CB20F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB6D22970620500CB20F3 /* ContentView.swift */; };
 		DEEDB6D52970620600CB20F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB6D42970620600CB20F3 /* Assets.xcassets */; };
 		DEEDB6D82970620600CB20F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB6D72970620600CB20F3 /* Preview Assets.xcassets */; };
@@ -47,8 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DEEDB6CD2970620500CB20F3 /* tvOS-TCAUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS-TCAUniversity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEEDB6D02970620500CB20F3 /* tvOS_TCAUniversityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS_TCAUniversityApp.swift; sourceTree = "<group>"; };
+		DEEDB6CD2970620500CB20F3 /* tca-university-tvos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tca-university-tvos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEEDB6D02970620500CB20F3 /* TCAUniversityTVOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAUniversityTVOSApp.swift; sourceTree = "<group>"; };
 		DEEDB6D22970620500CB20F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEEDB6D42970620600CB20F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEEDB6D72970620600CB20F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		DEEDB6C42970620400CB20F3 = {
 			isa = PBXGroup;
 			children = (
-				DEEDB6CF2970620500CB20F3 /* tvOS-TCAUniversity */,
+				DEEDB6CF2970620500CB20F3 /* tca-university-tvos */,
 				DEEDB6CE2970620500CB20F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,15 +109,15 @@
 		DEEDB6CE2970620500CB20F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEEDB6CD2970620500CB20F3 /* tvOS-TCAUniversity.app */,
+				DEEDB6CD2970620500CB20F3 /* tca-university-tvos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEEDB6CF2970620500CB20F3 /* tvOS-TCAUniversity */ = {
+		DEEDB6CF2970620500CB20F3 /* tca-university-tvos */ = {
 			isa = PBXGroup;
 			children = (
-				DEEDB6D02970620500CB20F3 /* tvOS_TCAUniversityApp.swift */,
+				DEEDB6D02970620500CB20F3 /* TCAUniversityTVOSApp.swift */,
 				DEEDB6D22970620500CB20F3 /* ContentView.swift */,
 				DEEDB80D297071E400CB20F3 /* ApplicationLayer */,
 				DEEDB7ED2970719400CB20F3 /* PresentationLayer */,
@@ -127,7 +127,7 @@
 				DEEDB6D42970620600CB20F3 /* Assets.xcassets */,
 				DEEDB6D62970620600CB20F3 /* Preview Content */,
 			);
-			path = "tvOS-TCAUniversity";
+			path = "tca-university-tvos";
 			sourceTree = "<group>";
 		};
 		DEEDB6D62970620600CB20F3 /* Preview Content */ = {
@@ -447,9 +447,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEEDB6CC2970620400CB20F3 /* tvOS-TCAUniversity */ = {
+		DEEDB6CC2970620400CB20F3 /* tca-university-tvos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEEDB6DB2970620600CB20F3 /* Build configuration list for PBXNativeTarget "tvOS-TCAUniversity" */;
+			buildConfigurationList = DEEDB6DB2970620600CB20F3 /* Build configuration list for PBXNativeTarget "tca-university-tvos" */;
 			buildPhases = (
 				DEEDB6C92970620400CB20F3 /* Sources */,
 				DEEDB6CA2970620400CB20F3 /* Frameworks */,
@@ -459,9 +459,9 @@
 			);
 			dependencies = (
 			);
-			name = "tvOS-TCAUniversity";
-			productName = "tvOS-TCAUniversity";
-			productReference = DEEDB6CD2970620500CB20F3 /* tvOS-TCAUniversity.app */;
+			name = "tca-university-tvos";
+			productName = "tca-university-tvos";
+			productReference = DEEDB6CD2970620500CB20F3 /* tca-university-tvos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -479,7 +479,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DEEDB6C82970620400CB20F3 /* Build configuration list for PBXProject "tvOS-TCAUniversity" */;
+			buildConfigurationList = DEEDB6C82970620400CB20F3 /* Build configuration list for PBXProject "tca-university-tvos" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -492,7 +492,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEEDB6CC2970620400CB20F3 /* tvOS-TCAUniversity */,
+				DEEDB6CC2970620400CB20F3 /* tca-university-tvos */,
 			);
 		};
 /* End PBXProject section */
@@ -548,7 +548,7 @@
 				DEEDB7B02970709D00CB20F3 /* NumberFactServiceImplementation.swift in Sources */,
 				DEEDB7412970708100CB20F3 /* String.swift in Sources */,
 				DEEDB7AA2970709D00CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
-				DEEDB6D12970620500CB20F3 /* tvOS_TCAUniversityApp.swift in Sources */,
+				DEEDB6D12970620500CB20F3 /* TCAUniversityTVOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,7 +676,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"tvOS-TCAUniversity/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tca-university-tvos/Preview Content\"";
 				DEVELOPMENT_TEAM = PM34MLKL7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -690,7 +690,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.tv-os-tca-university.tvOS-TCAUniversity";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.tv-os-tca-university.tca-university-tvos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -705,7 +705,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"tvOS-TCAUniversity/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tca-university-tvos/Preview Content\"";
 				DEVELOPMENT_TEAM = PM34MLKL7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -719,7 +719,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.tv-os-tca-university.tvOS-TCAUniversity";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.tv-os-tca-university.tca-university-tvos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -730,7 +730,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEEDB6C82970620400CB20F3 /* Build configuration list for PBXProject "tvOS-TCAUniversity" */ = {
+		DEEDB6C82970620400CB20F3 /* Build configuration list for PBXProject "tca-university-tvos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEEDB6D92970620600CB20F3 /* Debug */,
@@ -739,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEEDB6DB2970620600CB20F3 /* Build configuration list for PBXNativeTarget "tvOS-TCAUniversity" */ = {
+		DEEDB6DB2970620600CB20F3 /* Build configuration list for PBXNativeTarget "tca-university-tvos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEEDB6DC2970620600CB20F3 /* Debug */,

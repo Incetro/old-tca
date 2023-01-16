@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DEEDB7002970628300CB20F3"
-               BuildableName = "SwiftUITCAUniversity.app"
-               BlueprintName = "SwiftUITCAUniversity"
-               ReferencedContainer = "container:SwiftUITCAUniversity.xcodeproj">
+               BuildableName = "tca-university-swiftui.app"
+               BlueprintName = "tca-university-swiftui"
+               ReferencedContainer = "container:tca-university-swiftui.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEEDB7002970628300CB20F3"
-            BuildableName = "SwiftUITCAUniversity.app"
-            BlueprintName = "SwiftUITCAUniversity"
-            ReferencedContainer = "container:SwiftUITCAUniversity.xcodeproj">
+            BuildableName = "tca-university-swiftui.app"
+            BlueprintName = "tca-university-swiftui"
+            ReferencedContainer = "container:tca-university-swiftui.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEEDB7002970628300CB20F3"
-            BuildableName = "SwiftUITCAUniversity.app"
-            BlueprintName = "SwiftUITCAUniversity"
-            ReferencedContainer = "container:SwiftUITCAUniversity.xcodeproj">
+            BuildableName = "tca-university-swiftui.app"
+            BlueprintName = "tca-university-swiftui"
+            ReferencedContainer = "container:tca-university-swiftui.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
