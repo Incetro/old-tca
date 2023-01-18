@@ -6,10 +6,16 @@
 //
 
 import SwiftUI
+import TCA
 
 struct ContentView: View {
     var body: some View {
-        MainView()
+        MainView(
+            store: StoreOf<MainFeature>(
+                initialState: MainState(),
+                reducer: MainFeature()
+            )
+        )
     }
 }
 

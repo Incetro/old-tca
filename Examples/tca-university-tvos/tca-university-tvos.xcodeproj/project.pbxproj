@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DEBD8CF22975600C00E6FE89 /* TCA in Frameworks */ = {isa = PBXBuildFile; productRef = DEBD8CF12975600C00E6FE89 /* TCA */; };
+		DEBD8D2A2975694E00E6FE89 /* MainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D242975694E00E6FE89 /* MainFeature.swift */; };
+		DEBD8D2B2975694E00E6FE89 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D262975694E00E6FE89 /* MainState.swift */; };
+		DEBD8D2C2975694E00E6FE89 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D282975694E00E6FE89 /* MainAction.swift */; };
+		DEBD8D32297569BF00E6FE89 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D31297569BF00E6FE89 /* MainView.swift */; };
 		DEEDB6D12970620500CB20F3 /* TCAUniversityTVOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB6D02970620500CB20F3 /* TCAUniversityTVOSApp.swift */; };
 		DEEDB6D32970620500CB20F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB6D22970620500CB20F3 /* ContentView.swift */; };
 		DEEDB6D52970620600CB20F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEDB6D42970620600CB20F3 /* Assets.xcassets */; };
@@ -39,14 +44,13 @@
 		DEEDB8082970719400CB20F3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB8002970719400CB20F3 /* ActivityIndicator.swift */; };
 		DEEDB8092970719400CB20F3 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB8012970719400CB20F3 /* ProgressRingView.swift */; };
 		DEEDB80A2970719400CB20F3 /* UIViewRepresented.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB8022970719400CB20F3 /* UIViewRepresented.swift */; };
-		DEEDB84429707C1C00CB20F3 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB83A29707C1C00CB20F3 /* MainReducer.swift */; };
-		DEEDB84529707C1C00CB20F3 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB83C29707C1C00CB20F3 /* MainState.swift */; };
-		DEEDB84629707C1C00CB20F3 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB83E29707C1C00CB20F3 /* MainAction.swift */; };
-		DEEDB84729707C1C00CB20F3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB84029707C1C00CB20F3 /* MainView.swift */; };
-		DEEDB84829707C1C00CB20F3 /* MainEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDB84229707C1C00CB20F3 /* MainEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DEBD8D242975694E00E6FE89 /* MainFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeature.swift; sourceTree = "<group>"; };
+		DEBD8D262975694E00E6FE89 /* MainState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+		DEBD8D282975694E00E6FE89 /* MainAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
+		DEBD8D31297569BF00E6FE89 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = ExampleViews/MainView.swift; sourceTree = SOURCE_ROOT; };
 		DEEDB6CD2970620500CB20F3 /* tca-university-tvos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tca-university-tvos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEDB6D02970620500CB20F3 /* TCAUniversityTVOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAUniversityTVOSApp.swift; sourceTree = "<group>"; };
 		DEEDB6D22970620500CB20F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,11 +84,6 @@
 		DEEDB8002970719400CB20F3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		DEEDB8012970719400CB20F3 /* ProgressRingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
 		DEEDB8022970719400CB20F3 /* UIViewRepresented.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewRepresented.swift; sourceTree = "<group>"; };
-		DEEDB83A29707C1C00CB20F3 /* MainReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
-		DEEDB83C29707C1C00CB20F3 /* MainState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
-		DEEDB83E29707C1C00CB20F3 /* MainAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
-		DEEDB84029707C1C00CB20F3 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		DEEDB84229707C1C00CB20F3 /* MainEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,17 +91,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBD8CF22975600C00E6FE89 /* TCA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DEBD8CF02975600C00E6FE89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEBD8D222975694E00E6FE89 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D232975694E00E6FE89 /* Reducer */,
+				DEBD8D252975694E00E6FE89 /* State */,
+				DEBD8D272975694E00E6FE89 /* Action */,
+				DEBD8D292975694E00E6FE89 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DEBD8D232975694E00E6FE89 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D242975694E00E6FE89 /* MainFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		DEBD8D252975694E00E6FE89 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D262975694E00E6FE89 /* MainState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		DEBD8D272975694E00E6FE89 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D282975694E00E6FE89 /* MainAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		DEBD8D292975694E00E6FE89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEBD8D31297569BF00E6FE89 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DEEDB6C42970620400CB20F3 = {
 			isa = PBXGroup;
 			children = (
 				DEEDB6CF2970620500CB20F3 /* tca-university-tvos */,
 				DEEDB6CE2970620500CB20F3 /* Products */,
+				DEBD8CF02975600C00E6FE89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -295,7 +346,7 @@
 		DEEDB7F42970719400CB20F3 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
-				DEEDB83629707C1C00CB20F3 /* Main */,
+				DEBD8D222975694E00E6FE89 /* Main */,
 				DEEDB7F52970719400CB20F3 /* Advanced */,
 				DEEDB7F62970719400CB20F3 /* Pre-Intermediate */,
 				DEEDB7F72970719400CB20F3 /* Upper-Intermediate */,
@@ -391,59 +442,6 @@
 			path = ../../SharedFiles/ApplicationLayer;
 			sourceTree = "<group>";
 		};
-		DEEDB83629707C1C00CB20F3 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB83929707C1C00CB20F3 /* Reducer */,
-				DEEDB83B29707C1C00CB20F3 /* State */,
-				DEEDB83D29707C1C00CB20F3 /* Action */,
-				DEEDB83F29707C1C00CB20F3 /* View */,
-				DEEDB84129707C1C00CB20F3 /* Environment */,
-			);
-			name = Main;
-			path = ../../Main;
-			sourceTree = "<group>";
-		};
-		DEEDB83929707C1C00CB20F3 /* Reducer */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB83A29707C1C00CB20F3 /* MainReducer.swift */,
-			);
-			path = Reducer;
-			sourceTree = "<group>";
-		};
-		DEEDB83B29707C1C00CB20F3 /* State */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB83C29707C1C00CB20F3 /* MainState.swift */,
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
-		DEEDB83D29707C1C00CB20F3 /* Action */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB83E29707C1C00CB20F3 /* MainAction.swift */,
-			);
-			path = Action;
-			sourceTree = "<group>";
-		};
-		DEEDB83F29707C1C00CB20F3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB84029707C1C00CB20F3 /* MainView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		DEEDB84129707C1C00CB20F3 /* Environment */ = {
-			isa = PBXGroup;
-			children = (
-				DEEDB84229707C1C00CB20F3 /* MainEnvironment.swift */,
-			);
-			path = Environment;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -460,6 +458,9 @@
 			dependencies = (
 			);
 			name = "tca-university-tvos";
+			packageProductDependencies = (
+				DEBD8CF12975600C00E6FE89 /* TCA */,
+			);
 			productName = "tca-university-tvos";
 			productReference = DEEDB6CD2970620500CB20F3 /* tca-university-tvos.app */;
 			productType = "com.apple.product-type.application";
@@ -514,37 +515,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEEDB84629707C1C00CB20F3 /* MainAction.swift in Sources */,
 				DEEDB8042970719400CB20F3 /* CGFloat.swift in Sources */,
 				DEEDB7322970631B00CB20F3 /* User.swift in Sources */,
 				DEEDB7AD2970709D00CB20F3 /* NewsServiceImplementation.swift in Sources */,
 				DEEDB7A92970709D00CB20F3 /* ScrambleService.swift in Sources */,
 				DEEDB8082970719400CB20F3 /* ActivityIndicator.swift in Sources */,
 				DEEDB7A42970709D00CB20F3 /* PaletteService.swift in Sources */,
-				DEEDB84729707C1C00CB20F3 /* MainView.swift in Sources */,
 				DEEDB8072970719400CB20F3 /* BlurView.swift in Sources */,
-				DEEDB84829707C1C00CB20F3 /* MainEnvironment.swift in Sources */,
 				DEEDB7A62970709D00CB20F3 /* ImageServiceImplementation.swift in Sources */,
 				DEEDB80A2970719400CB20F3 /* UIViewRepresented.swift in Sources */,
 				DEEDB8052970719400CB20F3 /* Text.swift in Sources */,
 				DEEDB7AC2970709D00CB20F3 /* UserServiceImplementation.swift in Sources */,
+				DEBD8D32297569BF00E6FE89 /* MainView.swift in Sources */,
 				DEEDB7A72970709D00CB20F3 /* BookService.swift in Sources */,
 				DEEDB7312970631A00CB20F3 /* Palette.swift in Sources */,
+				DEBD8D2A2975694E00E6FE89 /* MainFeature.swift in Sources */,
 				DEEDB7AB2970709D00CB20F3 /* UserService.swift in Sources */,
 				DEEDB6D32970620500CB20F3 /* ContentView.swift in Sources */,
+				DEBD8D2B2975694E00E6FE89 /* MainState.swift in Sources */,
 				DEEDB7AE2970709D00CB20F3 /* NewsService.swift in Sources */,
 				DEEDB7A82970709D00CB20F3 /* BookServiceImplementation.swift in Sources */,
 				DEEDB7A32970709D00CB20F3 /* PaletteServiceImplementation.swift in Sources */,
 				DEEDB7332970631B00CB20F3 /* Book.swift in Sources */,
 				DEEDB7AF2970709D00CB20F3 /* NumberFactService.swift in Sources */,
 				DEEDB8062970719400CB20F3 /* Color.swift in Sources */,
-				DEEDB84529707C1C00CB20F3 /* MainState.swift in Sources */,
 				DEEDB8092970719400CB20F3 /* ProgressRingView.swift in Sources */,
 				DEEDB7352970631B00CB20F3 /* News.swift in Sources */,
 				DEEDB8032970719400CB20F3 /* Unifont.swift in Sources */,
+				DEBD8D2C2975694E00E6FE89 /* MainAction.swift in Sources */,
 				DEEDB7342970631B00CB20F3 /* LoremPicsumImage.swift in Sources */,
 				DEEDB7A52970709D00CB20F3 /* ImageService.swift in Sources */,
-				DEEDB84429707C1C00CB20F3 /* MainReducer.swift in Sources */,
 				DEEDB7B02970709D00CB20F3 /* NumberFactServiceImplementation.swift in Sources */,
 				DEEDB7412970708100CB20F3 /* String.swift in Sources */,
 				DEEDB7AA2970709D00CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
@@ -749,6 +749,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEBD8CF12975600C00E6FE89 /* TCA */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TCA;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DEEDB6C52970620400CB20F3 /* Project object */;
 }
