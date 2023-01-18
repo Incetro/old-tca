@@ -61,4 +61,39 @@ public enum MainAction: Equatable {
     case scrambler(ScramblerAction)
     
     // MARK: - Elementary
+    
+    /// Child action for `SimpleOptional` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `simpleOptional` case means that every action in `SimpleOptional` module
+    /// will be sent to current module through it
+    case simpleOptional(SimpleOptionalAction)
+    
+    /// Child action for `SimpleBindings` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `simpleBindings` case means that every action in `SimpleBindings` module
+    /// will be sent to current module through it
+    case simpleBindings(SimpleBindingsAction)
+    
+    /// Child action for `FlexibleBindings` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `flexibleBindings` case means that every action in `FlexibleBindings` module
+    /// will be sent to current module through it
+    case flexibleBindings(FlexibleBindingsAction)
+    
+    /// Child action for `AlertAndSheet` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `alertAndSheet` case means that every action in `AlertAndSheet` module
+    /// will be sent to current module through it
+    case alertAndSheet(AlertAndSheetAction)
+    
+    /// Child action for `FocusState` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `focusState` case means that every action in `FocusState` module
+    /// will be sent to current module through it
+    case focusState(FocusStateAction)
 }

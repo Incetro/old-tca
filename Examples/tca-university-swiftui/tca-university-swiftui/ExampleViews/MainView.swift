@@ -75,6 +75,58 @@ public struct MainView: View {
                         }
                     }
                     Section(header: Text("💡 Elementary")) {
+                        NavigationLink(
+                            destination: SimpleOptionalView(
+                                store: store.scope(
+                                    state: \.simpleOptional,
+                                    action: MainAction.simpleOptional
+                                )
+                            )
+                        ) {
+                            Text("Simple optional").standard
+                        }
+                        NavigationLink(
+                            destination: SimpleBindingsView(
+                                store: store.scope(
+                                    state: \.simpleBindings,
+                                    action: MainAction.simpleBindings
+                                )
+                            )
+                        ) {
+                            Text("Manual bindings").standard
+                        }
+                        NavigationLink(
+                            destination: FlexibleBindingsView(
+                                store: store.scope(
+                                    state: \.flexibleBindings,
+                                    action: MainAction.flexibleBindings
+                                )
+                            )
+                        ) {
+                            Text("Automatic bindings").standard
+                        }
+                        if #available(iOS 15.0, *) {
+                            NavigationLink(
+                                destination: FocusStateView(
+                                    store: store.scope(
+                                        state: \.focusState,
+                                        action: MainAction.focusState
+                                    )
+                                )
+                            ) {
+                                Text("Focus state").standard
+                            }
+                        }
+                        NavigationLink(
+                            destination: AlertAndSheetView(
+                                store: store.scope(
+                                    state: \.alertAndSheet,
+                                    action: MainAction.alertAndSheet
+                                )
+                            )
+                        ) {
+                            Text("Alert and ActionSheet").standard
+                        }
                     }
                     Section(header: Text("🙋🏻‍♂️ Pre Intermediate")) {
                     }

@@ -27,6 +27,21 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.scrambler, action: /MainAction.scrambler) {
             ScramblerFeature()
         }
+        Scope(state: \.flexibleBindings, action: /MainAction.flexibleBindings) {
+            FlexibleBindingsFeature()
+        }
+        Scope(state: \.alertAndSheet, action: /MainAction.alertAndSheet) {
+            AlertAndSheetFeature()
+        }
+        Scope(state: \.focusState, action: /MainAction.focusState) {
+            FocusStateFeature()
+        }
+        Scope(state: \.simpleBindings, action: /MainAction.simpleBindings) {
+            SimpleBindingsFeature()
+        }
+        Scope(state: \.simpleOptional, action: /MainAction.simpleOptional) {
+            SimpleOptionalFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:
