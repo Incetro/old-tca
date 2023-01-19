@@ -16,7 +16,7 @@ public struct SimpleEffectFeature: ReducerProtocol {
     // MARK: - Properties
     
     /// NumberFactService instance
-    public let numberFactService: NumberFactService = NumberFactServiceImplementation()
+    public let numberFactService = NumberFactServiceImplementation()
     
     // MARK: - ReducerProtocol
     

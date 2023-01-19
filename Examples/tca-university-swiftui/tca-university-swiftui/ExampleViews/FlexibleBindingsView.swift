@@ -66,7 +66,8 @@ public struct FlexibleBindingsView: View {
                             value: viewStore.binding(\.$sliderValue),
                             in: 0...Double(viewStore.counter.count),
                             step: 1
-                        ).disabled(viewStore.toggleEnabled)
+                        )
+                        .disabled(viewStore.toggleEnabled)
                     }
                     
                     Button("Reset all controls") {

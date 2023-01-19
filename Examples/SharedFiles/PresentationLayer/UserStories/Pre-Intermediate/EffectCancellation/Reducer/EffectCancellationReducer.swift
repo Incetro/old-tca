@@ -9,7 +9,6 @@
 import TCA
 import Foundation
 
-
 // MARK: - EffectCancellationFeature
 
 public struct EffectCancellationFeature: ReducerProtocol {
@@ -21,7 +20,7 @@ public struct EffectCancellationFeature: ReducerProtocol {
     // MARK: - Properties
     
     /// NumberFactService instance
-    public let numberFactService: NumberFactService = NumberFactServiceImplementation()
+    public let numberFactService = NumberFactServiceImplementation()
     
     // MARK: - ReducerProtocol
     
@@ -51,10 +50,8 @@ public struct EffectCancellationFeature: ReducerProtocol {
             case let .numberFactResponse(.success(fact)):
                 state.isFactRequestInFlight = false
                 state.numberFact = fact
-                return .none
             case .numberFactResponse(.failure):
                 state.isFactRequestInFlight = false
-                return .none
             case .cancelButtonTapped:
                 state.isFactRequestInFlight = false
                 return .cancel(id: NumberFactRequestID())
@@ -65,6 +62,7 @@ public struct EffectCancellationFeature: ReducerProtocol {
                     .init(value: .factButtonTapped)
                 )
             }
+            return .none
         }
     }
 }
