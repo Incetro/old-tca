@@ -49,4 +49,7 @@ public struct MainState: Equatable {
     
     /// SimpleEffectState instance
     public var simpleEffect = SimpleEffectState()
+    
+    /// EffectCancellationState instance
+    public var effectCancellation = EffectCancellationState()
 }

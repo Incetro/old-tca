@@ -103,4 +103,11 @@ public enum MainAction: Equatable {
     /// In short, the `simpleEffect` case means that every action in `SimpleEffect` module
     /// will be sent to current module through it
     case simpleEffect(SimpleEffectAction)
+    
+    /// Child action for `EffectCancellation` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `effectCancellation` case means that every action in `EffectCancellation` module
+    /// will be sent to current module through it
+    case effectCancellation(EffectCancellationAction)
 }

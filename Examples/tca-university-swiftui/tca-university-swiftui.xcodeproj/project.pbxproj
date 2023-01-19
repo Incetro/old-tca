@@ -31,6 +31,10 @@
 		CB2703672979235600943540 /* SimpleEffectState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2703632979235600943540 /* SimpleEffectState.swift */; };
 		CB2703682979235600943540 /* SimpleEffectAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2703652979235600943540 /* SimpleEffectAction.swift */; };
 		CB27036B297923E700943540 /* SimpleEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27036A297923E700943540 /* SimpleEffectView.swift */; };
+		CB270374297931D900943540 /* EffectCancellationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27036F297931D900943540 /* EffectCancellationReducer.swift */; };
+		CB270375297931D900943540 /* EffectCancellationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB270371297931D900943540 /* EffectCancellationState.swift */; };
+		CB270376297931D900943540 /* EffectCancellationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB270373297931D900943540 /* EffectCancellationAction.swift */; };
+		CB270379297932A300943540 /* EffectCancellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB270378297932A300943540 /* EffectCancellationView.swift */; };
 		DEBD8CEC29755F3700E6FE89 /* TCA in Frameworks */ = {isa = PBXBuildFile; productRef = DEBD8CEB29755F3700E6FE89 /* TCA */; };
 		DEBD8D032975652F00E6FE89 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CF72975652F00E6FE89 /* CounterFeature.swift */; };
 		DEBD8D042975652F00E6FE89 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CF92975652F00E6FE89 /* CounterState.swift */; };
@@ -118,6 +122,10 @@
 		CB2703652979235600943540 /* SimpleEffectAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleEffectAction.swift; sourceTree = "<group>"; };
 		CB27036A297923E700943540 /* SimpleEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimpleEffectView.swift; path = "tca-university-swiftui/ExampleViews/SimpleEffectView.swift"; sourceTree = SOURCE_ROOT; };
 		CB27036C29792C6200943540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CB27036F297931D900943540 /* EffectCancellationReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectCancellationReducer.swift; sourceTree = "<group>"; };
+		CB270371297931D900943540 /* EffectCancellationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectCancellationState.swift; sourceTree = "<group>"; };
+		CB270373297931D900943540 /* EffectCancellationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectCancellationAction.swift; sourceTree = "<group>"; };
+		CB270378297932A300943540 /* EffectCancellationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EffectCancellationView.swift; path = "tca-university-swiftui/ExampleViews/EffectCancellationView.swift"; sourceTree = SOURCE_ROOT; };
 		DEBD8CF72975652F00E6FE89 /* CounterFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		DEBD8CF92975652F00E6FE89 /* CounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
 		DEBD8CFB2975652F00E6FE89 /* CounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
@@ -409,6 +417,7 @@
 		CB27035E2979235600943540 /* Pre-Intermediate */ = {
 			isa = PBXGroup;
 			children = (
+				CB27036D297931D900943540 /* EffectCancellation */,
 				CB27035F2979235600943540 /* SimpleEffect */,
 			);
 			path = "Pre-Intermediate";
@@ -453,6 +462,49 @@
 			isa = PBXGroup;
 			children = (
 				CB27036A297923E700943540 /* SimpleEffectView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CB27036D297931D900943540 /* EffectCancellation */ = {
+			isa = PBXGroup;
+			children = (
+				CB2703772979320400943540 /* View */,
+				CB27036E297931D900943540 /* Reducer */,
+				CB270370297931D900943540 /* State */,
+				CB270372297931D900943540 /* Action */,
+			);
+			path = EffectCancellation;
+			sourceTree = "<group>";
+		};
+		CB27036E297931D900943540 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				CB27036F297931D900943540 /* EffectCancellationReducer.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CB270370297931D900943540 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				CB270371297931D900943540 /* EffectCancellationState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		CB270372297931D900943540 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				CB270373297931D900943540 /* EffectCancellationAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		CB2703772979320400943540 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB270378297932A300943540 /* EffectCancellationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1087,6 +1139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB270379297932A300943540 /* EffectCancellationView.swift in Sources */,
 				DEBD8D062975652F00E6FE89 /* StepperView.swift in Sources */,
 				DEBD8D5629758A6D00E6FE89 /* FibonacciCounterState.swift in Sources */,
 				DEBD8D072975652F00E6FE89 /* CounterExampleView.swift in Sources */,
@@ -1098,6 +1151,7 @@
 				DEEDB7632970708F00CB20F3 /* NewsServiceImplementation.swift in Sources */,
 				DEEDB75F2970708F00CB20F3 /* ScrambleService.swift in Sources */,
 				DEEDB7CC2970718800CB20F3 /* ActivityIndicator.swift in Sources */,
+				CB270375297931D900943540 /* EffectCancellationState.swift in Sources */,
 				CB27034B2978169600943540 /* AlertAndSheetAction.swift in Sources */,
 				DEEDB75A2970708F00CB20F3 /* PaletteService.swift in Sources */,
 				DEBD8D622975A43F00E6FE89 /* ScramblerFeature.swift in Sources */,
@@ -1135,6 +1189,7 @@
 				DEEDB75E2970708F00CB20F3 /* BookServiceImplementation.swift in Sources */,
 				DEEDB7592970708F00CB20F3 /* PaletteServiceImplementation.swift in Sources */,
 				DEEDB71B297062F700CB20F3 /* Book.swift in Sources */,
+				CB270376297931D900943540 /* EffectCancellationAction.swift in Sources */,
 				DEEDB7652970708F00CB20F3 /* NumberFactService.swift in Sources */,
 				CB2703482978169600943540 /* SimpleBindingsAction.swift in Sources */,
 				DEBD8D3D2975824000E6FE89 /* DoubleCounterAction.swift in Sources */,
@@ -1161,6 +1216,7 @@
 				CB2703422978169600943540 /* FocusStateReducer.swift in Sources */,
 				DEBD8D632975A43F00E6FE89 /* ScramblerState.swift in Sources */,
 				CB2703592978179400943540 /* FocusStateView.swift in Sources */,
+				CB270374297931D900943540 /* EffectCancellationReducer.swift in Sources */,
 				DEEDB7392970707800CB20F3 /* String.swift in Sources */,
 				DEEDB7602970708F00CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
 				DEBD8D082975652F00E6FE89 /* SimpleCounterView.swift in Sources */,
@@ -1295,7 +1351,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tca-university-swiftui/Preview Content\"";
-				DEVELOPMENT_TEAM = PM34MLKL7J;
+				DEVELOPMENT_TEAM = HFD95R9VP2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tca-university-swiftui/Info.plist";
@@ -1325,7 +1381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tca-university-swiftui/Preview Content\"";
-				DEVELOPMENT_TEAM = PM34MLKL7J;
+				DEVELOPMENT_TEAM = HFD95R9VP2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tca-university-swiftui/Info.plist";
