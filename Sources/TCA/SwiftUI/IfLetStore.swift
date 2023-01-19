@@ -36,7 +36,7 @@ import SwiftUI
 ///
 public struct IfLetStore<State, Action, Content: View>: View {
   private let content: (ViewStore<State?, Action>) -> Content
-  private let store: Store<State?, Action>
+  public let store: Store<State?, Action>
 
   /// Initializes an ``IfLetStore`` view that computes content depending on if a store of optional
   /// state is `nil` or non-`nil`.

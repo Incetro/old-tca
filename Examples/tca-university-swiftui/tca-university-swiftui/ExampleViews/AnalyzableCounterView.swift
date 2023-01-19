@@ -1,6 +1,6 @@
 //
 //  AnalyzableCounterView.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by incetro on 02/11/2021.
 //  Copyright © 2021 Incetro Inc. All rights reserved.
@@ -50,8 +50,10 @@ public struct AnalyzableCounterView: View {
                         )
                         .buttonStyle(BorderlessButtonStyle())
                     }
-                }.textCase(nil)
-            }.navigationTitle("Analyzable counter")
+                }
+                .textCase(nil)
+            }
+            .navigationTitle("Analyzable counter")
         }
     }
 }

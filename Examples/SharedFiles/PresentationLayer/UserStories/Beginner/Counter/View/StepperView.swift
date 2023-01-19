@@ -1,6 +1,6 @@
 //
 //  StepperView.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by Nikita Lezya on 09/11/2021.
 //  Copyright © 2021 Incetro Inc. All rights reserved.

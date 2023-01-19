@@ -1,6 +1,6 @@
 //
 //  DoubleCounterView.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by incetro on 13/10/2021.
 //  Copyright © 2021 Incetro Inc. All rights reserved.
@@ -46,7 +46,8 @@ public struct DoubleCounterView: View {
                         )
                         .buttonStyle(BorderlessButtonStyle())
                     }
-                }.textCase(nil)
+                }
+                .textCase(nil)
             }
             .padding([.trailing], 8)
             .navigationBarTitle("Composition")

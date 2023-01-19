@@ -31,4 +31,19 @@ public struct MainState: Equatable {
     
     /// ScramblerState instance
     public var scrambler = ScramblerState()
+    
+    /// SimpleOptionalState instance
+    public var simpleOptional = SimpleOptionalState()
+
+    /// SimpleBindingsState instance
+    public var simpleBindings = SimpleBindingsState()
+
+    /// FlexibleBindingsState instance
+    public var flexibleBindings = FlexibleBindingsState()
+    
+    /// AlertAndSheetState instance
+    public var alertAndSheet = AlertAndSheetState()
+    
+    /// FocusStateState instance
+    public var focusState = FocusStateState()
 }
