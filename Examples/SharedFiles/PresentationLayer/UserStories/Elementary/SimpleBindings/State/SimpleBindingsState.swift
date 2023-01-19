@@ -1,6 +1,6 @@
 //
 //  SimpleBindingsState.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by Nikita Lezya on 17/10/2021.
 //  Copyright © 2021 Incetro Inc. All rights reserved.
@@ -20,12 +20,16 @@ public struct SimpleBindingsState: Equatable {
 
     /// Tint color variants
     public enum PickableColor: String, CaseIterable {
+        
+        // MARK: - Cases
 
         case red
         case green
         case blue
         case orange
         case purple
+        
+        // MARK: - Properties
 
         var color: Color {
             switch self {

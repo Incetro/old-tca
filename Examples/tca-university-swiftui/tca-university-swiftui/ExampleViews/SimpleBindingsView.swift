@@ -1,6 +1,6 @@
 //
 //  SimpleBindingsView.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by Nikita Lezya on 17/10/2021.
 //  Copyright © 2021 Incetro Inc. All rights reserved.
@@ -11,16 +11,11 @@ import SwiftUI
 
 // MARK: - SimpleBindingsView
 
-/// A visual representation of `SimpleBindings` module.
-/// Here we define the view that displays the feature.
-/// It holds onto a `Store<SimpleBindingsState, SimpleBindingsAction>` so that it can observe
-/// all changes to the state and re-render, and we can send all user actions
-/// to the store so that state changes.
 public struct SimpleBindingsView: View {
 
     // MARK: - Properties
 
-    /// SimpleBindingsStore instance
+    /// The store powering the `SimpleBindings` feature
     public let store: StoreOf<SimpleBindingsFeature>
 
     // MARK: - View
@@ -57,7 +52,9 @@ public struct SimpleBindingsView: View {
                     Toggle(isOn: viewStore.binding(
                         get: \.toggleEnabled,
                         send: SimpleBindingsAction.switchToggle)
-                    ) { Text("Disable other controls").standard }
+                    ) {
+                        Text("Disable other controls").standard
+                    }
                     .toggleStyle(SwitchToggleStyle(tint: viewStore.pickedColor.color))
 
                     HStack {
@@ -92,9 +89,12 @@ public struct SimpleBindingsView: View {
                         viewStore.send(.resetControls)
                     }
                     .standard
-                }.textCase(nil)
-            }.accentColor(viewStore.pickedColor.color)
-        }.navigationBarTitle("Simple Bindings")
+                }
+                .textCase(nil)
+            }
+            .accentColor(viewStore.pickedColor.color)
+        }
+        .navigationBarTitle("Simple Bindings")
     }
 }
 
@@ -107,7 +107,7 @@ extension SimpleBindingsView {
         static let interspacing: CGFloat = 16
 
         static let summary = """
-        This screen demonstrates how simple bindings between views and state can be achieved with the VERSE.
+        This screen demonstrates how simple bindings between views and state can be achieved with the TCA.
 
         Any view change updates the state and consequently the state affects other views if they bound to that state.
 

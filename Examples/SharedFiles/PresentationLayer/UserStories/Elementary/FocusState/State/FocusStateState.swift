@@ -1,6 +1,6 @@
 //
 //  FocusStateState.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by incetro on 16/02/2022.
 //  Copyright © 2022 Incetro Inc. All rights reserved.
@@ -20,6 +20,9 @@ public struct FocusStateState: Equatable {
     // MARK: - Field
 
     public enum Field {
+        
+        // MARK: - Cases
+        
         case name
         case surname
         case email

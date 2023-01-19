@@ -1,6 +1,6 @@
 //
 //  FocusStateView.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by incetro on 16/02/2022.
 //  Copyright © 2022 Incetro Inc. All rights reserved.
@@ -11,11 +11,6 @@ import SwiftUI
 
 // MARK: - FocusStateView
 
-/// A visual representation of `FocusState` module.
-/// Here we define the view that displays the feature.
-/// It holds onto a `Store<FocusStateState, FocusStateAction>` so that it can observe
-/// all changes to the state and re-render, and we can send all user actions
-/// to the store so that state changes.
 @available(iOS 15.0, *)
 public struct FocusStateView: View {
 
@@ -24,7 +19,7 @@ public struct FocusStateView: View {
     /// Focus state for text editors
     @FocusState var focusedField: FocusStateState.Field?
 
-    /// `FocusState` module `Store` instance
+    /// The store powering the `FocusState` feature
     public let store: StoreOf<FocusStateFeature>
 
     // MARK: - View
@@ -47,7 +42,8 @@ public struct FocusStateView: View {
                                 RoundedRectangle(cornerRadius: 13, style: .continuous)
                                     .fill(Color.accentColor)
                             )
-                    }.disabled(!viewStore.isMandatorytDataFilled)
+                    }
+                    .disabled(!viewStore.isMandatorytDataFilled)
                 ) {
                     TextField("Name", text: viewStore.binding(\.$name))
                         .focused($focusedField, equals: .name)
@@ -79,7 +75,8 @@ public struct FocusStateView: View {
                         }
                     }
                     .frame(height: 36)
-                }.textCase(nil)
+                }
+                .textCase(nil)
             }
             .navigationBarTitle("Focus state")
             .navigationBarItems(
@@ -117,7 +114,7 @@ extension FocusStateView {
     enum Constants {
 
         static let summary = """
-        This example demonstrates how to work with `@FocusState` logic in the VERSE.
+        This example demonstrates how to work with `@FocusState` logic in the TCA.
 
         Here you have simple registration form. When you tap on any textfield focus state
         will be synchronized with SwiftUI's `@FocusState` variable. Moreover, you will have

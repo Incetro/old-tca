@@ -1,6 +1,6 @@
 //
 //  CounterExampleView.swift
-//  verse-swiftui-examples
+//  TCA-swiftui-examples
 //
 //  Created by incetro on 10/13/21.
 //
@@ -26,7 +26,8 @@ public struct CounterExampleView: View {
                 CounterView(store: store)
                     .buttonStyle(BorderlessButtonStyle())
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-            }.textCase(nil)
+            }
+            .textCase(nil)
         }
         .navigationBarTitle("Basics")
     }

@@ -1,6 +1,6 @@
 //
 //  SimpleBindingsReducer.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by Nikita Lezya on 17/10/2021.
 //  Copyright © 2021 Incetro Inc. All rights reserved.
@@ -22,7 +22,6 @@ public struct SimpleBindingsFeature: ReducerProtocol {
                 state.text = text
             case .switchToggle(let enabled):
                 state.toggleEnabled = enabled
-                break
             case .moveSlider(let value):
                 state.sliderValue = Double(Int(value))
             case .resetControls:

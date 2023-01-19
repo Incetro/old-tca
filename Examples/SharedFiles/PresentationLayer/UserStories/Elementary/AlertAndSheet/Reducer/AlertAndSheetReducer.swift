@@ -1,6 +1,6 @@
 //
 //  AlertAndSheetReducer.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by incetro on 31/10/2021.
 //  Copyright © 2021 Incetro Inc. All rights reserved.
@@ -31,7 +31,7 @@ public struct AlertAndSheetFeature: ReducerProtocol {
             state.actionSheet = nil
             return .none
         case .alertButtonTapped:
-            state.alert = .init(
+            state.alert = AlertState(
                 title: TextState("Alert!"),
                 message: TextState("This is an alert"),
                 buttons: [
@@ -46,11 +46,11 @@ public struct AlertAndSheetFeature: ReducerProtocol {
             state.alert = nil
             return .none
         case .decrementButtonTapped:
-            state.alert = .init(title: TextState("Decremented 👇🏻"))
+            state.alert = AlertState(title: TextState("Decremented 👇🏻"))
             state.count -= 1
             return .none
         case .incrementButtonTapped:
-            state.alert = .init(title: TextState("Incremented 👆🏻"))
+            state.alert = AlertState(title: TextState("Incremented 👆🏻"))
             state.count += 1
             return .none
         }

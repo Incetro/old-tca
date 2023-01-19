@@ -1,6 +1,6 @@
 //
 //  CounterView.swift
-//  verse-swiftui-examples
+//  TCA-swiftui-examples
 //
 //  Created by incetro on 10/13/21.
 //

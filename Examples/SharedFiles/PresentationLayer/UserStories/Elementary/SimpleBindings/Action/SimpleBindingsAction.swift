@@ -1,6 +1,6 @@
 //
 //  SimpleBindingsAction.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by Nikita Lezya on 17/10/2021.
 //  Copyright © 2021 Incetro Inc. All rights reserved.

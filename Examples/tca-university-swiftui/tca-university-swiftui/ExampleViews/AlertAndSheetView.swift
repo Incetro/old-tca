@@ -1,6 +1,6 @@
 //
 //  AlertAndSheetView.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by incetro on 31/10/2021.
 //  Copyright © 2021 Incetro Inc. All rights reserved.
@@ -11,16 +11,11 @@ import SwiftUI
 
 // MARK: - AlertAndSheetView
 
-/// A visual representation of `AlertAndSheet` module.
-/// Here we define the view that displays the feature.
-/// It holds onto a `Store<AlertAndSheetState, AlertAndSheetAction>` so that it can observe
-/// all changes to the state and re-render, and we can send all user actions
-/// to the store so that state changes.
 public struct AlertAndSheetView: View {
 
     // MARK: - Properties
 
-    /// `AlertAndSheet` module `Store` instance
+    /// The store powering the `AlertAndSheet` feature
     public let store: StoreOf<AlertAndSheetFeature>
 
     // MARK: - View
@@ -45,8 +40,10 @@ public struct AlertAndSheetView: View {
                         store.scope(state: \.actionSheet),
                         dismiss: .actionSheetDismissed
                     )
-                }.textCase(nil)
-            }.navigationTitle("Alert and ActionSheet")
+                }
+                .textCase(nil)
+            }
+            .navigationTitle("Alert and ActionSheet")
         }
     }
 }
@@ -58,7 +55,7 @@ extension AlertAndSheetView {
     enum Constants {
 
         static let summary = """
-        This demonstrates how to work with alerts and action sheets in the VERSE.
+        This demonstrates how to work with alerts and action sheets in the TCA.
 
         Because the library demands that all data flow through the application in a single direction, we \
         cannot use SwiftUI's two-way bindings because they can make changes to state without going through a reducer. \

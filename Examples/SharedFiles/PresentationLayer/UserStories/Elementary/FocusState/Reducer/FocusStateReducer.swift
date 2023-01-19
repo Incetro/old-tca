@@ -1,6 +1,6 @@
 //
 //  FocusStateReducer.swift
-//  verse-examples
+//  TCA-examples
 //
 //  Created by incetro on 16/02/2022.
 //  Copyright © 2022 Incetro Inc. All rights reserved.
@@ -24,12 +24,12 @@ public struct FocusStateFeature: ReducerProtocol {
                 state.field = .password
             case .nextButtonTapped where state.field == .password:
                 if state.isMandatorytDataFilled {
-                    state.alert = .init(title: TextState("Success from the `Next` button!"))
+                    state.alert = AlertState(title: TextState("Success from the `Next` button!"))
                 } else {
                     state.field = nil
                 }
             case .actionButtonTapped:
-                state.alert = .init(title: TextState("Success from `Continue` button!"))
+                state.alert = AlertState(title: TextState("Success from `Continue` button!"))
             case .togglePasswordButtonTapped:
                 state.isPasswordShowed.toggle()
             case .fillRandomDataButtonTapped:
