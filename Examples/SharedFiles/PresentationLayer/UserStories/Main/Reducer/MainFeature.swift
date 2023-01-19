@@ -42,6 +42,9 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.simpleOptional, action: /MainAction.simpleOptional) {
             SimpleOptionalFeature()
         }
+        Scope(state: \.simpleEffect, action: /MainAction.simpleEffect) {
+            SimpleEffectFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:
