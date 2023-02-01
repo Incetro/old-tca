@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC89C41224460F95006900B9"
-               BuildableName = "SwiftUICaseStudies.app"
-               BlueprintName = "SwiftUICaseStudies"
-               ReferencedContainer = "container:CaseStudies.xcodeproj">
+               BlueprintIdentifier = "DC4C6EA62450DD380066A05D"
+               BuildableName = "UIKitTCAUniversity.app"
+               BlueprintName = "UIKitTCAUniversity"
+               ReferencedContainer = "container:TCAUniversity.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DC89C42824460F96006900B9"
-               BuildableName = "SwiftUICaseStudiesTests.xctest"
-               BlueprintName = "SwiftUICaseStudiesTests"
-               ReferencedContainer = "container:CaseStudies.xcodeproj">
+               BlueprintIdentifier = "DC4C6EBB2450DD390066A05D"
+               BuildableName = "UIKitTCAUniversityTests.xctest"
+               BlueprintName = "UIKitTCAUniversityTests"
+               ReferencedContainer = "container:TCAUniversity.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -54,10 +54,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC89C41224460F95006900B9"
-            BuildableName = "SwiftUICaseStudies.app"
-            BlueprintName = "SwiftUICaseStudies"
-            ReferencedContainer = "container:CaseStudies.xcodeproj">
+            BlueprintIdentifier = "DC4C6EA62450DD380066A05D"
+            BuildableName = "UIKitTCAUniversity.app"
+            BlueprintName = "UIKitTCAUniversity"
+            ReferencedContainer = "container:TCAUniversity.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -71,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DC89C41224460F95006900B9"
-            BuildableName = "SwiftUICaseStudies.app"
-            BlueprintName = "SwiftUICaseStudies"
-            ReferencedContainer = "container:CaseStudies.xcodeproj">
+            BlueprintIdentifier = "DC4C6EA62450DD380066A05D"
+            BuildableName = "UIKitTCAUniversity.app"
+            BlueprintName = "UIKitTCAUniversity"
+            ReferencedContainer = "container:TCAUniversity.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

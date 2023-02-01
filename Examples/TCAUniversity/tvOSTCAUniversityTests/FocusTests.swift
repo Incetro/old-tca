@@ -1,10 +1,10 @@
 import TCA
 import XCTest
 
-@testable import tvOSCaseStudies
+@testable import tvOSTCAUniversity
 
 @MainActor
-final class tvOSCaseStudiesTests: XCTestCase {
+final class tvOSTCAUniversityTests: XCTestCase {
 }
 
 /// A linear congruential random number generator.

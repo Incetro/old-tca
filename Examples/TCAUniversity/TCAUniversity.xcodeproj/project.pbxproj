@@ -20,7 +20,7 @@
 		DC4C6EB02450DD380066A05D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4C6EAF2450DD380066A05D /* Assets.xcassets */; };
 		DC4C6EB32450DD380066A05D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4C6EB22450DD380066A05D /* Preview Assets.xcassets */; };
 		DC4C6EB62450DD380066A05D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4C6EB42450DD380066A05D /* LaunchScreen.storyboard */; };
-		DC4C6EC12450DD390066A05D /* UIKitCaseStudiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C6EC02450DD390066A05D /* UIKitCaseStudiesTests.swift */; };
+		DC4C6EC12450DD390066A05D /* UIKitTCAUniversityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4C6EC02450DD390066A05D /* UIKitTCAUniversityTests.swift */; };
 		DC89C41D24460F96006900B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC89C41C24460F96006900B9 /* Assets.xcassets */; };
 		DCFE1960278DBF0600C14CCF /* TCAUniversityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE195F278DBF0600C14CCF /* TCAUniversityApp.swift */; };
 /* End PBXBuildFile section */
@@ -31,21 +31,21 @@
 			containerPortal = DC89C40B24460F95006900B9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CAF88E6F24B8E26D00539345;
-			remoteInfo = tvOSCaseStudies;
+			remoteInfo = tvOSTCAUniversity;
 		};
 		DC4C6EBD2450DD390066A05D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC89C40B24460F95006900B9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DC4C6EA62450DD380066A05D;
-			remoteInfo = UIKitCaseStudies;
+			remoteInfo = UIKitTCAUniversity;
 		};
 		DC89C42A24460F96006900B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC89C40B24460F95006900B9 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DC89C41224460F95006900B9;
-			remoteInfo = CaseStudies;
+			remoteInfo = TCAUniversity;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -93,28 +93,28 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CAF88E7024B8E26D00539345 /* tvOSCaseStudies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSCaseStudies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF88E7024B8E26D00539345 /* tvOSTCAUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSTCAUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF88E7224B8E26D00539345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAF88E7424B8E26D00539345 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		CAF88E7624B8E26E00539345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAF88E7E24B8E26E00539345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAF88E8324B8E26E00539345 /* tvOSCaseStudiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSCaseStudiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF88E8324B8E26E00539345 /* tvOSTCAUniversityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tvOSTCAUniversityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF88E8724B8E26E00539345 /* FocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTests.swift; sourceTree = "<group>"; };
 		CAF88E9224B8E3D000539345 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
 		CAF88E9424B8E4D500539345 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
-		DC4C6EA72450DD380066A05D /* UIKitCaseStudies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitCaseStudies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4C6EA72450DD380066A05D /* UIKitTCAUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitTCAUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC4C6EAB2450DD380066A05D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC4C6EAF2450DD380066A05D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC4C6EB22450DD380066A05D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC4C6EB52450DD380066A05D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4C6EB72450DD380066A05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC4C6EBC2450DD390066A05D /* UIKitCaseStudiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitCaseStudiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC4C6EC02450DD390066A05D /* UIKitCaseStudiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitCaseStudiesTests.swift; sourceTree = "<group>"; };
+		DC4C6EBC2450DD390066A05D /* UIKitTCAUniversityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitTCAUniversityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4C6EC02450DD390066A05D /* UIKitTCAUniversityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTCAUniversityTests.swift; sourceTree = "<group>"; };
 		DC4C6EC22450DD390066A05D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC89C41324460F95006900B9 /* SwiftUICaseStudies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICaseStudies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC89C41324460F95006900B9 /* SwiftUITCAUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITCAUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC89C41C24460F96006900B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC89C42424460F96006900B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC89C42924460F96006900B9 /* SwiftUICaseStudiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUICaseStudiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC89C42924460F96006900B9 /* SwiftUITCAUniversityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITCAUniversityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC89C43824460FC7006900B9 /* swift-tca */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "swift-tca"; path = ../..; sourceTree = "<group>"; };
 		DC89C43924460FFF006900B9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DCFE195F278DBF0600C14CCF /* TCAUniversityApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TCAUniversityApp.swift; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 			path = ApplicationLayer;
 			sourceTree = "<group>";
 		};
-		CAF88E7124B8E26D00539345 /* tvOSCaseStudies */ = {
+		CAF88E7124B8E26D00539345 /* tvOSTCAUniversity */ = {
 			isa = PBXGroup;
 			children = (
 				CAF88E7E24B8E26E00539345 /* Info.plist */,
@@ -187,18 +187,18 @@
 				CAF88E7424B8E26D00539345 /* RootView.swift */,
 				CAF88E7624B8E26E00539345 /* Assets.xcassets */,
 			);
-			path = tvOSCaseStudies;
+			path = tvOSTCAUniversity;
 			sourceTree = "<group>";
 		};
-		CAF88E8624B8E26E00539345 /* tvOSCaseStudiesTests */ = {
+		CAF88E8624B8E26E00539345 /* tvOSTCAUniversityTests */ = {
 			isa = PBXGroup;
 			children = (
 				CAF88E8724B8E26E00539345 /* FocusTests.swift */,
 			);
-			path = tvOSCaseStudiesTests;
+			path = tvOSTCAUniversityTests;
 			sourceTree = "<group>";
 		};
-		DC4C6EA82450DD380066A05D /* UIKitCaseStudies */ = {
+		DC4C6EA82450DD380066A05D /* UIKitTCAUniversity */ = {
 			isa = PBXGroup;
 			children = (
 				DC4C6EAB2450DD380066A05D /* SceneDelegate.swift */,
@@ -207,7 +207,7 @@
 				DC4C6EB72450DD380066A05D /* Info.plist */,
 				DC4C6EB12450DD380066A05D /* Preview Content */,
 			);
-			path = UIKitCaseStudies;
+			path = UIKitTCAUniversity;
 			sourceTree = "<group>";
 		};
 		DC4C6EB12450DD380066A05D /* Preview Content */ = {
@@ -218,13 +218,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DC4C6EBF2450DD390066A05D /* UIKitCaseStudiesTests */ = {
+		DC4C6EBF2450DD390066A05D /* UIKitTCAUniversityTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC4C6EC02450DD390066A05D /* UIKitCaseStudiesTests.swift */,
+				DC4C6EC02450DD390066A05D /* UIKitTCAUniversityTests.swift */,
 				DC4C6EC22450DD390066A05D /* Info.plist */,
 			);
-			path = UIKitCaseStudiesTests;
+			path = UIKitTCAUniversityTests;
 			sourceTree = "<group>";
 		};
 		DC89C40A24460F95006900B9 = {
@@ -234,23 +234,23 @@
 				DC89C43924460FFF006900B9 /* README.md */,
 				DC89C41424460F95006900B9 /* Products */,
 				DC89C41524460F95006900B9 /* SwiftUI */,
-				DC89C42C24460F96006900B9 /* SwiftUICaseStudiesTests */,
-				CAF88E7124B8E26D00539345 /* tvOSCaseStudies */,
-				CAF88E8624B8E26E00539345 /* tvOSCaseStudiesTests */,
-				DC4C6EA82450DD380066A05D /* UIKitCaseStudies */,
-				DC4C6EBF2450DD390066A05D /* UIKitCaseStudiesTests */,
+				DC89C42C24460F96006900B9 /* SwiftUITCAUniversityTests */,
+				CAF88E7124B8E26D00539345 /* tvOSTCAUniversity */,
+				CAF88E8624B8E26E00539345 /* tvOSTCAUniversityTests */,
+				DC4C6EA82450DD380066A05D /* UIKitTCAUniversity */,
+				DC4C6EBF2450DD390066A05D /* UIKitTCAUniversityTests */,
 			);
 			sourceTree = "<group>";
 		};
 		DC89C41424460F95006900B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC89C41324460F95006900B9 /* SwiftUICaseStudies.app */,
-				DC89C42924460F96006900B9 /* SwiftUICaseStudiesTests.xctest */,
-				DC4C6EA72450DD380066A05D /* UIKitCaseStudies.app */,
-				DC4C6EBC2450DD390066A05D /* UIKitCaseStudiesTests.xctest */,
-				CAF88E7024B8E26D00539345 /* tvOSCaseStudies.app */,
-				CAF88E8324B8E26E00539345 /* tvOSCaseStudiesTests.xctest */,
+				DC89C41324460F95006900B9 /* SwiftUITCAUniversity.app */,
+				DC89C42924460F96006900B9 /* SwiftUITCAUniversityTests.xctest */,
+				DC4C6EA72450DD380066A05D /* UIKitTCAUniversity.app */,
+				DC4C6EBC2450DD390066A05D /* UIKitTCAUniversityTests.xctest */,
+				CAF88E7024B8E26D00539345 /* tvOSTCAUniversity.app */,
+				CAF88E8324B8E26E00539345 /* tvOSTCAUniversityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,19 +265,19 @@
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
-		DC89C42C24460F96006900B9 /* SwiftUICaseStudiesTests */ = {
+		DC89C42C24460F96006900B9 /* SwiftUITCAUniversityTests */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = SwiftUICaseStudiesTests;
+			path = SwiftUITCAUniversityTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CAF88E6F24B8E26D00539345 /* tvOSCaseStudies */ = {
+		CAF88E6F24B8E26D00539345 /* tvOSTCAUniversity */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAF88E8E24B8E26E00539345 /* Build configuration list for PBXNativeTarget "tvOSCaseStudies" */;
+			buildConfigurationList = CAF88E8E24B8E26E00539345 /* Build configuration list for PBXNativeTarget "tvOSTCAUniversity" */;
 			buildPhases = (
 				CAF88E6C24B8E26D00539345 /* Sources */,
 				CAF88E6D24B8E26D00539345 /* Frameworks */,
@@ -287,17 +287,17 @@
 			);
 			dependencies = (
 			);
-			name = tvOSCaseStudies;
+			name = tvOSTCAUniversity;
 			packageProductDependencies = (
 				CAF88E9024B8E3AF00539345 /* TCA */,
 			);
-			productName = tvOSCaseStudies;
-			productReference = CAF88E7024B8E26D00539345 /* tvOSCaseStudies.app */;
+			productName = tvOSTCAUniversity;
+			productReference = CAF88E7024B8E26D00539345 /* tvOSTCAUniversity.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CAF88E8224B8E26E00539345 /* tvOSCaseStudiesTests */ = {
+		CAF88E8224B8E26E00539345 /* tvOSTCAUniversityTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAF88E8F24B8E26E00539345 /* Build configuration list for PBXNativeTarget "tvOSCaseStudiesTests" */;
+			buildConfigurationList = CAF88E8F24B8E26E00539345 /* Build configuration list for PBXNativeTarget "tvOSTCAUniversityTests" */;
 			buildPhases = (
 				CAF88E7F24B8E26E00539345 /* Sources */,
 				CAF88E8024B8E26E00539345 /* Frameworks */,
@@ -308,14 +308,14 @@
 			dependencies = (
 				CAF88E8524B8E26E00539345 /* PBXTargetDependency */,
 			);
-			name = tvOSCaseStudiesTests;
-			productName = tvOSCaseStudiesTests;
-			productReference = CAF88E8324B8E26E00539345 /* tvOSCaseStudiesTests.xctest */;
+			name = tvOSTCAUniversityTests;
+			productName = tvOSTCAUniversityTests;
+			productReference = CAF88E8324B8E26E00539345 /* tvOSTCAUniversityTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DC4C6EA62450DD380066A05D /* UIKitCaseStudies */ = {
+		DC4C6EA62450DD380066A05D /* UIKitTCAUniversity */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC4C6EC32450DD390066A05D /* Build configuration list for PBXNativeTarget "UIKitCaseStudies" */;
+			buildConfigurationList = DC4C6EC32450DD390066A05D /* Build configuration list for PBXNativeTarget "UIKitTCAUniversity" */;
 			buildPhases = (
 				DC4C6EA32450DD380066A05D /* Sources */,
 				DC4C6EA42450DD380066A05D /* Frameworks */,
@@ -326,17 +326,17 @@
 			);
 			dependencies = (
 			);
-			name = UIKitCaseStudies;
+			name = UIKitTCAUniversity;
 			packageProductDependencies = (
 				DC13940F2469E27300EE1157 /* TCA */,
 			);
-			productName = UIKitCaseStudies;
-			productReference = DC4C6EA72450DD380066A05D /* UIKitCaseStudies.app */;
+			productName = UIKitTCAUniversity;
+			productReference = DC4C6EA72450DD380066A05D /* UIKitTCAUniversity.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DC4C6EBB2450DD390066A05D /* UIKitCaseStudiesTests */ = {
+		DC4C6EBB2450DD390066A05D /* UIKitTCAUniversityTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC4C6EC62450DD390066A05D /* Build configuration list for PBXNativeTarget "UIKitCaseStudiesTests" */;
+			buildConfigurationList = DC4C6EC62450DD390066A05D /* Build configuration list for PBXNativeTarget "UIKitTCAUniversityTests" */;
 			buildPhases = (
 				DC4C6EB82450DD390066A05D /* Sources */,
 				DC4C6EB92450DD390066A05D /* Frameworks */,
@@ -348,16 +348,16 @@
 			dependencies = (
 				DC4C6EBE2450DD390066A05D /* PBXTargetDependency */,
 			);
-			name = UIKitCaseStudiesTests;
+			name = UIKitTCAUniversityTests;
 			packageProductDependencies = (
 			);
-			productName = UIKitCaseStudiesTests;
-			productReference = DC4C6EBC2450DD390066A05D /* UIKitCaseStudiesTests.xctest */;
+			productName = UIKitTCAUniversityTests;
+			productReference = DC4C6EBC2450DD390066A05D /* UIKitTCAUniversityTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DC89C41224460F95006900B9 /* SwiftUICaseStudies */ = {
+		DC89C41224460F95006900B9 /* SwiftUITCAUniversity */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC89C43224460F96006900B9 /* Build configuration list for PBXNativeTarget "SwiftUICaseStudies" */;
+			buildConfigurationList = DC89C43224460F96006900B9 /* Build configuration list for PBXNativeTarget "SwiftUITCAUniversity" */;
 			buildPhases = (
 				DC89C40F24460F95006900B9 /* Sources */,
 				DC89C41024460F95006900B9 /* Frameworks */,
@@ -368,17 +368,17 @@
 			);
 			dependencies = (
 			);
-			name = SwiftUICaseStudies;
+			name = SwiftUITCAUniversity;
 			packageProductDependencies = (
 				DC13940D2469E25C00EE1157 /* TCA */,
 			);
-			productName = CaseStudies;
-			productReference = DC89C41324460F95006900B9 /* SwiftUICaseStudies.app */;
+			productName = TCAUniversity;
+			productReference = DC89C41324460F95006900B9 /* SwiftUITCAUniversity.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DC89C42824460F96006900B9 /* SwiftUICaseStudiesTests */ = {
+		DC89C42824460F96006900B9 /* SwiftUITCAUniversityTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC89C43524460F96006900B9 /* Build configuration list for PBXNativeTarget "SwiftUICaseStudiesTests" */;
+			buildConfigurationList = DC89C43524460F96006900B9 /* Build configuration list for PBXNativeTarget "SwiftUITCAUniversityTests" */;
 			buildPhases = (
 				DC89C42524460F96006900B9 /* Sources */,
 				DC89C42624460F96006900B9 /* Frameworks */,
@@ -390,11 +390,11 @@
 			dependencies = (
 				DC89C42B24460F96006900B9 /* PBXTargetDependency */,
 			);
-			name = SwiftUICaseStudiesTests;
+			name = SwiftUITCAUniversityTests;
 			packageProductDependencies = (
 			);
-			productName = CaseStudiesTests;
-			productReference = DC89C42924460F96006900B9 /* SwiftUICaseStudiesTests.xctest */;
+			productName = TCAUniversityTests;
+			productReference = DC89C42924460F96006900B9 /* SwiftUITCAUniversityTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -430,7 +430,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DC89C40E24460F95006900B9 /* Build configuration list for PBXProject "CaseStudies" */;
+			buildConfigurationList = DC89C40E24460F95006900B9 /* Build configuration list for PBXProject "TCAUniversity" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -443,12 +443,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC89C41224460F95006900B9 /* SwiftUICaseStudies */,
-				DC89C42824460F96006900B9 /* SwiftUICaseStudiesTests */,
-				DC4C6EA62450DD380066A05D /* UIKitCaseStudies */,
-				DC4C6EBB2450DD390066A05D /* UIKitCaseStudiesTests */,
-				CAF88E6F24B8E26D00539345 /* tvOSCaseStudies */,
-				CAF88E8224B8E26E00539345 /* tvOSCaseStudiesTests */,
+				DC89C41224460F95006900B9 /* SwiftUITCAUniversity */,
+				DC89C42824460F96006900B9 /* SwiftUITCAUniversityTests */,
+				DC4C6EA62450DD380066A05D /* UIKitTCAUniversity */,
+				DC4C6EBB2450DD390066A05D /* UIKitTCAUniversityTests */,
+				CAF88E6F24B8E26D00539345 /* tvOSTCAUniversity */,
+				CAF88E8224B8E26E00539345 /* tvOSTCAUniversityTests */,
 			);
 		};
 /* End PBXProject section */
@@ -535,7 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4C6EC12450DD390066A05D /* UIKitCaseStudiesTests.swift in Sources */,
+				DC4C6EC12450DD390066A05D /* UIKitTCAUniversityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,17 +559,17 @@
 /* Begin PBXTargetDependency section */
 		CAF88E8524B8E26E00539345 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CAF88E6F24B8E26D00539345 /* tvOSCaseStudies */;
+			target = CAF88E6F24B8E26D00539345 /* tvOSTCAUniversity */;
 			targetProxy = CAF88E8424B8E26E00539345 /* PBXContainerItemProxy */;
 		};
 		DC4C6EBE2450DD390066A05D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC4C6EA62450DD380066A05D /* UIKitCaseStudies */;
+			target = DC4C6EA62450DD380066A05D /* UIKitTCAUniversity */;
 			targetProxy = DC4C6EBD2450DD390066A05D /* PBXContainerItemProxy */;
 		};
 		DC89C42B24460F96006900B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DC89C41224460F95006900B9 /* SwiftUICaseStudies */;
+			target = DC89C41224460F95006900B9 /* SwiftUITCAUniversity */;
 			targetProxy = DC89C42A24460F96006900B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -592,12 +592,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = tvOSCaseStudies/Info.plist;
+				INFOPLIST_FILE = tvOSTCAUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.pointfree.tvOSCaseStudies;
+				PRODUCT_BUNDLE_IDENTIFIER = co.pointfree.tvOSTCAUniversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
@@ -612,12 +612,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = tvOSCaseStudies/Info.plist;
+				INFOPLIST_FILE = tvOSTCAUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.pointfree.tvOSCaseStudies;
+				PRODUCT_BUNDLE_IDENTIFIER = co.pointfree.tvOSTCAUniversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
@@ -632,18 +632,18 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = tvOSCaseStudies/Info.plist;
+				INFOPLIST_FILE = tvOSTCAUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.pointfree.tvOSCaseStudiesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = co.pointfree.tvOSTCAUniversityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOSCaseStudies.app/tvOSCaseStudies";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOSTCAUniversity.app/tvOSTCAUniversity";
 				TVOS_DEPLOYMENT_TARGET = 13.3;
 			};
 			name = Debug;
@@ -654,18 +654,18 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = tvOSCaseStudies/Info.plist;
+				INFOPLIST_FILE = tvOSTCAUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.pointfree.tvOSCaseStudiesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = co.pointfree.tvOSTCAUniversityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOSCaseStudies.app/tvOSCaseStudies";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tvOSTCAUniversity.app/tvOSTCAUniversity";
 				TVOS_DEPLOYMENT_TARGET = 13.3;
 			};
 			name = Release;
@@ -675,9 +675,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"UIKitCaseStudies/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"UIKitTCAUniversity/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = UIKitCaseStudies/Info.plist;
+				INFOPLIST_FILE = UIKitTCAUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,9 +695,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"UIKitCaseStudies/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"UIKitTCAUniversity/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = UIKitCaseStudies/Info.plist;
+				INFOPLIST_FILE = UIKitTCAUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -716,7 +716,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UIKitCaseStudies/Info.plist;
+				INFOPLIST_FILE = UIKitTCAUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -726,7 +726,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKitCaseStudies.app/UIKitCaseStudies";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKitTCAUniversity.app/UIKitTCAUniversity";
 			};
 			name = Debug;
 		};
@@ -736,7 +736,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = UIKitCaseStudies/Info.plist;
+				INFOPLIST_FILE = UIKitTCAUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -746,7 +746,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKitCaseStudies.app/UIKitCaseStudies";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIKitTCAUniversity.app/UIKitTCAUniversity";
 			};
 			name = Release;
 		};
@@ -908,7 +908,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftUICaseStudies/Info.plist;
+				INFOPLIST_FILE = SwiftUITCAUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -918,7 +918,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUICaseStudies.app/SwiftUICaseStudies";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUITCAUniversity.app/SwiftUITCAUniversity";
 			};
 			name = Debug;
 		};
@@ -928,7 +928,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftUICaseStudies/Info.plist;
+				INFOPLIST_FILE = SwiftUITCAUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -938,14 +938,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUICaseStudies.app/SwiftUICaseStudies";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUITCAUniversity.app/SwiftUITCAUniversity";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CAF88E8E24B8E26E00539345 /* Build configuration list for PBXNativeTarget "tvOSCaseStudies" */ = {
+		CAF88E8E24B8E26E00539345 /* Build configuration list for PBXNativeTarget "tvOSTCAUniversity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAF88E8A24B8E26E00539345 /* Debug */,
@@ -954,7 +954,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAF88E8F24B8E26E00539345 /* Build configuration list for PBXNativeTarget "tvOSCaseStudiesTests" */ = {
+		CAF88E8F24B8E26E00539345 /* Build configuration list for PBXNativeTarget "tvOSTCAUniversityTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAF88E8C24B8E26E00539345 /* Debug */,
@@ -963,7 +963,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC4C6EC32450DD390066A05D /* Build configuration list for PBXNativeTarget "UIKitCaseStudies" */ = {
+		DC4C6EC32450DD390066A05D /* Build configuration list for PBXNativeTarget "UIKitTCAUniversity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC4C6EC42450DD390066A05D /* Debug */,
@@ -972,7 +972,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC4C6EC62450DD390066A05D /* Build configuration list for PBXNativeTarget "UIKitCaseStudiesTests" */ = {
+		DC4C6EC62450DD390066A05D /* Build configuration list for PBXNativeTarget "UIKitTCAUniversityTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC4C6EC72450DD390066A05D /* Debug */,
@@ -981,7 +981,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC89C40E24460F95006900B9 /* Build configuration list for PBXProject "CaseStudies" */ = {
+		DC89C40E24460F95006900B9 /* Build configuration list for PBXProject "TCAUniversity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC89C43024460F96006900B9 /* Debug */,
@@ -990,7 +990,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC89C43224460F96006900B9 /* Build configuration list for PBXNativeTarget "SwiftUICaseStudies" */ = {
+		DC89C43224460F96006900B9 /* Build configuration list for PBXNativeTarget "SwiftUITCAUniversity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC89C43324460F96006900B9 /* Debug */,
@@ -999,7 +999,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC89C43524460F96006900B9 /* Build configuration list for PBXNativeTarget "SwiftUICaseStudiesTests" */ = {
+		DC89C43524460F96006900B9 /* Build configuration list for PBXNativeTarget "SwiftUITCAUniversityTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC89C43624460F96006900B9 /* Debug */,
