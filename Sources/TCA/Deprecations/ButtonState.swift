@@ -18,9 +18,9 @@ extension ButtonState {
     /// - Returns: `cancel` button instance
     public static func cancel(
         _ label: String,
-        send action: ButtonStateAction<Action> = .send(nil)
+        send action: Action? = nil
     ) -> Self {
-        Self(role: .cancel, action: action) {
+        Self(role: .cancel, action: .send(action)) {
             .init(label)
         }
     }
@@ -30,9 +30,9 @@ extension ButtonState {
     ///   - action: button action
     /// - Returns: `cancel` button instance
     public static func cancel(
-        send action: ButtonStateAction<Action> = .send(nil)
+        send action: Action? = nil
     ) -> Self {
-        Self(role: .cancel, action: action) {
+        Self(role: .cancel, action: .send(action)) {
             .init("")
         }
     }
@@ -44,9 +44,9 @@ extension ButtonState {
     /// - Returns: `default` button instance
     public static func `default`(
         _ label: String,
-        send action: ButtonStateAction<Action> = .send(nil)
+        send action: Action? = nil
     ) -> Self {
-        Self(action: action) {
+        Self(action: .send(action)) {
             .init(label)
         }
     }
@@ -58,9 +58,9 @@ extension ButtonState {
     /// - Returns: `destructive` button instance
     public static func destructive(
         _ label: String,
-        send action: ButtonStateAction<Action> = .send(nil)
+        send action: Action? = nil
     ) -> Self {
-        Self(role: .destructive, action: action) {
+        Self(role: .destructive, action: .send(action)) {
             .init(label)
         }
     }
