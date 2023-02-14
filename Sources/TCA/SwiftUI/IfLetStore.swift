@@ -48,8 +48,8 @@ public struct IfLetStore<State, Action, Content: View>: View {
   ///   - elseContent: A view that is only visible when the optional state is `nil`.
   public init<IfContent, ElseContent>(
     _ store: Store<State?, Action>,
-    @ViewBuilder then ifContent: @escaping (Store<State, Action>) -> IfContent,
-    @ViewBuilder else elseContent: () -> ElseContent
+    then ifContent: @escaping (Store<State, Action>) -> IfContent,
+    else elseContent: @escaping @autoclosure () -> ElseContent
   ) where Content == _ConditionalContent<IfContent, ElseContent> {
     self.store = store
     let elseContent = elseContent()
