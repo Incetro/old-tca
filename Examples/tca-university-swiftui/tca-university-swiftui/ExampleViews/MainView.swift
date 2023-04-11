@@ -149,6 +149,16 @@ public struct MainView: View {
                         ) {
                             Text("Effect cancellation").standard
                         }
+                        NavigationLink(
+                            destination: EffectDebounceView(
+                                store: store.scope(
+                                    state: \.effectDebounce,
+                                    action: MainAction.effectDebounce
+                                )
+                            )
+                        ) {
+                            Text("Effect debounce").standard
+                        }
                     }
                     Section(header: Text("👨🏻‍💻 Intermediate")) {
                     }

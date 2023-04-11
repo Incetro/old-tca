@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01EB05929E4290100E84E1B /* EffectDebounceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB05429E4290100E84E1B /* EffectDebounceFeature.swift */; };
+		C01EB05A29E4290100E84E1B /* EffectDebounceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB05629E4290100E84E1B /* EffectDebounceState.swift */; };
+		C01EB05B29E4290100E84E1B /* EffectDebounceAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB05829E4290100E84E1B /* EffectDebounceAction.swift */; };
+		C01EB05D29E4294100E84E1B /* EffectDebounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB05C29E4294100E84E1B /* EffectDebounceView.swift */; };
 		CB27033F2978169600943540 /* FlexibleBindingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27031D2978169500943540 /* FlexibleBindingsReducer.swift */; };
 		CB2703402978169600943540 /* FlexibleBindingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27031F2978169500943540 /* FlexibleBindingsState.swift */; };
 		CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2703212978169600943540 /* FlexibleBindingsAction.swift */; };
@@ -97,6 +101,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C01EB05429E4290100E84E1B /* EffectDebounceFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectDebounceFeature.swift; sourceTree = "<group>"; };
+		C01EB05629E4290100E84E1B /* EffectDebounceState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectDebounceState.swift; sourceTree = "<group>"; };
+		C01EB05829E4290100E84E1B /* EffectDebounceAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectDebounceAction.swift; sourceTree = "<group>"; };
+		C01EB05C29E4294100E84E1B /* EffectDebounceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EffectDebounceView.swift; path = "../SharedFiles/PresentationLayer/UserStories/Pre-Intermediate/EffectDebounce/View/EffectDebounceView.swift"; sourceTree = SOURCE_ROOT; };
 		CB27031D2978169500943540 /* FlexibleBindingsReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsReducer.swift; sourceTree = "<group>"; };
 		CB27031F2978169500943540 /* FlexibleBindingsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsState.swift; sourceTree = "<group>"; };
 		CB2703212978169600943540 /* FlexibleBindingsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsAction.swift; sourceTree = "<group>"; };
@@ -199,6 +207,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C01EB05229E4290100E84E1B /* EffectDebounce */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB05E29E4295100E84E1B /* View */,
+				C01EB05329E4290100E84E1B /* Reducer */,
+				C01EB05529E4290100E84E1B /* State */,
+				C01EB05729E4290100E84E1B /* Action */,
+			);
+			path = EffectDebounce;
+			sourceTree = "<group>";
+		};
+		C01EB05329E4290100E84E1B /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB05429E4290100E84E1B /* EffectDebounceFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C01EB05529E4290100E84E1B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB05629E4290100E84E1B /* EffectDebounceState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C01EB05729E4290100E84E1B /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB05829E4290100E84E1B /* EffectDebounceAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C01EB05E29E4295100E84E1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB05C29E4294100E84E1B /* EffectDebounceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CB27031B2978169500943540 /* FlexibleBindings */ = {
 			isa = PBXGroup;
 			children = (
@@ -417,6 +468,7 @@
 		CB27035E2979235600943540 /* Pre-Intermediate */ = {
 			isa = PBXGroup;
 			children = (
+				C01EB05229E4290100E84E1B /* EffectDebounce */,
 				CB27036D297931D900943540 /* EffectCancellation */,
 				CB27035F2979235600943540 /* SimpleEffect */,
 			);
@@ -1168,6 +1220,7 @@
 				DEEDB7622970708F00CB20F3 /* UserServiceImplementation.swift in Sources */,
 				CB2703672979235600943540 /* SimpleEffectState.swift in Sources */,
 				CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */,
+				C01EB05A29E4290100E84E1B /* EffectDebounceState.swift in Sources */,
 				DEBD8D032975652F00E6FE89 /* CounterFeature.swift in Sources */,
 				DEEDB75D2970708F00CB20F3 /* BookService.swift in Sources */,
 				CB2703452978169600943540 /* SimpleBindingsReducer.swift in Sources */,
@@ -1186,6 +1239,7 @@
 				DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */,
 				CB27034E2978169600943540 /* SimpleOptionalAction.swift in Sources */,
 				DEEDB7642970708F00CB20F3 /* NewsService.swift in Sources */,
+				C01EB05D29E4294100E84E1B /* EffectDebounceView.swift in Sources */,
 				DEEDB75E2970708F00CB20F3 /* BookServiceImplementation.swift in Sources */,
 				DEEDB7592970708F00CB20F3 /* PaletteServiceImplementation.swift in Sources */,
 				DEEDB71B297062F700CB20F3 /* Book.swift in Sources */,
@@ -1209,10 +1263,12 @@
 				DEEDB7C72970718800CB20F3 /* Unifont.swift in Sources */,
 				DEEDB71C297062F700CB20F3 /* LoremPicsumImage.swift in Sources */,
 				CB27034C2978169600943540 /* SimpleOptionalReducer.swift in Sources */,
+				C01EB05B29E4290100E84E1B /* EffectDebounceAction.swift in Sources */,
 				CB2703572978177300943540 /* FlexibleBindingsView.swift in Sources */,
 				DEBD8D2E2975697600E6FE89 /* MainView.swift in Sources */,
 				DEEDB75B2970708F00CB20F3 /* ImageService.swift in Sources */,
 				DEEDB7662970708F00CB20F3 /* NumberFactServiceImplementation.swift in Sources */,
+				C01EB05929E4290100E84E1B /* EffectDebounceFeature.swift in Sources */,
 				CB2703422978169600943540 /* FocusStateReducer.swift in Sources */,
 				DEBD8D632975A43F00E6FE89 /* ScramblerState.swift in Sources */,
 				CB2703592978179400943540 /* FocusStateView.swift in Sources */,
@@ -1360,6 +1416,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1390,6 +1447,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -48,6 +48,9 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.effectCancellation, action: /MainAction.effectCancellation) {
             EffectCancellationFeature()
         }
+        Scope(state: \.effectDebounce, action: /MainAction.effectDebounce) {
+            EffectDebounceFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:

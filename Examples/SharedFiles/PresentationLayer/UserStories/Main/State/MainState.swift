@@ -52,4 +52,7 @@ public struct MainState: Equatable {
     
     /// EffectCancellationState instance
     public var effectCancellation = EffectCancellationState()
+    
+    /// EffectCancellationState instance
+    public var effectDebounce = EffectDebounceState()
 }
