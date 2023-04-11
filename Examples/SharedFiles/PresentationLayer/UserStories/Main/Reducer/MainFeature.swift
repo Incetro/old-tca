@@ -51,6 +51,12 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.effectDebounce, action: /MainAction.effectDebounce) {
             EffectDebounceFeature()
         }
+        Scope(state: \.effectThrottle, action: /MainAction.effectThrottle) {
+            EffectThrottleFeature()
+        }
+        Scope(state: \.longLivingEffect, action: /MainAction.longLivingEffect) {
+            LongLivingEffectFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:

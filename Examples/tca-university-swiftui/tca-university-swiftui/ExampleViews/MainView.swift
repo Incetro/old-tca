@@ -157,7 +157,27 @@ public struct MainView: View {
                                 )
                             )
                         ) {
-                            Text("Effect debounce").standard
+                            Text("Debounce").standard
+                        }
+                        NavigationLink(
+                            destination: EffectThrottleView(
+                                store: store.scope(
+                                    state: \.effectThrottle,
+                                    action: MainAction.effectThrottle
+                                )
+                            )
+                        ) {
+                            Text("Throttle").standard
+                        }
+                        NavigationLink(
+                            destination: LongLivingEffectView(
+                                store: store.scope(
+                                    state: \.longLivingEffect,
+                                    action: MainAction.longLivingEffect
+                                )
+                            )
+                        ) {
+                            Text("Long-living effects").standard
                         }
                     }
                     Section(header: Text("👨🏻‍💻 Intermediate")) {

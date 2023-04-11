@@ -117,4 +117,19 @@ public enum MainAction: Equatable {
     /// In short, the `effectDebounce` case means that every action in `EffectDebounce` module
     /// will be sent to current module through it
     case effectDebounce(EffectDebounceAction)
+    
+    /// Child action for `EffectThrottle` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `effectThrottle` case means that every action in `EffectThrottle` module
+    /// will be sent to current module through it
+    case effectThrottle(EffectThrottleAction)
+    
+    
+    /// Child action for `LongLivingEffect` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `longLivingEffect` case means that every action in `LongLivingEffect` module
+    /// will be sent to current module through it
+    case longLivingEffect(LongLivingEffectAction)
 }

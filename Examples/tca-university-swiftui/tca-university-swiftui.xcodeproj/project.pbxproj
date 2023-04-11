@@ -10,7 +10,15 @@
 		C01EB05929E4290100E84E1B /* EffectDebounceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB05429E4290100E84E1B /* EffectDebounceFeature.swift */; };
 		C01EB05A29E4290100E84E1B /* EffectDebounceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB05629E4290100E84E1B /* EffectDebounceState.swift */; };
 		C01EB05B29E4290100E84E1B /* EffectDebounceAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB05829E4290100E84E1B /* EffectDebounceAction.swift */; };
-		C01EB05D29E4294100E84E1B /* EffectDebounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB05C29E4294100E84E1B /* EffectDebounceView.swift */; };
+		C01EB06029E5B37600E84E1B /* EffectDebounceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB05F29E5B37600E84E1B /* EffectDebounceView.swift */; };
+		C01EB06829E5B3FD00E84E1B /* EffectThrottleFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB06329E5B3FD00E84E1B /* EffectThrottleFeature.swift */; };
+		C01EB06929E5B3FD00E84E1B /* EffectThrottleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB06529E5B3FD00E84E1B /* EffectThrottleState.swift */; };
+		C01EB06A29E5B3FD00E84E1B /* EffectThrottleAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB06729E5B3FD00E84E1B /* EffectThrottleAction.swift */; };
+		C01EB06D29E5B42200E84E1B /* EffectThrottleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB06C29E5B42200E84E1B /* EffectThrottleView.swift */; };
+		C01EB07529E5B7CE00E84E1B /* LongLivingEffectFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB07029E5B7CE00E84E1B /* LongLivingEffectFeature.swift */; };
+		C01EB07629E5B7CE00E84E1B /* LongLivingEffectState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB07229E5B7CE00E84E1B /* LongLivingEffectState.swift */; };
+		C01EB07729E5B7CE00E84E1B /* LongLivingEffectAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB07429E5B7CE00E84E1B /* LongLivingEffectAction.swift */; };
+		C01EB07A29E5B7EF00E84E1B /* LongLivingEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB07929E5B7EF00E84E1B /* LongLivingEffectView.swift */; };
 		CB27033F2978169600943540 /* FlexibleBindingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27031D2978169500943540 /* FlexibleBindingsReducer.swift */; };
 		CB2703402978169600943540 /* FlexibleBindingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27031F2978169500943540 /* FlexibleBindingsState.swift */; };
 		CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2703212978169600943540 /* FlexibleBindingsAction.swift */; };
@@ -104,7 +112,15 @@
 		C01EB05429E4290100E84E1B /* EffectDebounceFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectDebounceFeature.swift; sourceTree = "<group>"; };
 		C01EB05629E4290100E84E1B /* EffectDebounceState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectDebounceState.swift; sourceTree = "<group>"; };
 		C01EB05829E4290100E84E1B /* EffectDebounceAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectDebounceAction.swift; sourceTree = "<group>"; };
-		C01EB05C29E4294100E84E1B /* EffectDebounceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EffectDebounceView.swift; path = "../SharedFiles/PresentationLayer/UserStories/Pre-Intermediate/EffectDebounce/View/EffectDebounceView.swift"; sourceTree = SOURCE_ROOT; };
+		C01EB05F29E5B37600E84E1B /* EffectDebounceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EffectDebounceView.swift; path = "tca-university-swiftui/ExampleViews/EffectDebounceView.swift"; sourceTree = SOURCE_ROOT; };
+		C01EB06329E5B3FD00E84E1B /* EffectThrottleFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectThrottleFeature.swift; sourceTree = "<group>"; };
+		C01EB06529E5B3FD00E84E1B /* EffectThrottleState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectThrottleState.swift; sourceTree = "<group>"; };
+		C01EB06729E5B3FD00E84E1B /* EffectThrottleAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EffectThrottleAction.swift; sourceTree = "<group>"; };
+		C01EB06C29E5B42200E84E1B /* EffectThrottleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EffectThrottleView.swift; path = "tca-university-swiftui/ExampleViews/EffectThrottleView.swift"; sourceTree = SOURCE_ROOT; };
+		C01EB07029E5B7CE00E84E1B /* LongLivingEffectFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongLivingEffectFeature.swift; sourceTree = "<group>"; };
+		C01EB07229E5B7CE00E84E1B /* LongLivingEffectState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongLivingEffectState.swift; sourceTree = "<group>"; };
+		C01EB07429E5B7CE00E84E1B /* LongLivingEffectAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongLivingEffectAction.swift; sourceTree = "<group>"; };
+		C01EB07929E5B7EF00E84E1B /* LongLivingEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LongLivingEffectView.swift; path = "tca-university-swiftui/ExampleViews/LongLivingEffectView.swift"; sourceTree = SOURCE_ROOT; };
 		CB27031D2978169500943540 /* FlexibleBindingsReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsReducer.swift; sourceTree = "<group>"; };
 		CB27031F2978169500943540 /* FlexibleBindingsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsState.swift; sourceTree = "<group>"; };
 		CB2703212978169600943540 /* FlexibleBindingsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsAction.swift; sourceTree = "<group>"; };
@@ -245,7 +261,93 @@
 		C01EB05E29E4295100E84E1B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C01EB05C29E4294100E84E1B /* EffectDebounceView.swift */,
+				C01EB05F29E5B37600E84E1B /* EffectDebounceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C01EB06129E5B3FD00E84E1B /* EffectThrottle */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB06B29E5B40800E84E1B /* View */,
+				C01EB06229E5B3FD00E84E1B /* Reducer */,
+				C01EB06429E5B3FD00E84E1B /* State */,
+				C01EB06629E5B3FD00E84E1B /* Action */,
+			);
+			path = EffectThrottle;
+			sourceTree = "<group>";
+		};
+		C01EB06229E5B3FD00E84E1B /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB06329E5B3FD00E84E1B /* EffectThrottleFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C01EB06429E5B3FD00E84E1B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB06529E5B3FD00E84E1B /* EffectThrottleState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C01EB06629E5B3FD00E84E1B /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB06729E5B3FD00E84E1B /* EffectThrottleAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C01EB06B29E5B40800E84E1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB06C29E5B42200E84E1B /* EffectThrottleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C01EB06E29E5B7CE00E84E1B /* LongLivingEffect */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB07829E5B7D200E84E1B /* View */,
+				C01EB06F29E5B7CE00E84E1B /* Reducer */,
+				C01EB07129E5B7CE00E84E1B /* State */,
+				C01EB07329E5B7CE00E84E1B /* Action */,
+			);
+			path = LongLivingEffect;
+			sourceTree = "<group>";
+		};
+		C01EB06F29E5B7CE00E84E1B /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB07029E5B7CE00E84E1B /* LongLivingEffectFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C01EB07129E5B7CE00E84E1B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB07229E5B7CE00E84E1B /* LongLivingEffectState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C01EB07329E5B7CE00E84E1B /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB07429E5B7CE00E84E1B /* LongLivingEffectAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C01EB07829E5B7D200E84E1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB07929E5B7EF00E84E1B /* LongLivingEffectView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -468,6 +570,8 @@
 		CB27035E2979235600943540 /* Pre-Intermediate */ = {
 			isa = PBXGroup;
 			children = (
+				C01EB06E29E5B7CE00E84E1B /* LongLivingEffect */,
+				C01EB06129E5B3FD00E84E1B /* EffectThrottle */,
 				C01EB05229E4290100E84E1B /* EffectDebounce */,
 				CB27036D297931D900943540 /* EffectCancellation */,
 				CB27035F2979235600943540 /* SimpleEffect */,
@@ -1194,6 +1298,8 @@
 				CB270379297932A300943540 /* EffectCancellationView.swift in Sources */,
 				DEBD8D062975652F00E6FE89 /* StepperView.swift in Sources */,
 				DEBD8D5629758A6D00E6FE89 /* FibonacciCounterState.swift in Sources */,
+				C01EB07729E5B7CE00E84E1B /* LongLivingEffectAction.swift in Sources */,
+				C01EB07529E5B7CE00E84E1B /* LongLivingEffectFeature.swift in Sources */,
 				DEBD8D072975652F00E6FE89 /* CounterExampleView.swift in Sources */,
 				DEBD8D48297586F000E6FE89 /* AnalyzableCounterFeature.swift in Sources */,
 				DEEDB7C82970718800CB20F3 /* CGFloat.swift in Sources */,
@@ -1212,11 +1318,14 @@
 				CB2703472978169600943540 /* SimpleBindingsState.swift in Sources */,
 				DEEDB7CB2970718800CB20F3 /* BlurView.swift in Sources */,
 				DEBD8D042975652F00E6FE89 /* CounterState.swift in Sources */,
+				C01EB06D29E5B42200E84E1B /* EffectThrottleView.swift in Sources */,
 				DEEDB75C2970708F00CB20F3 /* ImageServiceImplementation.swift in Sources */,
 				DEEDB7CE2970718800CB20F3 /* UIViewRepresented.swift in Sources */,
 				DEEDB7C92970718800CB20F3 /* Text.swift in Sources */,
+				C01EB06A29E5B3FD00E84E1B /* EffectThrottleAction.swift in Sources */,
 				DEBD8D4A297586F000E6FE89 /* AnalyzableCounterAction.swift in Sources */,
 				DEBD8D5929758A9100E6FE89 /* FibonacciCounterView.swift in Sources */,
+				C01EB06829E5B3FD00E84E1B /* EffectThrottleFeature.swift in Sources */,
 				DEEDB7622970708F00CB20F3 /* UserServiceImplementation.swift in Sources */,
 				CB2703672979235600943540 /* SimpleEffectState.swift in Sources */,
 				CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */,
@@ -1224,6 +1333,7 @@
 				DEBD8D032975652F00E6FE89 /* CounterFeature.swift in Sources */,
 				DEEDB75D2970708F00CB20F3 /* BookService.swift in Sources */,
 				CB2703452978169600943540 /* SimpleBindingsReducer.swift in Sources */,
+				C01EB06929E5B3FD00E84E1B /* EffectThrottleState.swift in Sources */,
 				DEBD8D4C2975870C00E6FE89 /* AnalyzableCounterView.swift in Sources */,
 				DEEDB719297062F700CB20F3 /* Palette.swift in Sources */,
 				DEEDB7612970708F00CB20F3 /* UserService.swift in Sources */,
@@ -1239,7 +1349,7 @@
 				DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */,
 				CB27034E2978169600943540 /* SimpleOptionalAction.swift in Sources */,
 				DEEDB7642970708F00CB20F3 /* NewsService.swift in Sources */,
-				C01EB05D29E4294100E84E1B /* EffectDebounceView.swift in Sources */,
+				C01EB06029E5B37600E84E1B /* EffectDebounceView.swift in Sources */,
 				DEEDB75E2970708F00CB20F3 /* BookServiceImplementation.swift in Sources */,
 				DEEDB7592970708F00CB20F3 /* PaletteServiceImplementation.swift in Sources */,
 				DEEDB71B297062F700CB20F3 /* Book.swift in Sources */,
@@ -1271,12 +1381,14 @@
 				C01EB05929E4290100E84E1B /* EffectDebounceFeature.swift in Sources */,
 				CB2703422978169600943540 /* FocusStateReducer.swift in Sources */,
 				DEBD8D632975A43F00E6FE89 /* ScramblerState.swift in Sources */,
+				C01EB07A29E5B7EF00E84E1B /* LongLivingEffectView.swift in Sources */,
 				CB2703592978179400943540 /* FocusStateView.swift in Sources */,
 				CB270374297931D900943540 /* EffectCancellationReducer.swift in Sources */,
 				DEEDB7392970707800CB20F3 /* String.swift in Sources */,
 				DEEDB7602970708F00CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
 				DEBD8D082975652F00E6FE89 /* SimpleCounterView.swift in Sources */,
 				DEBD8D642975A43F00E6FE89 /* ScramblerAction.swift in Sources */,
+				C01EB07629E5B7CE00E84E1B /* LongLivingEffectState.swift in Sources */,
 				CB2703442978169600943540 /* FocusStateAction.swift in Sources */,
 				DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */,
 			);
@@ -1407,7 +1519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tca-university-swiftui/Preview Content\"";
-				DEVELOPMENT_TEAM = HFD95R9VP2;
+				DEVELOPMENT_TEAM = B7P5N87PQY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tca-university-swiftui/Info.plist";
@@ -1422,7 +1534,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.swiftui-tca-university.tca-university-swiftui";
+				PRODUCT_BUNDLE_IDENTIFIER = tca.university;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -1453,7 +1565,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.swiftui-tca-university.tca-university-swiftui";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

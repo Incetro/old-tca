@@ -55,4 +55,10 @@ public struct MainState: Equatable {
     
     /// EffectCancellationState instance
     public var effectDebounce = EffectDebounceState()
+    
+    /// EffectCancellationState instance
+    public var effectThrottle = EffectThrottleState()
+    
+    /// LongLivingEffectState instance
+    public var longLivingEffect = LongLivingEffectState()
 }
