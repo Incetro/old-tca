@@ -181,6 +181,16 @@ public struct MainView: View {
                         }
                     }
                     Section(header: Text("👨🏻‍💻 Intermediate")) {
+                        NavigationLink(
+                            destination: AnimationsView(
+                                store: store.scope(
+                                    state: \.animations,
+                                    action: MainAction.animations
+                                )
+                            )
+                        ) {
+                            Text("Animations").standard
+                        }
                     }
                     Section(header: Text("👨🏻‍🏫 Upper intermediate")) {
                     }

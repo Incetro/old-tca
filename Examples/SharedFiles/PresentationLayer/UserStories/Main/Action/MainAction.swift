@@ -131,4 +131,11 @@ public enum MainAction: Equatable {
     /// In short, the `longLivingEffect` case means that every action in `LongLivingEffect` module
     /// will be sent to current module through it
     case longLivingEffect(LongLivingEffectAction)
+    
+    /// Child action for `Animations` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `animations` case means that every action in `Animations` module
+    /// will be sent to current module through it
+    case animations(AnimationsAction)
 }

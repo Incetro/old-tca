@@ -61,4 +61,7 @@ public struct MainState: Equatable {
     
     /// LongLivingEffectState instance
     public var longLivingEffect = LongLivingEffectState()
+    
+    /// AnimationsState instance
+    public var animations = AnimationsState()
 }

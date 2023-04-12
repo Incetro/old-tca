@@ -57,6 +57,9 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.longLivingEffect, action: /MainAction.longLivingEffect) {
             LongLivingEffectFeature()
         }
+        Scope(state: \.animations, action: /MainAction.animations) {
+            AnimationsFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:
