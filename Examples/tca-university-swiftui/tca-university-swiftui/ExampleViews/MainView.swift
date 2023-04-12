@@ -129,6 +129,56 @@ public struct MainView: View {
                         }
                     }
                     Section(header: Text("🙋🏻‍♂️ Pre Intermediate")) {
+                        NavigationLink(
+                            destination: SimpleEffectView(
+                                store: store.scope(
+                                    state: \.simpleEffect,
+                                    action: MainAction.simpleEffect
+                                )
+                            )
+                        ) {
+                            Text("Effects").standard
+                        }
+                        NavigationLink(
+                            destination: EffectCancellationView(
+                                store: store.scope(
+                                    state: \.effectCancellation,
+                                    action: MainAction.effectCancellation
+                                )
+                            )
+                        ) {
+                            Text("Effect cancellation").standard
+                        }
+                        NavigationLink(
+                            destination: EffectDebounceView(
+                                store: store.scope(
+                                    state: \.effectDebounce,
+                                    action: MainAction.effectDebounce
+                                )
+                            )
+                        ) {
+                            Text("Debounce").standard
+                        }
+                        NavigationLink(
+                            destination: EffectThrottleView(
+                                store: store.scope(
+                                    state: \.effectThrottle,
+                                    action: MainAction.effectThrottle
+                                )
+                            )
+                        ) {
+                            Text("Throttle").standard
+                        }
+                        NavigationLink(
+                            destination: LongLivingEffectView(
+                                store: store.scope(
+                                    state: \.longLivingEffect,
+                                    action: MainAction.longLivingEffect
+                                )
+                            )
+                        ) {
+                            Text("Long-living effects").standard
+                        }
                     }
                     Section(header: Text("👨🏻‍💻 Intermediate")) {
                     }

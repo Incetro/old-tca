@@ -42,6 +42,21 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.simpleOptional, action: /MainAction.simpleOptional) {
             SimpleOptionalFeature()
         }
+        Scope(state: \.simpleEffect, action: /MainAction.simpleEffect) {
+            SimpleEffectFeature()
+        }
+        Scope(state: \.effectCancellation, action: /MainAction.effectCancellation) {
+            EffectCancellationFeature()
+        }
+        Scope(state: \.effectDebounce, action: /MainAction.effectDebounce) {
+            EffectDebounceFeature()
+        }
+        Scope(state: \.effectThrottle, action: /MainAction.effectThrottle) {
+            EffectThrottleFeature()
+        }
+        Scope(state: \.longLivingEffect, action: /MainAction.longLivingEffect) {
+            LongLivingEffectFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:
