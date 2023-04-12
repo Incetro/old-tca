@@ -13,7 +13,7 @@ import SwiftUI
 
 /// A visual representation of `EffectDebounce` module.
 /// Here we define the view that displays the feature.
-/// It holds onto a `Store<EffectDebounceState, EffectDebounceAction>` so that it can observe
+/// It holds onto a `StoreOf<EffectDebounceFeature>` so that it can observe
 /// all changes to the state and re-render, and we can send all user actions
 /// to the store so that state changes.
 public struct EffectDebounceView: View {
