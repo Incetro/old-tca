@@ -53,7 +53,8 @@ public struct EffectDebounceFeature: ReducerProtocol {
                 state.isFactRequestInFlight = false
                 return .cancel(id: NumberFactRequestID())
             case .counter:
-                return Effect(value: .generateFact).debounce(id: NumberFactDebounceID(), for: 1, scheduler: DispatchQueue.main)
+                return Effect(value: .generateFact)
+                    .debounce(id: NumberFactDebounceID(), for: 1, scheduler: DispatchQueue.main)
             }
         }
     }

@@ -125,7 +125,6 @@ public enum MainAction: Equatable {
     /// will be sent to current module through it
     case effectThrottle(EffectThrottleAction)
     
-    
     /// Child action for `LongLivingEffect` module.
     ///
     /// It's necessary as we use `Scope` builder in current module's reducer.
