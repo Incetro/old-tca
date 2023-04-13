@@ -191,6 +191,16 @@ public struct MainView: View {
                         ) {
                             Text("Animations").standard
                         }
+                        NavigationLink(
+                            destination: TimersView(
+                                store: store.scope(
+                                    state: \.timers,
+                                    action: MainAction.timers
+                                )
+                            )
+                        ) {
+                            Text("Timers").standard
+                        }
                     }
                     Section(header: Text("👨🏻‍🏫 Upper intermediate")) {
                     }

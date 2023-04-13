@@ -37,9 +37,7 @@ public struct SimpleOptionalView: View {
                                     .buttonStyle(BorderlessButtonStyle())
                             }
                         },
-                        else: {
-                            Text(viewStore.counterDescription)
-                        }
+                        else: Text(viewStore.counterDescription)
                     )
                     Button("Toggle") {
                         viewStore.send(.toggleOptional)

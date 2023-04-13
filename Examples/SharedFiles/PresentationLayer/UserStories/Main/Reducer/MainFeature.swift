@@ -60,6 +60,9 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.animations, action: /MainAction.animations) {
             AnimationsFeature()
         }
+        Scope(state: \.timers, action: /MainAction.timers) {
+            TimersFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:

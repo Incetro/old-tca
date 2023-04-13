@@ -138,4 +138,11 @@ public enum MainAction: Equatable {
     /// In short, the `animations` case means that every action in `Animations` module
     /// will be sent to current module through it
     case animations(AnimationsAction)
+    
+    /// Child action for `Timers` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `timers` case means that every action in `Timers` module
+    /// will be sent to current module through it
+    case timers(TimersAction)
 }
