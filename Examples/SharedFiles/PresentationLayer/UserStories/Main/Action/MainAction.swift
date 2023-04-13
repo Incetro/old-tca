@@ -145,4 +145,11 @@ public enum MainAction: Equatable {
     /// In short, the `timers` case means that every action in `Timers` module
     /// will be sent to current module through it
     case timers(TimersAction)
+    
+    /// Child action for `InstantTransition` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `instantTransition` case means that every action in `InstantTransition` module
+    /// will be sent to current module through it
+    case instantTransition(InstantTransitionAction)
 }

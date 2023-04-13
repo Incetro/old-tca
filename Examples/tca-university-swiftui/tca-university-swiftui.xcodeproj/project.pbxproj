@@ -27,6 +27,10 @@
 		C01EB09029E7F22600E84E1B /* TimersState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB08C29E7F22600E84E1B /* TimersState.swift */; };
 		C01EB09129E7F22600E84E1B /* TimersAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB08E29E7F22600E84E1B /* TimersAction.swift */; };
 		C01EB09429E7F24000E84E1B /* TimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB09329E7F24000E84E1B /* TimersView.swift */; };
+		C01EB09C29E8038600E84E1B /* InstantTransitionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB09729E8038500E84E1B /* InstantTransitionFeature.swift */; };
+		C01EB09D29E8038600E84E1B /* InstantTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB09929E8038500E84E1B /* InstantTransitionState.swift */; };
+		C01EB09E29E8038600E84E1B /* InstantTransitionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB09B29E8038500E84E1B /* InstantTransitionAction.swift */; };
+		C01EB0A129E8039900E84E1B /* InstantTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0A029E8039900E84E1B /* InstantTransitionView.swift */; };
 		CB27033F2978169600943540 /* FlexibleBindingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27031D2978169500943540 /* FlexibleBindingsReducer.swift */; };
 		CB2703402978169600943540 /* FlexibleBindingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27031F2978169500943540 /* FlexibleBindingsState.swift */; };
 		CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2703212978169600943540 /* FlexibleBindingsAction.swift */; };
@@ -137,6 +141,10 @@
 		C01EB08C29E7F22600E84E1B /* TimersState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimersState.swift; sourceTree = "<group>"; };
 		C01EB08E29E7F22600E84E1B /* TimersAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimersAction.swift; sourceTree = "<group>"; };
 		C01EB09329E7F24000E84E1B /* TimersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimersView.swift; path = "tca-university-swiftui/ExampleViews/TimersView.swift"; sourceTree = SOURCE_ROOT; };
+		C01EB09729E8038500E84E1B /* InstantTransitionFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstantTransitionFeature.swift; sourceTree = "<group>"; };
+		C01EB09929E8038500E84E1B /* InstantTransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstantTransitionState.swift; sourceTree = "<group>"; };
+		C01EB09B29E8038500E84E1B /* InstantTransitionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstantTransitionAction.swift; sourceTree = "<group>"; };
+		C01EB0A029E8039900E84E1B /* InstantTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstantTransitionView.swift; path = "tca-university-swiftui/ExampleViews/InstantTransitionView.swift"; sourceTree = SOURCE_ROOT; };
 		CB27031D2978169500943540 /* FlexibleBindingsReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsReducer.swift; sourceTree = "<group>"; };
 		CB27031F2978169500943540 /* FlexibleBindingsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsState.swift; sourceTree = "<group>"; };
 		CB2703212978169600943540 /* FlexibleBindingsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsAction.swift; sourceTree = "<group>"; };
@@ -450,6 +458,49 @@
 			isa = PBXGroup;
 			children = (
 				C01EB09329E7F24000E84E1B /* TimersView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C01EB09529E8038500E84E1B /* InstantTransition */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB09F29E8038700E84E1B /* View */,
+				C01EB09629E8038500E84E1B /* Reducer */,
+				C01EB09829E8038500E84E1B /* State */,
+				C01EB09A29E8038500E84E1B /* Action */,
+			);
+			path = InstantTransition;
+			sourceTree = "<group>";
+		};
+		C01EB09629E8038500E84E1B /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB09729E8038500E84E1B /* InstantTransitionFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C01EB09829E8038500E84E1B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB09929E8038500E84E1B /* InstantTransitionState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C01EB09A29E8038500E84E1B /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB09B29E8038500E84E1B /* InstantTransitionAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C01EB09F29E8038700E84E1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB0A029E8039900E84E1B /* InstantTransitionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1289,6 +1340,7 @@
 		DEEDB7BF2970718800CB20F3 /* Intermediate */ = {
 			isa = PBXGroup;
 			children = (
+				C01EB09529E8038500E84E1B /* InstantTransition */,
 				C01EB08829E7F22600E84E1B /* Timers */,
 				C01EB07B29E6B7E200E84E1B /* Animations */,
 			);
@@ -1413,6 +1465,7 @@
 				DEBD8D142975690500E6FE89 /* MainFeature.swift in Sources */,
 				DEEDB7632970708F00CB20F3 /* NewsServiceImplementation.swift in Sources */,
 				DEEDB75F2970708F00CB20F3 /* ScrambleService.swift in Sources */,
+				C01EB09D29E8038600E84E1B /* InstantTransitionState.swift in Sources */,
 				DEEDB7CC2970718800CB20F3 /* ActivityIndicator.swift in Sources */,
 				CB270375297931D900943540 /* EffectCancellationState.swift in Sources */,
 				CB27034B2978169600943540 /* AlertAndSheetAction.swift in Sources */,
@@ -1434,6 +1487,7 @@
 				C01EB06829E5B3FD00E84E1B /* EffectThrottleFeature.swift in Sources */,
 				DEEDB7622970708F00CB20F3 /* UserServiceImplementation.swift in Sources */,
 				CB2703672979235600943540 /* SimpleEffectState.swift in Sources */,
+				C01EB09C29E8038600E84E1B /* InstantTransitionFeature.swift in Sources */,
 				CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */,
 				C01EB05A29E4290100E84E1B /* EffectDebounceState.swift in Sources */,
 				DEBD8D032975652F00E6FE89 /* CounterFeature.swift in Sources */,
@@ -1456,6 +1510,7 @@
 				CB27035D297817D900943540 /* SimpleOptionalView.swift in Sources */,
 				DEBD8D49297586F000E6FE89 /* AnalyzableCounterState.swift in Sources */,
 				DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */,
+				C01EB09E29E8038600E84E1B /* InstantTransitionAction.swift in Sources */,
 				CB27034E2978169600943540 /* SimpleOptionalAction.swift in Sources */,
 				DEEDB7642970708F00CB20F3 /* NewsService.swift in Sources */,
 				C01EB06029E5B37600E84E1B /* EffectDebounceView.swift in Sources */,
@@ -1489,6 +1544,7 @@
 				DEBD8D2E2975697600E6FE89 /* MainView.swift in Sources */,
 				DEEDB75B2970708F00CB20F3 /* ImageService.swift in Sources */,
 				C01EB08729E6B81800E84E1B /* AnimationsView.swift in Sources */,
+				C01EB0A129E8039900E84E1B /* InstantTransitionView.swift in Sources */,
 				DEEDB7662970708F00CB20F3 /* NumberFactServiceImplementation.swift in Sources */,
 				C01EB05929E4290100E84E1B /* EffectDebounceFeature.swift in Sources */,
 				CB2703422978169600943540 /* FocusStateReducer.swift in Sources */,

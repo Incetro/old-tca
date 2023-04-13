@@ -63,6 +63,9 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.timers, action: /MainAction.timers) {
             TimersFeature()
         }
+        Scope(state: \.instantTransition, action: /MainAction.instantTransition) {
+            InstantTransitionFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:

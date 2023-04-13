@@ -66,5 +66,8 @@ public struct MainState: Equatable {
     public var animations = AnimationsState()
     
     /// TimersState instance
-    var timers = TimersState()
+    public var timers = TimersState()
+    
+    /// InstantTransitionState instance
+    public var instantTransition = InstantTransitionState()
 }

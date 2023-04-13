@@ -201,6 +201,16 @@ public struct MainView: View {
                         ) {
                             Text("Timers").standard
                         }
+                        NavigationLink(
+                            destination: InstantTransitionView(
+                                store: store.scope(
+                                    state: \.instantTransition,
+                                    action: MainAction.instantTransition
+                                )
+                            )
+                        ) {
+                            Text("Instant transition").standard
+                        }
                     }
                     Section(header: Text("👨🏻‍🏫 Upper intermediate")) {
                     }
