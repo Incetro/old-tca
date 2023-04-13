@@ -211,6 +211,16 @@ public struct MainView: View {
                         ) {
                             Text("Instant transition").standard
                         }
+                        NavigationLink(
+                            destination: DeferredTransitionView(
+                                store: store.scope(
+                                    state: \.deferredTransition,
+                                    action: MainAction.deferredTransition
+                                )
+                            )
+                        ) {
+                            Text("Deferred transition").standard
+                        }
                     }
                     Section(header: Text("👨🏻‍🏫 Upper intermediate")) {
                     }

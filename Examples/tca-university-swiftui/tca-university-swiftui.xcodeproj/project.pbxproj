@@ -31,6 +31,10 @@
 		C01EB09D29E8038600E84E1B /* InstantTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB09929E8038500E84E1B /* InstantTransitionState.swift */; };
 		C01EB09E29E8038600E84E1B /* InstantTransitionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB09B29E8038500E84E1B /* InstantTransitionAction.swift */; };
 		C01EB0A129E8039900E84E1B /* InstantTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0A029E8039900E84E1B /* InstantTransitionView.swift */; };
+		C01EB0A929E808DC00E84E1B /* DeferredTransitionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0A429E808DC00E84E1B /* DeferredTransitionFeature.swift */; };
+		C01EB0AA29E808DC00E84E1B /* DeferredTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0A629E808DC00E84E1B /* DeferredTransitionState.swift */; };
+		C01EB0AB29E808DC00E84E1B /* DeferredTransitionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0A829E808DC00E84E1B /* DeferredTransitionAction.swift */; };
+		C01EB0AE29E808F900E84E1B /* DeferredTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0AD29E808F900E84E1B /* DeferredTransitionView.swift */; };
 		CB27033F2978169600943540 /* FlexibleBindingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27031D2978169500943540 /* FlexibleBindingsReducer.swift */; };
 		CB2703402978169600943540 /* FlexibleBindingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27031F2978169500943540 /* FlexibleBindingsState.swift */; };
 		CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2703212978169600943540 /* FlexibleBindingsAction.swift */; };
@@ -145,6 +149,10 @@
 		C01EB09929E8038500E84E1B /* InstantTransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstantTransitionState.swift; sourceTree = "<group>"; };
 		C01EB09B29E8038500E84E1B /* InstantTransitionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstantTransitionAction.swift; sourceTree = "<group>"; };
 		C01EB0A029E8039900E84E1B /* InstantTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstantTransitionView.swift; path = "tca-university-swiftui/ExampleViews/InstantTransitionView.swift"; sourceTree = SOURCE_ROOT; };
+		C01EB0A429E808DC00E84E1B /* DeferredTransitionFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeferredTransitionFeature.swift; sourceTree = "<group>"; };
+		C01EB0A629E808DC00E84E1B /* DeferredTransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeferredTransitionState.swift; sourceTree = "<group>"; };
+		C01EB0A829E808DC00E84E1B /* DeferredTransitionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeferredTransitionAction.swift; sourceTree = "<group>"; };
+		C01EB0AD29E808F900E84E1B /* DeferredTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeferredTransitionView.swift; path = "tca-university-swiftui/ExampleViews/DeferredTransitionView.swift"; sourceTree = SOURCE_ROOT; };
 		CB27031D2978169500943540 /* FlexibleBindingsReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsReducer.swift; sourceTree = "<group>"; };
 		CB27031F2978169500943540 /* FlexibleBindingsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsState.swift; sourceTree = "<group>"; };
 		CB2703212978169600943540 /* FlexibleBindingsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsAction.swift; sourceTree = "<group>"; };
@@ -501,6 +509,49 @@
 			isa = PBXGroup;
 			children = (
 				C01EB0A029E8039900E84E1B /* InstantTransitionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C01EB0A229E808DC00E84E1B /* DeferredTransition */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB0AC29E808EB00E84E1B /* View */,
+				C01EB0A329E808DC00E84E1B /* Reducer */,
+				C01EB0A529E808DC00E84E1B /* State */,
+				C01EB0A729E808DC00E84E1B /* Action */,
+			);
+			path = DeferredTransition;
+			sourceTree = "<group>";
+		};
+		C01EB0A329E808DC00E84E1B /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB0A429E808DC00E84E1B /* DeferredTransitionFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C01EB0A529E808DC00E84E1B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB0A629E808DC00E84E1B /* DeferredTransitionState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C01EB0A729E808DC00E84E1B /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB0A829E808DC00E84E1B /* DeferredTransitionAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C01EB0AC29E808EB00E84E1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C01EB0AD29E808F900E84E1B /* DeferredTransitionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1340,6 +1391,7 @@
 		DEEDB7BF2970718800CB20F3 /* Intermediate */ = {
 			isa = PBXGroup;
 			children = (
+				C01EB0A229E808DC00E84E1B /* DeferredTransition */,
 				C01EB09529E8038500E84E1B /* InstantTransition */,
 				C01EB08829E7F22600E84E1B /* Timers */,
 				C01EB07B29E6B7E200E84E1B /* Animations */,
@@ -1467,6 +1519,7 @@
 				DEEDB75F2970708F00CB20F3 /* ScrambleService.swift in Sources */,
 				C01EB09D29E8038600E84E1B /* InstantTransitionState.swift in Sources */,
 				DEEDB7CC2970718800CB20F3 /* ActivityIndicator.swift in Sources */,
+				C01EB0AB29E808DC00E84E1B /* DeferredTransitionAction.swift in Sources */,
 				CB270375297931D900943540 /* EffectCancellationState.swift in Sources */,
 				CB27034B2978169600943540 /* AlertAndSheetAction.swift in Sources */,
 				C01EB08329E6B7E200E84E1B /* AnimationsState.swift in Sources */,
@@ -1486,6 +1539,7 @@
 				DEBD8D5929758A9100E6FE89 /* FibonacciCounterView.swift in Sources */,
 				C01EB06829E5B3FD00E84E1B /* EffectThrottleFeature.swift in Sources */,
 				DEEDB7622970708F00CB20F3 /* UserServiceImplementation.swift in Sources */,
+				C01EB0AA29E808DC00E84E1B /* DeferredTransitionState.swift in Sources */,
 				CB2703672979235600943540 /* SimpleEffectState.swift in Sources */,
 				C01EB09C29E8038600E84E1B /* InstantTransitionFeature.swift in Sources */,
 				CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */,
@@ -1537,6 +1591,7 @@
 				DEBD8D662975A46700E6FE89 /* ScramblerView.swift in Sources */,
 				DEEDB7C72970718800CB20F3 /* Unifont.swift in Sources */,
 				DEEDB71C297062F700CB20F3 /* LoremPicsumImage.swift in Sources */,
+				C01EB0A929E808DC00E84E1B /* DeferredTransitionFeature.swift in Sources */,
 				CB27034C2978169600943540 /* SimpleOptionalReducer.swift in Sources */,
 				C01EB08229E6B7E200E84E1B /* AnimationsFeature.swift in Sources */,
 				C01EB05B29E4290100E84E1B /* EffectDebounceAction.swift in Sources */,
@@ -1558,6 +1613,7 @@
 				DEBD8D642975A43F00E6FE89 /* ScramblerAction.swift in Sources */,
 				C01EB07629E5B7CE00E84E1B /* LongLivingEffectState.swift in Sources */,
 				CB2703442978169600943540 /* FocusStateAction.swift in Sources */,
+				C01EB0AE29E808F900E84E1B /* DeferredTransitionView.swift in Sources */,
 				DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

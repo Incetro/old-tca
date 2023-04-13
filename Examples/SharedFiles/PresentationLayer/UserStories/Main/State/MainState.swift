@@ -70,4 +70,7 @@ public struct MainState: Equatable {
     
     /// InstantTransitionState instance
     public var instantTransition = InstantTransitionState()
+    
+    /// DeferredTransitionState instance
+    public var deferredTransition = DeferredTransitionState()
 }
