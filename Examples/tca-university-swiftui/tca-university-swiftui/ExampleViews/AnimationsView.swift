@@ -33,7 +33,7 @@ public struct AnimationsView: View {
                     .standard
                     .padding(16)
                 ZStack {
-                    let size = UIScreen.main.bounds.height / 3.5
+                    let size = UIScreen.main.bounds.width - 100 - 64
                     ProgressRingView(progress: viewStore.progress)
                         .frame(width: size, height: size)
                     if #available(iOS 15.0, *) {
