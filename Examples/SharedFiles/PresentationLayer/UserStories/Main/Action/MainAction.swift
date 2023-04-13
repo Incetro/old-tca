@@ -159,4 +159,11 @@ public enum MainAction: Equatable {
     /// In short, the `deferredTransition` case means that every action in `DeferredTransition` module
     /// will be sent to current module through it
     case deferredTransition(DeferredTransitionAction)
+    
+    /// Child action for `SheetInstantTransition` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `sheetInstantTransition` case means that every action in `SheetInstantTransition` module
+    /// will be sent to current module through it
+    case sheetInstantTransition(SheetInstantTransitionAction)
 }

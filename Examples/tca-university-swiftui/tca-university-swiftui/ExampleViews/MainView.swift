@@ -221,6 +221,16 @@ public struct MainView: View {
                         ) {
                             Text("Deferred transition").standard
                         }
+                        NavigationLink(
+                            destination: SheetInstantTransitionView(
+                                store: store.scope(
+                                    state: \.sheetInstantTransition,
+                                    action: MainAction.sheetInstantTransition
+                                )
+                            )
+                        ) {
+                            Text("Sheet instance transition").standard
+                        }
                     }
                     Section(header: Text("👨🏻‍🏫 Upper intermediate")) {
                     }

@@ -73,4 +73,8 @@ public struct MainState: Equatable {
     
     /// DeferredTransitionState instance
     public var deferredTransition = DeferredTransitionState()
+    
+    
+    /// SheetInstantTransitionState instance
+    public var sheetInstantTransition = SheetInstantTransitionState()
 }
