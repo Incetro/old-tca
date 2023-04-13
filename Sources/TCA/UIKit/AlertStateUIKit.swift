@@ -1,12 +1,12 @@
 #if canImport(UIKit) && !os(watchOS)
-  import UIKit
+import UIKit
 
-  @available(iOS 13, *)
-  @available(macCatalyst 13, *)
-  @available(macOS, unavailable)
-  @available(tvOS 13, *)
-  @available(watchOS, unavailable)
-  extension UIAlertController {
+@available(iOS 13, *)
+@available(macCatalyst 13, *)
+@available(macOS, unavailable)
+@available(tvOS 13, *)
+@available(watchOS, unavailable)
+extension UIAlertController {
     /// Creates a `UIAlertController` from `AlertState`.
     ///
     /// ```swift
@@ -42,17 +42,17 @@
     ///   - state: The state of an alert that can be shown to the user.
     ///   - send: A function that wraps an alert action in the view store's action type.
     public convenience init<Action>(
-      state: AlertState<Action>,
-      send: @escaping (Action) -> Void
+        state: AlertState<Action>,
+        send: @escaping (Action?) -> Void
     ) {
-      self.init(
-        title: String(state: state.title),
-        message: state.message.map { String(state: $0) },
-        preferredStyle: .alert
-      )
-      for button in state.buttons {
-        self.addAction(.init(button, action: send))
-      }
+        self.init(
+            title: String(state: state.title),
+            message: state.message.map { String(state: $0) },
+            preferredStyle: .alert
+        )
+        for button in state.buttons {
+            self.addAction(.init(button, action: send))
+        }
     }
 
     /// Creates a `UIAlertController` from `ConfirmationDialogState`.
@@ -61,50 +61,51 @@
     ///   - state: The state of dialog that can be shown to the user.
     ///   - send: A function that wraps a dialog action in the view store's action type.
     public convenience init<Action>(
-      state: ConfirmationDialogState<Action>, send: @escaping (Action) -> Void
+        state: ConfirmationDialogState<Action>, send: @escaping (Action?) -> Void
     ) {
-      self.init(
-        title: String(state: state.title),
-        message: state.message.map { String(state: $0) },
-        preferredStyle: .actionSheet
-      )
-      for button in state.buttons {
-        self.addAction(.init(button, action: send))
-      }
+        self.init(
+            title: String(state: state.title),
+            message: state.message.map { String(state: $0) },
+            preferredStyle: .actionSheet
+        )
+        for button in state.buttons {
+            self.addAction(.init(button, action: send))
+        }
     }
-  }
+}
 
-  @available(iOS 13, *)
-  @available(macCatalyst 13, *)
-  @available(macOS, unavailable)
-  @available(tvOS 13, *)
-  @available(watchOS, unavailable)
-  extension UIAlertAction.Style {
-    init<Action>(_ role: ButtonState<Action>.Role) {
-      switch role {
-      case .cancel:
-        self = .cancel
-      case .destructive:
-        self = .destructive
-      }
+@available(iOS 13, *)
+@available(macCatalyst 13, *)
+@available(macOS, unavailable)
+@available(tvOS 13, *)
+@available(watchOS, unavailable)
+extension UIAlertAction.Style {
+    init(_ role: ButtonStateRole) {
+        switch role {
+        case .cancel:
+            self = .cancel
+        case .destructive:
+            self = .destructive
+        }
     }
-  }
+}
 
-  @available(iOS 13, *)
-  @available(macCatalyst 13, *)
-  @available(macOS, unavailable)
-  @available(tvOS 13, *)
-  @available(watchOS, unavailable)
-  extension UIAlertAction {
+@available(iOS 13, *)
+@available(macCatalyst 13, *)
+@available(macOS, unavailable)
+@available(tvOS 13, *)
+@available(watchOS, unavailable)
+extension UIAlertAction {
     convenience init<Action>(
-      _ button: ButtonState<Action>,
-      action: @escaping (Action) -> Void
+        _ button: ButtonState<Action>,
+        action handler: @escaping (Action?) -> Void
     ) {
-      self.init(
-        title: String(state: button.label),
-        style: button.role.map(UIAlertAction.Style.init) ?? .default,
-        handler: button.action.map { _ in { _ in button.withAction(action) } }
-      )
+        self.init(
+            title: String(state: button.label),
+            style: button.role.map(UIAlertAction.Style.init) ?? .default
+        ) { _ in
+            button.withAction(handler)
+        }
     }
-  }
+}
 #endif
