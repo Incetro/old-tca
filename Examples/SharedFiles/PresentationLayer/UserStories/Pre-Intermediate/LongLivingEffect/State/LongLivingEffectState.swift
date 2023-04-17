@@ -18,5 +18,6 @@ public struct LongLivingEffectState: Equatable, Codable {
 
     // MARK: - Properties
 
+    /// Count of taken screenshots
     public var screenshotsCount = 0
 }

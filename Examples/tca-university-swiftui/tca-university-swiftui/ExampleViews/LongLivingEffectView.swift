@@ -44,7 +44,7 @@ public struct LongLivingEffectView: View {
 
 extension LongLivingEffectView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates how to create long-living effects in the VERSE.

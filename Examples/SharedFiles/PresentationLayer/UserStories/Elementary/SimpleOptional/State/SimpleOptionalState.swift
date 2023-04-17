@@ -22,7 +22,9 @@ public struct SimpleOptionalState: Equatable {
     public var counterDescription: String {
         "Counter is " + (counter == nil ? "nil" : "non-nil")
     }
-
+    
+    // MARK: - Children
+    
     /// Optional CounterState instance
     public var counter: CounterState? = CounterState()
 }

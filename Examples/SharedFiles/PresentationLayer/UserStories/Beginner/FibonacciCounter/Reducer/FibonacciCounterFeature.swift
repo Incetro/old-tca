@@ -13,6 +13,8 @@ import Darwin
 
 public struct FibonacciCounterFeature: ReducerProtocol {
     
+    // MARK: - ReducerProtocol
+    
     public var body: some ReducerProtocol<FibonacciCounterState, FibonacciCounterAction> {
         Scope(state: \.counter, action: /FibonacciCounterAction.counter) {
             CounterFeature()

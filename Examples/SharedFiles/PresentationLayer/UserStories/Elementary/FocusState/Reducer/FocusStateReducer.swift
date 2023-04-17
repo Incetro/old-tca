@@ -12,6 +12,8 @@ import TCA
 
 public struct FocusStateFeature: ReducerProtocol {
     
+    // MARK: - ReducerProtocol
+    
     public var body: some ReducerProtocol<FocusStateState, FocusStateAction> {
         BindingReducer()
         Reduce { state, action in

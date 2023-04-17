@@ -181,6 +181,86 @@ public struct MainView: View {
                         }
                     }
                     Section(header: Text("👨🏻‍💻 Intermediate")) {
+                        NavigationLink(
+                            destination: AnimationsView(
+                                store: store.scope(
+                                    state: \.animations,
+                                    action: MainAction.animations
+                                )
+                            )
+                        ) {
+                            Text("Animations").standard
+                        }
+                        NavigationLink(
+                            destination: TimersView(
+                                store: store.scope(
+                                    state: \.timers,
+                                    action: MainAction.timers
+                                )
+                            )
+                        ) {
+                            Text("Timers").standard
+                        }
+                        NavigationLink(
+                            destination: InstantTransitionView(
+                                store: store.scope(
+                                    state: \.instantTransition,
+                                    action: MainAction.instantTransition
+                                )
+                            )
+                        ) {
+                            Text("Instant transition").standard
+                        }
+                        NavigationLink(
+                            destination: DeferredTransitionView(
+                                store: store.scope(
+                                    state: \.deferredTransition,
+                                    action: MainAction.deferredTransition
+                                )
+                            )
+                        ) {
+                            Text("Deferred transition").standard
+                        }
+                        NavigationLink(
+                            destination: SheetInstantTransitionView(
+                                store: store.scope(
+                                    state: \.sheetInstantTransition,
+                                    action: MainAction.sheetInstantTransition
+                                )
+                            )
+                        ) {
+                            Text("Sheet instance transition").standard
+                        }
+                        NavigationLink(
+                            destination: SheetDeferredTransitionView(
+                                store: store.scope(
+                                    state: \.sheetDeferredTransition,
+                                    action: MainAction.sheetDeferredTransition
+                                )
+                            )
+                        ) {
+                            Text("Sheet deferred transition").standard
+                        }
+                        NavigationLink(
+                            destination: BasicListView(
+                                store: store.scope(
+                                    state: \.basicList,
+                                    action: MainAction.basicList
+                                )
+                            )
+                        ) {
+                            Text("Basic list").standard
+                        }
+                        NavigationLink(
+                            destination: InteractiveListView(
+                                store: store.scope(
+                                    state: \.interactiveList,
+                                    action: MainAction.interactiveList
+                                )
+                            )
+                        ) {
+                            Text("Interactive list").standard
+                        }
                     }
                     Section(header: Text("👨🏻‍🏫 Upper intermediate")) {
                     }

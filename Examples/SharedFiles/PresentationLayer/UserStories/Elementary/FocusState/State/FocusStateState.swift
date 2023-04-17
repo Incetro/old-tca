@@ -48,7 +48,7 @@ public struct FocusStateState: Equatable {
     @BindableState public var email = ""
 
     /// Password value
-    @BindableState var password = ""
+    @BindableState public var password = ""
 
     /// True if need to show user password
     public var isPasswordShowed = false
@@ -56,6 +56,8 @@ public struct FocusStateState: Equatable {
     /// AlertState instance
     public var alert: AlertState<FocusStateAction>?
 }
+
+// MARK: - String
 
 private extension String {
 

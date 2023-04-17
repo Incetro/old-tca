@@ -61,4 +61,28 @@ public struct MainState: Equatable {
     
     /// LongLivingEffectState instance
     public var longLivingEffect = LongLivingEffectState()
+    
+    /// AnimationsState instance
+    public var animations = AnimationsState()
+    
+    /// TimersState instance
+    public var timers = TimersState()
+    
+    /// InstantTransitionState instance
+    public var instantTransition = InstantTransitionState()
+    
+    /// DeferredTransitionState instance
+    public var deferredTransition = DeferredTransitionState()
+    
+    /// SheetInstantTransitionState instance
+    public var sheetInstantTransition = SheetInstantTransitionState()
+    
+    /// SheetDeferredTransitionState instance
+    public var sheetDeferredTransition = SheetDeferredTransitionState()
+    
+    /// BasicListState
+    public var basicList = BasicListState()
+    
+    /// InteractiveListState instance
+    public var interactiveList = InteractiveListState()
 }

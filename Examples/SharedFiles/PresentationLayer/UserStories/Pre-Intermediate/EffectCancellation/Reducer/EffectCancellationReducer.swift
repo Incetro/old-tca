@@ -13,7 +13,7 @@ import Foundation
 
 public struct EffectCancellationFeature: ReducerProtocol {
     
-    // MARK: - Identifiars
+    // MARK: - Identifiers
     
     private struct NumberFactRequestID: Hashable {}
     

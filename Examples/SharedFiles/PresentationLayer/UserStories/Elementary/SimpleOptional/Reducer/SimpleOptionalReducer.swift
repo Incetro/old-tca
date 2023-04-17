@@ -12,6 +12,8 @@ import TCA
 
 public struct SimpleOptionalFeature: ReducerProtocol {
     
+    // MARK: - ReducerProtocol
+    
     public var body: some ReducerProtocol<SimpleOptionalState, SimpleOptionalAction> {
         Reduce { state, action in
             switch action {

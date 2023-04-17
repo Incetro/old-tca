@@ -12,6 +12,8 @@ import TCA
 
 public struct FlexibleBindingsFeature: ReducerProtocol {
     
+    // MARK: - ReducerProtocol
+    
     public var body: some ReducerProtocol<FlexibleBindingsState, FlexibleBindingsAction> {
         BindingReducer()
         Scope(state: \.counter, action: /FlexibleBindingsAction.counter) {

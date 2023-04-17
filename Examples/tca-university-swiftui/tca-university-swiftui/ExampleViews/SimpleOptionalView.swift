@@ -37,9 +37,7 @@ public struct SimpleOptionalView: View {
                                     .buttonStyle(BorderlessButtonStyle())
                             }
                         },
-                        else: {
-                            Text(viewStore.counterDescription)
-                        }
+                        else: Text(viewStore.counterDescription)
                     )
                     Button("Toggle") {
                         viewStore.send(.toggleOptional)
@@ -56,7 +54,7 @@ public struct SimpleOptionalView: View {
 
 extension SimpleOptionalView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates work with optional states.

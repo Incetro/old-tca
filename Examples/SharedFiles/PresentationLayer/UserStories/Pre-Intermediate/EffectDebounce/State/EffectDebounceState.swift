@@ -1,9 +1,8 @@
 //
 //  EffectDebounceState.swift
-//  verse-examples
+//  tca-university-swiftui
 //
-//  Created by incetro on 15/10/2021.
-//  Copyright © 2021 Incetro Inc. All rights reserved.
+//  Created by Kazakh on 17.04.2023.
 //
 
 import Foundation
@@ -18,12 +17,14 @@ public struct EffectDebounceState: Equatable {
 
     // MARK: - Properties
 
-    /// CounterState instance
-    public var counter = CounterState()
-
     /// True if a request is being in flight
     public var isFactRequestInFlight = false
 
     /// Last obtained fact
     public var numberFact: String?
+    
+    // MARK: - Children
+    
+    /// CounterState instance
+    public var counter = CounterState()
 }

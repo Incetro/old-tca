@@ -21,6 +21,8 @@ import Foundation
 /// and the action that occurs when we receive a response from the fact API request.
 public enum FibonacciCounterAction: Equatable {
     
+    // MARK: - Cases
+
     /// Child action for `Counter` module.
     ///
     /// It's necessary as we use `Scope` builder in current module's reducer.

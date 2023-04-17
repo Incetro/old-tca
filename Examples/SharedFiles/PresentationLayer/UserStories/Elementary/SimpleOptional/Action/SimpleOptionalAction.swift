@@ -21,13 +21,17 @@ import Foundation
 /// and the action that occurs when we receive a response from the fact API request.
 public enum SimpleOptionalAction: Equatable {
     
+    // MARK: - Cases
+    
+    /// Toggles optional state
+    case toggleOptional
+    
+    // MARK: - Children
+    
     /// Child action for `Counter` module.
     ///
     /// It's necessary as we use `Scope` builder in current module's reducer.
     /// In short, the `counter` case means that every action in `Counter` module
     /// will be sent to current module through it
     case counter(CounterAction)
-    
-    /// Toggles optional state
-    case toggleOptional
 }

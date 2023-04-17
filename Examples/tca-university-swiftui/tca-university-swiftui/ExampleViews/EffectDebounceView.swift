@@ -1,9 +1,8 @@
 //
 //  EffectDebounceView.swift
-//  verse-examples
+//  tca-university-swiftui
 //
-//  Created by incetro on 15/10/2021.
-//  Copyright © 2021 Incetro Inc. All rights reserved.
+//  Created by Kazakh on 17.04.2023.
 //
 
 import TCA
@@ -64,7 +63,7 @@ public struct EffectDebounceView: View {
 
 extension EffectDebounceView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates how to debounce side effects with a feature built with the VERSE.

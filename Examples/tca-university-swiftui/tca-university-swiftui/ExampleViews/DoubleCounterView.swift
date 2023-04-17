@@ -59,7 +59,7 @@ public struct DoubleCounterView: View {
 
 extension DoubleCounterView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates how to take small features and compose them into bigger ones using the \

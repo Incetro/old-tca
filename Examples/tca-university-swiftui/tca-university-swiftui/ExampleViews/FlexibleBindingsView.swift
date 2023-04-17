@@ -87,9 +87,10 @@ public struct FlexibleBindingsView: View {
 
 extension FlexibleBindingsView {
 
-    enum Constants {
+    private enum Constants {
 
         static let interspacing: CGFloat = 16
+        
         static let summary = """
         This screen demonstrates how bindings between views and state can be achieved with the TCA.
         On this particular screen bindings set directly via KeyPath binding without setting the state in corresponding reducer.

@@ -102,7 +102,7 @@ public struct SimpleBindingsView: View {
 
 extension SimpleBindingsView {
 
-    enum Constants {
+    private enum Constants {
 
         static let interspacing: CGFloat = 16
 

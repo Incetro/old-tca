@@ -57,6 +57,30 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.longLivingEffect, action: /MainAction.longLivingEffect) {
             LongLivingEffectFeature()
         }
+        Scope(state: \.animations, action: /MainAction.animations) {
+            AnimationsFeature()
+        }
+        Scope(state: \.timers, action: /MainAction.timers) {
+            TimersFeature()
+        }
+        Scope(state: \.instantTransition, action: /MainAction.instantTransition) {
+            InstantTransitionFeature()
+        }
+        Scope(state: \.deferredTransition, action: /MainAction.deferredTransition) {
+            DeferredTransitionFeature()
+        }
+        Scope(state: \.sheetInstantTransition, action: /MainAction.sheetInstantTransition) {
+            SheetInstantTransitionFeature()
+        }
+        Scope(state: \.sheetDeferredTransition, action: /MainAction.sheetDeferredTransition) {
+            SheetDeferredTransitionFeature()
+        }
+        Scope(state: \.basicList, action: /MainAction.basicList) {
+            BasicListFeature()
+        }
+        Scope(state: \.interactiveList, action: /MainAction.interactiveList) {
+            InteractiveListFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:

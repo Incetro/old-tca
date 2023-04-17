@@ -1,9 +1,8 @@
 //
 //  EffectDebounceFeature.swift
-//  verse-examples
+//  tca-university-swiftui
 //
-//  Created by incetro on 15/10/2021.
-//  Copyright © 2021 Incetro Inc. All rights reserved.
+//  Created by Kazakh on 17.04.2023.
 //
 
 import TCA
@@ -13,7 +12,7 @@ import Foundation
 
 public struct EffectDebounceFeature: ReducerProtocol {
     
-    // MARK: - Identifiars
+    // MARK: - Identifiers
     
     struct NumberFactRequestID: Hashable {}
     struct NumberFactDebounceID: Hashable {}

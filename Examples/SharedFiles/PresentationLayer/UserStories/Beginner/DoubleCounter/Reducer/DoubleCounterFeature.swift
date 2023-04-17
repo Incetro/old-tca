@@ -12,6 +12,8 @@ import TCA
 
 public struct DoubleCounterFeature: ReducerProtocol {
     
+    // MARK: - ReducerProtocol
+    
     public var body: some ReducerProtocol<DoubleCounterState, DoubleCounterAction> {
         Scope(state: \.counter1, action: /DoubleCounterAction.counter1) {
             CounterFeature()

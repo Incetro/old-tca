@@ -12,9 +12,9 @@ import UIKit
 
 public struct LongLivingEffectFeature: ReducerProtocol {
     
-    // MARK: - Identifiars
+    // MARK: - Identifiers
     
-    struct UserDidTakeScreenshotID: Hashable {}
+    private struct UserDidTakeScreenshotID: Hashable {}
     
     // MARK: - Properties
     
@@ -29,7 +29,6 @@ public struct LongLivingEffectFeature: ReducerProtocol {
     // MARK: - ReducerProtocol
     
     public var body: some ReducerProtocol<LongLivingEffectState, LongLivingEffectAction> {
-        
         Reduce { state, action in
             switch action {
             case .onAppear:

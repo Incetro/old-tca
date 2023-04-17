@@ -20,6 +20,8 @@ import Foundation
 /// and the action that occurs when we receive a response from the fact API request.
 public enum MainAction: Equatable {
 
+    // MARK: - Cases
+    
     /// General action that calls when view appears
     case onAppear
     
@@ -97,6 +99,7 @@ public enum MainAction: Equatable {
     /// will be sent to current module through it
     case focusState(FocusStateAction)
     
+    // MARK: - Pre intermediate
     /// Child action for `SimpleEffect` module.
     ///
     /// It's necessary as we use `Scope` builder in current module's reducer.
@@ -131,4 +134,62 @@ public enum MainAction: Equatable {
     /// In short, the `longLivingEffect` case means that every action in `LongLivingEffect` module
     /// will be sent to current module through it
     case longLivingEffect(LongLivingEffectAction)
+    
+    // MARK: - Intermediate
+    
+    /// Child action for `Animations` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `animations` case means that every action in `Animations` module
+    /// will be sent to current module through it
+    case animations(AnimationsAction)
+    
+    /// Child action for `Timers` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `timers` case means that every action in `Timers` module
+    /// will be sent to current module through it
+    case timers(TimersAction)
+    
+    /// Child action for `InstantTransition` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `instantTransition` case means that every action in `InstantTransition` module
+    /// will be sent to current module through it
+    case instantTransition(InstantTransitionAction)
+    
+    /// Child action for `DeferredTransition` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `deferredTransition` case means that every action in `DeferredTransition` module
+    /// will be sent to current module through it
+    case deferredTransition(DeferredTransitionAction)
+    
+    /// Child action for `SheetInstantTransition` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `sheetInstantTransition` case means that every action in `SheetInstantTransition` module
+    /// will be sent to current module through it
+    case sheetInstantTransition(SheetInstantTransitionAction)
+    
+    /// Child action for `SheetDeferredTransition` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `sheetDeferredTransition` case means that every action in `SheetDeferredTransition` module
+    /// will be sent to current module through it
+    case sheetDeferredTransition(SheetDeferredTransitionAction)
+    
+    /// Child action for `BasicList` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `basicList` case means that every action in `BasicList` module
+    /// will be sent to current module through it
+    case basicList(BasicListAction)
+    
+    /// Child action for `InteractiveList` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `interactiveList` case means that every action in `InteractiveList` module
+    /// will be sent to current module through it
+    case interactiveList(InteractiveListAction)
 }

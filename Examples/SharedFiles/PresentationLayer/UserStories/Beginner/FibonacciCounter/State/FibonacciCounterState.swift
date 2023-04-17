@@ -22,6 +22,8 @@ public struct FibonacciCounterState: Equatable {
     /// ✅ otherwise
     public var fibonacchiText = "❌"
 
+    // MARK: - Children
+    
     /// CounterState instance
     public var counter = CounterState()
 }
