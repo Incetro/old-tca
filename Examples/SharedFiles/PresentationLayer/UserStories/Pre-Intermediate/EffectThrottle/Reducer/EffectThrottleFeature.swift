@@ -15,8 +15,8 @@ public struct EffectThrottleFeature: ReducerProtocol {
     
     // MARK: - Identifiars
     
-    struct NumberFactRequestID: Hashable {}
-    struct NumberFactDebounceID: Hashable {}
+    private struct NumberFactRequestID: Hashable {}
+    private struct NumberFactDebounceID: Hashable {}
     
     // MARK: - Properties
     

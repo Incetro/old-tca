@@ -20,7 +20,18 @@ import Foundation
 /// But there are also some slightly non-obvious ones, such as the action of the user dismissing the alert,
 /// and the action that occurs when we receive a response from the fact API request.
 public enum InstantTransitionAction: Equatable {
-    case counter(CounterAction)
+    
+    // MARK: - Cases
+    
+    // This case represents an action to set the isActive property of a navigation link
     case setNavigation(isActive: Bool)
+    
+    // This case represents an action to indicate that loading has completed
     case loadingCompleted
+    
+    // MARK: - Children
+    
+    // This case wraps a CounterAction that performs a counting operation
+    case counter(CounterAction)
 }
+

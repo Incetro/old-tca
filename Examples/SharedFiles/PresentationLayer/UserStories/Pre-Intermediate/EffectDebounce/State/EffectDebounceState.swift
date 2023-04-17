@@ -18,12 +18,14 @@ public struct EffectDebounceState: Equatable {
 
     // MARK: - Properties
 
-    /// CounterState instance
-    public var counter = CounterState()
-
     /// True if a request is being in flight
     public var isFactRequestInFlight = false
 
     /// Last obtained fact
     public var numberFact: String?
+    
+    // MARK: - Children
+    
+    /// CounterState instance
+    public var counter = CounterState()
 }

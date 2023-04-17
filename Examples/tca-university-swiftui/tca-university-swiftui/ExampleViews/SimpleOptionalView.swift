@@ -54,7 +54,7 @@ public struct SimpleOptionalView: View {
 
 extension SimpleOptionalView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates work with optional states.

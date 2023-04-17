@@ -18,9 +18,11 @@ public struct InstantTransitionState: Equatable {
 
     // MARK: - Properties
 
-    /// CounterState instance
-    var counter: CounterState?
-
     /// True if navigation is active at the moment
     var isNavigationActive = false
+    
+    // MARK: - Children
+    
+    /// CounterState instance
+    var counter: CounterState?
 }

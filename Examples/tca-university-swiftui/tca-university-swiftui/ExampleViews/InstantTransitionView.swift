@@ -57,7 +57,7 @@ public struct InstantTransitionView: View {
 
 extension InstantTransitionView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates instant transition that depends on loading optional state.

@@ -20,6 +20,12 @@ import Foundation
 /// But there are also some slightly non-obvious ones, such as the action of the user dismissing the alert,
 /// and the action that occurs when we receive a response from the fact API request.
 public enum BasicListAction: Equatable {
+    
+    // MARK: - Cases
+    
+    // This case represents an action to update the existing items in a list
     case updateItems
+    
+    // This case represents an action to add a random item to a list
     case addRandom
 }

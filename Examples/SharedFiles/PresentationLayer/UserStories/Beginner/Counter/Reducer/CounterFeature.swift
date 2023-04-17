@@ -11,6 +11,8 @@ import TCA
 
 public struct CounterFeature: ReducerProtocol {
     
+    // MARK: - ReducerProtocol
+    
     public func reduce(into state: inout CounterState, action: CounterAction) -> EffectTask<CounterAction> {
         switch action {
         case .incrementButtonTapped:

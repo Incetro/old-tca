@@ -18,9 +18,6 @@ public struct SheetDeferredTransitionState: Equatable {
 
     // MARK: - Properties
 
-    /// CounterState instance
-    var counter: CounterState?
-
     /// True if we are in loading state
     var isLoading = false
 
@@ -28,4 +25,9 @@ public struct SheetDeferredTransitionState: Equatable {
     var isSheetPresented: Bool {
         counter != nil
     }
+    
+    // MARK: - Children
+    
+    /// CounterState instance
+    var counter: CounterState?
 }

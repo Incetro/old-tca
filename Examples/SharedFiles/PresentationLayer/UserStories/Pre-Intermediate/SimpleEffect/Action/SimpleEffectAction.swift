@@ -22,12 +22,7 @@ import TCA
 /// and the action that occurs when we receive a response from the fact API request.
 public enum SimpleEffectAction: Equatable {
     
-    /// Child action for `Counter` module.
-    ///
-    /// It's necessary as we use `Scope` builder in current module's reducer.
-    /// In short, the `counter` case means that every action in `Counter` module
-    /// will be sent to current module through it
-    case counter(CounterAction)
+    // MARK: - Cases
     
     /// An action that calls when user taps on the `fact` button
     /// Generates fact for the current number
@@ -39,4 +34,13 @@ public enum SimpleEffectAction: Equatable {
     
     /// Responce of the `NumberFactService` generation method
     case numberFactResponse(TaskResult<String>)
+    
+    // MARK: - Children
+    
+    /// Child action for `Counter` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `counter` case means that every action in `Counter` module
+    /// will be sent to current module through it
+    case counter(CounterAction)
 }

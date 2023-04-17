@@ -33,7 +33,7 @@ public struct AnimationsView: View {
                     .standard
                     .padding(16)
                 ZStack {
-                    let size = UIScreen.main.bounds.width - 100 - 64
+                    let size = LayoutConstants.ringImageWidth
                     ProgressRingView(progress: viewStore.progress)
                         .frame(width: size, height: size)
                     if #available(iOS 15.0, *) {
@@ -44,7 +44,7 @@ public struct AnimationsView: View {
                 }
                 Spacer()
                 HStack {
-                    let width = (UIScreen.main.bounds.width - 32 * 3) / 2
+                    let width = LayoutConstants.stackWidth
                     let height: CGFloat = 50
                     Spacer()
                     Button("No animation") {
@@ -81,7 +81,7 @@ public struct AnimationsView: View {
 
 extension AnimationsView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates how changes to module state can drive animations. Because the \
@@ -94,5 +94,15 @@ extension AnimationsView {
         Tap on the `Randomize` button to see the animation that changes `ProgressRingView` progress
 
         """
+    }
+}
+
+// MARK: - LayoutConstants
+
+extension AnimationsView {
+    
+    private enum LayoutConstants {
+        static let ringImageWidth = UIScreen.main.bounds.width - 100 - 64
+        static let stackWidth = (UIScreen.main.bounds.width - 32 * 3) / 2
     }
 }

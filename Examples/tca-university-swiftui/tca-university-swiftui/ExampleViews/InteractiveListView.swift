@@ -53,7 +53,7 @@ public struct InteractiveListView: View {
 
 extension InteractiveListView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates interactive work with lists.

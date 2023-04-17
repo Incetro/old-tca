@@ -46,7 +46,7 @@ private let images = [
 ]
 
 private func randomizeItem(index: Int) -> BasicListState.Item {
-    .init(
+    BasicListState.Item(
         id: UUID(),
         title: .generatedName,
         image: images[index % images.count],

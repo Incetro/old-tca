@@ -12,6 +12,8 @@ import TCA
 
 public struct SimpleBindingsFeature: ReducerProtocol {
     
+    // MARK: - ReducerProtocol
+    
     public var body: some ReducerProtocol<SimpleBindingsState, SimpleBindingsAction> {
         Scope(state: \.counter, action: /SimpleBindingsAction.counter) {
             CounterFeature()

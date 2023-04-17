@@ -12,6 +12,8 @@ import TCA
 
 public struct AlertAndSheetFeature: ReducerProtocol {
     
+    // MARK: - ReducerProtocol
+    
     public func reduce(into state: inout AlertAndSheetState, action: AlertAndSheetAction) -> EffectTask<AlertAndSheetAction> {
         switch action {
         case .actionSheetButtonTapped:

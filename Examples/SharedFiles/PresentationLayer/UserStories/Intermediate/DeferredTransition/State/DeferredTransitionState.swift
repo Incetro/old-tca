@@ -18,9 +18,6 @@ public struct DeferredTransitionState: Equatable {
 
     // MARK: - Properties
 
-    /// CounterState instance
-    var counter: CounterState?
-
     /// True if we are in loading state
     var isLoading = false
 
@@ -28,4 +25,9 @@ public struct DeferredTransitionState: Equatable {
     var isNavigationActive: Bool {
         counter != nil
     }
+    
+    // MARK: - Children
+    
+    /// CounterState instance
+    var counter: CounterState?
 }

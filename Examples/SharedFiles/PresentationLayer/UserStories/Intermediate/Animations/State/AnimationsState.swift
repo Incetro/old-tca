@@ -19,5 +19,5 @@ public struct AnimationsState: Equatable {
     // MARK: - Properties
 
     /// Current animation progress
-    var progress: Double = 0.13
+    public var progress: Double = 0.13
 }

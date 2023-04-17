@@ -22,6 +22,8 @@ import TCA
 /// and the action that occurs when we receive a response from the fact API request.
 public enum FlexibleBindingsAction: BindableAction, Equatable {
     
+    // MARK: - Cases
+    
     /// Binding interlayer action
     ///
     /// Embeds a binding action in this action type.
@@ -33,13 +35,15 @@ public enum FlexibleBindingsAction: BindableAction, Equatable {
     /// See the documentation for `BindableState` for more details.
     case binding(BindingAction<FlexibleBindingsState>)
     
+    /// Resets controls state
+    case resetControls
+    
+    // MARK: - Children
+    
     /// Child action for `Counter` module.
     ///
     /// It's necessary as we use `Scope` builder in current module's reducer.
     /// In short, the `counter` case means that every action in `Counter` module
     /// will be sent to current module through it
     case counter(CounterAction)
-    
-    /// Resets controls state
-    case resetControls
 }

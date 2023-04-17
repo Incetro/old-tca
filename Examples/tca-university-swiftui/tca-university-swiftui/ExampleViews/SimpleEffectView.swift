@@ -72,7 +72,7 @@ public struct SimpleEffectView: View {
 
 extension SimpleEffectView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates how to use side effects with a feature built with the TCA.

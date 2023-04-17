@@ -13,7 +13,24 @@ import Foundation
 
 public struct ScramblerFeature: ReducerProtocol {
     
-    func scramble(_ length: Int) -> String {
+    // MARK: - ReducerProtocol
+    
+    public func reduce(into state: inout ScramblerState, action: ScramblerAction) -> EffectTask<ScramblerAction> {
+        switch action {
+        case .plusButtonTapped:
+            state.currentScrambleLength += 1
+        case .minusButtonTapped:
+            state.currentScrambleLength -= 1
+        default:
+            break
+        }
+        state.scramble = scramble(state.currentScrambleLength)
+        return .none
+    }
+    
+    // MARK: - Private
+    
+    private func scramble(_ length: Int) -> String {
         let notations = ["F", "B", "R", "U", "D", "L"].map {
             [$0, $0 + "'", $0 + "2"]
         }
@@ -35,18 +52,5 @@ public struct ScramblerFeature: ReducerProtocol {
             }
         }
         return result
-    }
-    
-    public func reduce(into state: inout ScramblerState, action: ScramblerAction) -> EffectTask<ScramblerAction> {
-        switch action {
-        case .plusButtonTapped:
-            state.currentScrambleLength += 1
-        case .minusButtonTapped:
-            state.currentScrambleLength -= 1
-        default:
-            break
-        }
-        state.scramble = scramble(state.currentScrambleLength)
-        return .none
     }
 }

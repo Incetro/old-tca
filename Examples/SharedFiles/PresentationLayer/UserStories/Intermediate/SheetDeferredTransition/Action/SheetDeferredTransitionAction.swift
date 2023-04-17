@@ -20,7 +20,20 @@ import Foundation
 /// But there are also some slightly non-obvious ones, such as the action of the user dismissing the alert,
 /// and the action that occurs when we receive a response from the fact API request.
 public enum SheetDeferredTransitionAction: Equatable {
-    case counter(CounterAction)
+    
+    // MARK: - Cases
+    
+    /// An action that sets whether the sheet is currently presented.
+    /// - Parameters:
+    ///   - isPresented: A boolean value indicating whether the sheet is presented or not.
     case setSheet(isPresented: Bool)
+    
+    /// An action that signals that loading has completed for the sheet.
     case loadingCompleted
+    
+    // MARK: - Children
+    
+    /// An action that performs a counter action on the sheet.
+    case counter(CounterAction)
 }
+

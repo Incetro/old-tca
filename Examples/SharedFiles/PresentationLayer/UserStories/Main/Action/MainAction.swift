@@ -20,6 +20,8 @@ import Foundation
 /// and the action that occurs when we receive a response from the fact API request.
 public enum MainAction: Equatable {
 
+    // MARK: - Cases
+    
     /// General action that calls when view appears
     case onAppear
     
@@ -97,6 +99,7 @@ public enum MainAction: Equatable {
     /// will be sent to current module through it
     case focusState(FocusStateAction)
     
+    // MARK: - Pre intermediate
     /// Child action for `SimpleEffect` module.
     ///
     /// It's necessary as we use `Scope` builder in current module's reducer.
@@ -131,6 +134,8 @@ public enum MainAction: Equatable {
     /// In short, the `longLivingEffect` case means that every action in `LongLivingEffect` module
     /// will be sent to current module through it
     case longLivingEffect(LongLivingEffectAction)
+    
+    // MARK: - Intermediate
     
     /// Child action for `Animations` module.
     ///

@@ -84,7 +84,7 @@ public struct EffectCancellationView: View {
 
 extension EffectCancellationView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates how to cancel side effects with a feature built with the TCA.

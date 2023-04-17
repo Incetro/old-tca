@@ -17,7 +17,7 @@ public struct FocusStateView: View {
     // MARK: - Properties
 
     /// Focus state for text editors
-    @FocusState var focusedField: FocusStateState.Field?
+    @FocusState public var focusedField: FocusStateState.Field?
 
     /// The store powering the `FocusState` feature
     public let store: StoreOf<FocusStateFeature>
@@ -47,13 +47,13 @@ public struct FocusStateView: View {
                 ) {
                     TextField("Name", text: viewStore.binding(\.$name))
                         .focused($focusedField, equals: .name)
-                        .frame(height: 36)
+                        .frame(height: LayoutConstants.textFieldHeight)
                     TextField("Surname", text: viewStore.binding(\.$surname))
                         .focused($focusedField, equals: .surname)
-                        .frame(height: 36)
+                        .frame(height: LayoutConstants.textFieldHeight)
                     TextField("E-mail", text: viewStore.binding(\.$email))
                         .focused($focusedField, equals: .email)
-                        .frame(height: 36)
+                        .frame(height: LayoutConstants.textFieldHeight)
                     HStack {
                         if viewStore.isPasswordShowed {
                             TextField("Password", text: viewStore.binding(\.$password))
@@ -74,7 +74,7 @@ public struct FocusStateView: View {
                             .buttonStyle(PlainButtonStyle())
                         }
                     }
-                    .frame(height: 36)
+                    .frame(height: LayoutConstants.textFieldHeight)
                 }
                 .textCase(nil)
             }
@@ -110,8 +110,12 @@ public struct FocusStateView: View {
 
 @available(iOS 15.0, *)
 extension FocusStateView {
+    
+    private enum LayoutConstants {
+        static let textFieldHeight = CGFloat(36)
+    }
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This example demonstrates how to work with `@FocusState` logic in the TCA.

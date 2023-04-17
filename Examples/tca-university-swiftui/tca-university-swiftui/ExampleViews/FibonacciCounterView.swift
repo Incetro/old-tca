@@ -54,7 +54,7 @@ public struct FibonacciCounterView: View {
 
 extension FibonacciCounterView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates how to take small features and compose them into bigger ones using the `scope` operator on stores and reducers.

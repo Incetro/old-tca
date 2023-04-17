@@ -37,5 +37,5 @@ public struct BasicListState: Equatable {
 
     // MARK: - Properties
 
-    var items: [Item] = []
+    public var items: [Item] = []
 }

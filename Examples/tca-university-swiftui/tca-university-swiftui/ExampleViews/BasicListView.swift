@@ -76,7 +76,7 @@ public struct BasicListView: View {
 
 extension BasicListView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates work with lists.

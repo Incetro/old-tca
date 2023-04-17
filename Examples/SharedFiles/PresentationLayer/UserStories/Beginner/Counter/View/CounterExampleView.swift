@@ -37,7 +37,7 @@ public struct CounterExampleView: View {
 
 extension CounterExampleView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen shows the simplest example of the TCA architecture based on a regular counter.

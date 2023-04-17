@@ -18,9 +18,11 @@ public struct SheetInstantTransitionState: Equatable {
 
     // MARK: - Properties
 
-    /// CounterState instance
-    var counter: CounterState?
-
     /// True if counter is being loaded
     var isSheetPresented = false
+    
+    // MARK: - Children
+    
+    /// CounterState instance
+    var counter: CounterState?
 }

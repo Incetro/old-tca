@@ -18,5 +18,5 @@ public struct InteractiveListState: Equatable {
 
     // MARK: - Properties
 
-    var items: IdentifiedArrayOf<InteractiveListItemState> = []
+    public var items: IdentifiedArrayOf<InteractiveListItemState> = []
 }

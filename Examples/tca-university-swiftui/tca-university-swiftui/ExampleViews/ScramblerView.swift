@@ -40,7 +40,7 @@ struct ScramblerView: View {
                             Image(systemName: "minus")
                                 .foregroundColor(.white)
                         }
-                        .frame(width: 60, height: 60, alignment: .center)
+                        .frame(width: LayoutConstants.buttonFrame, height: LayoutConstants.buttonFrame, alignment: .center)
                         .background(Color.blue)
                         .clipShape(Circle())
                         .font(Font.system(size: 27))
@@ -56,7 +56,7 @@ struct ScramblerView: View {
                             Image(systemName: "plus")
                                 .foregroundColor(.white)
                         }
-                        .frame(width: 60, height: 60, alignment: .center)
+                        .frame(width: LayoutConstants.buttonFrame, height: LayoutConstants.buttonFrame, alignment: .center)
                         .background(Color.blue)
                         .clipShape(Circle())
                         .font(Font.system(size: 27))
@@ -67,5 +67,14 @@ struct ScramblerView: View {
                 viewStore.send(.generateButtonTapped)
             }
         }
+    }
+}
+
+// MARK: - LayoutConstants
+
+extension ScramblerView {
+    
+    private enum LayoutConstants {
+        static let buttonFrame = CGFloat(60)
     }
 }

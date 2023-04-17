@@ -64,7 +64,7 @@ public struct EffectThrottleView: View {
 
 extension EffectThrottleView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates how to throttle side effects with a feature built with the VERSE.

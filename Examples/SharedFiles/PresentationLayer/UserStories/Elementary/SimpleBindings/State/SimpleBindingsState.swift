@@ -31,7 +31,7 @@ public struct SimpleBindingsState: Equatable {
         
         // MARK: - Properties
 
-        var color: Color {
+        public var color: Color {
             switch self {
             case .red:
                 return .red

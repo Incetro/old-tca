@@ -80,7 +80,7 @@ private let images = [
 ]
 
 private func randomizeItem(index: Int) -> InteractiveListItemState {
-    .init(
+    InteractiveListItemState(
         id: UUID(),
         title: .generatedName,
         image: images.randomElement().unsafelyUnwrapped,

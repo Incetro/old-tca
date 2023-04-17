@@ -21,6 +21,8 @@ import Foundation
 /// and the action that occurs when we receive a response from the fact API request.
 public enum AlertAndSheetAction: Equatable {
 
+    // MARK: - Cases
+    
     /// An action that calls when user taps on the button that activates sheet
     case actionSheetButtonTapped
     

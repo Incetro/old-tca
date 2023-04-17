@@ -73,7 +73,7 @@ public struct TimersView: View {
 
 extension TimersView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This example demonstrates how to work with timers in the VERSE.

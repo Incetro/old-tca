@@ -59,7 +59,7 @@ public struct SheetInstantTransitionView: View {
 
 extension SheetInstantTransitionView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates instant transition that depends on loading optional data into state.

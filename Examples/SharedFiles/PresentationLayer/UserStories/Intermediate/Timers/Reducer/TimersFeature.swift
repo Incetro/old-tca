@@ -15,7 +15,7 @@ public struct TimersFeature: ReducerProtocol {
     
     // MARK: - Identifiars
     
-    struct TimerID: Hashable {}
+    private struct TimerID: Hashable {}
     
     // MARK: - ReducerProtocol
     

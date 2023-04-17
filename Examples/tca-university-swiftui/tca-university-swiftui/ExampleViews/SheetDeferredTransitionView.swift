@@ -66,7 +66,7 @@ public struct SheetDeferredTransitionView: View {
 
 extension SheetDeferredTransitionView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates deferred transition that depends on loading optional data into state.

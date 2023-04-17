@@ -19,6 +19,12 @@ import Foundation
 /// But there are also some slightly non-obvious ones, such as the action of the user dismissing the alert,
 /// and the action that occurs when we receive a response from the fact API request.
 public enum CounterAction: Equatable {
+    
+    // MARK: - Cases
+    
+    /// Decrements given value
     case decrementButtonTapped
+    
+    /// Increments given value
     case incrementButtonTapped
 }

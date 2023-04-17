@@ -23,7 +23,12 @@ public enum LongLivingEffectAction: Equatable {
 
     // MARK: - Cases
 
+    /// Represents an action that triggers when a view or screen appears on the user's device screen
     case onAppear
+    
+    /// Represents an action that triggers when a view or screen disappears from the user's device screen
     case onDisappear
+    
+    /// Represents an action that triggers when the user takes a screenshot of the app's content
     case userDidTakeScreenshot
 }

@@ -52,7 +52,7 @@ public struct AlertAndSheetView: View {
 
 extension AlertAndSheetView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This demonstrates how to work with alerts and action sheets in the TCA.

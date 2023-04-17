@@ -64,7 +64,7 @@ public struct EffectDebounceView: View {
 
 extension EffectDebounceView {
 
-    enum Constants {
+    private enum Constants {
 
         static let summary = """
         This screen demonstrates how to debounce side effects with a feature built with the VERSE.
