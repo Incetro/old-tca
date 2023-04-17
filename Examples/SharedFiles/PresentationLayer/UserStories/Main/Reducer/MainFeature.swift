@@ -72,6 +72,16 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.sheetInstantTransition, action: /MainAction.sheetInstantTransition) {
             SheetInstantTransitionFeature()
         }
+        
+        Scope(state: \.sheetDeferredTransition, action: /MainAction.sheetDeferredTransition) {
+            SheetDeferredTransitionFeature()
+        }
+        Scope(state: \.basicList, action: /MainAction.basicList) {
+            BasicListFeature()
+        }
+        Scope(state: \.interactiveList, action: /MainAction.interactiveList) {
+            InteractiveListFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:

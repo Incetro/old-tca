@@ -231,6 +231,36 @@ public struct MainView: View {
                         ) {
                             Text("Sheet instance transition").standard
                         }
+                        NavigationLink(
+                            destination: SheetDeferredTransitionView(
+                                store: store.scope(
+                                    state: \.sheetDeferredTransition,
+                                    action: MainAction.sheetDeferredTransition
+                                )
+                            )
+                        ) {
+                            Text("Sheet deferred transition").standard
+                        }
+                        NavigationLink(
+                            destination: BasicListView(
+                                store: store.scope(
+                                    state: \.basicList,
+                                    action: MainAction.basicList
+                                )
+                            )
+                        ) {
+                            Text("Basic list").standard
+                        }
+                        NavigationLink(
+                            destination: InteractiveListView(
+                                store: store.scope(
+                                    state: \.interactiveList,
+                                    action: MainAction.interactiveList
+                                )
+                            )
+                        ) {
+                            Text("Interactive list").standard
+                        }
                     }
                     Section(header: Text("👨🏻‍🏫 Upper intermediate")) {
                     }

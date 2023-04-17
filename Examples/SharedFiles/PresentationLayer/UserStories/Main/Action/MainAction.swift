@@ -166,4 +166,25 @@ public enum MainAction: Equatable {
     /// In short, the `sheetInstantTransition` case means that every action in `SheetInstantTransition` module
     /// will be sent to current module through it
     case sheetInstantTransition(SheetInstantTransitionAction)
+    
+    /// Child action for `SheetDeferredTransition` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `sheetDeferredTransition` case means that every action in `SheetDeferredTransition` module
+    /// will be sent to current module through it
+    case sheetDeferredTransition(SheetDeferredTransitionAction)
+    
+    /// Child action for `BasicList` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `basicList` case means that every action in `BasicList` module
+    /// will be sent to current module through it
+    case basicList(BasicListAction)
+    
+    /// Child action for `InteractiveList` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `interactiveList` case means that every action in `InteractiveList` module
+    /// will be sent to current module through it
+    case interactiveList(InteractiveListAction)
 }

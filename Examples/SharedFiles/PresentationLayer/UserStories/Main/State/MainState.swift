@@ -74,7 +74,15 @@ public struct MainState: Equatable {
     /// DeferredTransitionState instance
     public var deferredTransition = DeferredTransitionState()
     
-    
     /// SheetInstantTransitionState instance
     public var sheetInstantTransition = SheetInstantTransitionState()
+    
+    /// SheetDeferredTransitionState instance
+    public var sheetDeferredTransition = SheetDeferredTransitionState()
+    
+    /// BasicListState
+    public var basicList = BasicListState()
+    
+    /// InteractiveListState instance
+    public var interactiveList = InteractiveListState()
 }

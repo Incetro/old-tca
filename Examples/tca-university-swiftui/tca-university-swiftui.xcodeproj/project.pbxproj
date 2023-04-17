@@ -39,6 +39,22 @@
 		C01EB0B729E80C2400E84E1B /* SheetInstantTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0B329E80C2400E84E1B /* SheetInstantTransitionState.swift */; };
 		C01EB0B829E80C2400E84E1B /* SheetInstantTransitionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0B529E80C2400E84E1B /* SheetInstantTransitionAction.swift */; };
 		C01EB0BB29E80C3900E84E1B /* SheetInstantTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0BA29E80C3900E84E1B /* SheetInstantTransitionView.swift */; };
+		C0FFB78429ED645B00870757 /* BasicListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB77F29ED645B00870757 /* BasicListFeature.swift */; };
+		C0FFB78529ED645B00870757 /* BasicListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78129ED645B00870757 /* BasicListState.swift */; };
+		C0FFB78629ED645B00870757 /* BasicListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78329ED645B00870757 /* BasicListAction.swift */; };
+		C0FFB78E29ED646500870757 /* SheetDeferredTransitionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78929ED646500870757 /* SheetDeferredTransitionFeature.swift */; };
+		C0FFB78F29ED646500870757 /* SheetDeferredTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78B29ED646500870757 /* SheetDeferredTransitionState.swift */; };
+		C0FFB79029ED646500870757 /* SheetDeferredTransitionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78D29ED646500870757 /* SheetDeferredTransitionAction.swift */; };
+		C0FFB7A029ED647D00870757 /* InteractiveListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB79329ED647D00870757 /* InteractiveListFeature.swift */; };
+		C0FFB7A129ED647D00870757 /* InteractiveListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB79529ED647D00870757 /* InteractiveListState.swift */; };
+		C0FFB7A229ED647D00870757 /* InteractiveListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB79729ED647D00870757 /* InteractiveListAction.swift */; };
+		C0FFB7A329ED647D00870757 /* InteractiveListItemFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB79B29ED647D00870757 /* InteractiveListItemFeature.swift */; };
+		C0FFB7A429ED647D00870757 /* InteractiveListItemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB79D29ED647D00870757 /* InteractiveListItemState.swift */; };
+		C0FFB7A529ED647D00870757 /* InteractiveListItemAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB79F29ED647D00870757 /* InteractiveListItemAction.swift */; };
+		C0FFB7A829ED64B300870757 /* InteractiveListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB7A729ED64B300870757 /* InteractiveListItemView.swift */; };
+		C0FFB7AB29ED64D700870757 /* InteractiveListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB7AA29ED64D700870757 /* InteractiveListView.swift */; };
+		C0FFB7AE29ED64F300870757 /* SheetDeferredTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB7AD29ED64F300870757 /* SheetDeferredTransitionView.swift */; };
+		C0FFB7B129ED650600870757 /* BasicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB7B029ED650600870757 /* BasicListView.swift */; };
 		CB27033F2978169600943540 /* FlexibleBindingsReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27031D2978169500943540 /* FlexibleBindingsReducer.swift */; };
 		CB2703402978169600943540 /* FlexibleBindingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB27031F2978169500943540 /* FlexibleBindingsState.swift */; };
 		CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2703212978169600943540 /* FlexibleBindingsAction.swift */; };
@@ -161,6 +177,22 @@
 		C01EB0B329E80C2400E84E1B /* SheetInstantTransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetInstantTransitionState.swift; sourceTree = "<group>"; };
 		C01EB0B529E80C2400E84E1B /* SheetInstantTransitionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetInstantTransitionAction.swift; sourceTree = "<group>"; };
 		C01EB0BA29E80C3900E84E1B /* SheetInstantTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SheetInstantTransitionView.swift; path = "tca-university-swiftui/ExampleViews/SheetInstantTransitionView.swift"; sourceTree = SOURCE_ROOT; };
+		C0FFB77F29ED645B00870757 /* BasicListFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListFeature.swift; sourceTree = "<group>"; };
+		C0FFB78129ED645B00870757 /* BasicListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListState.swift; sourceTree = "<group>"; };
+		C0FFB78329ED645B00870757 /* BasicListAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListAction.swift; sourceTree = "<group>"; };
+		C0FFB78929ED646500870757 /* SheetDeferredTransitionFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetDeferredTransitionFeature.swift; sourceTree = "<group>"; };
+		C0FFB78B29ED646500870757 /* SheetDeferredTransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetDeferredTransitionState.swift; sourceTree = "<group>"; };
+		C0FFB78D29ED646500870757 /* SheetDeferredTransitionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetDeferredTransitionAction.swift; sourceTree = "<group>"; };
+		C0FFB79329ED647D00870757 /* InteractiveListFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveListFeature.swift; sourceTree = "<group>"; };
+		C0FFB79529ED647D00870757 /* InteractiveListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveListState.swift; sourceTree = "<group>"; };
+		C0FFB79729ED647D00870757 /* InteractiveListAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveListAction.swift; sourceTree = "<group>"; };
+		C0FFB79B29ED647D00870757 /* InteractiveListItemFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveListItemFeature.swift; sourceTree = "<group>"; };
+		C0FFB79D29ED647D00870757 /* InteractiveListItemState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveListItemState.swift; sourceTree = "<group>"; };
+		C0FFB79F29ED647D00870757 /* InteractiveListItemAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveListItemAction.swift; sourceTree = "<group>"; };
+		C0FFB7A729ED64B300870757 /* InteractiveListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InteractiveListItemView.swift; path = "tca-university-swiftui/ExampleViews/InteractiveListItemView.swift"; sourceTree = SOURCE_ROOT; };
+		C0FFB7AA29ED64D700870757 /* InteractiveListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InteractiveListView.swift; path = "tca-university-swiftui/ExampleViews/InteractiveListView.swift"; sourceTree = SOURCE_ROOT; };
+		C0FFB7AD29ED64F300870757 /* SheetDeferredTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SheetDeferredTransitionView.swift; path = "tca-university-swiftui/ExampleViews/SheetDeferredTransitionView.swift"; sourceTree = SOURCE_ROOT; };
+		C0FFB7B029ED650600870757 /* BasicListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicListView.swift; path = "tca-university-swiftui/ExampleViews/BasicListView.swift"; sourceTree = SOURCE_ROOT; };
 		CB27031D2978169500943540 /* FlexibleBindingsReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsReducer.swift; sourceTree = "<group>"; };
 		CB27031F2978169500943540 /* FlexibleBindingsState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsState.swift; sourceTree = "<group>"; };
 		CB2703212978169600943540 /* FlexibleBindingsAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlexibleBindingsAction.swift; sourceTree = "<group>"; };
@@ -603,6 +635,187 @@
 			isa = PBXGroup;
 			children = (
 				C01EB0BA29E80C3900E84E1B /* SheetInstantTransitionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0FFB77D29ED645B00870757 /* BasicList */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB7AF29ED64F800870757 /* View */,
+				C0FFB77E29ED645B00870757 /* Reducer */,
+				C0FFB78029ED645B00870757 /* State */,
+				C0FFB78229ED645B00870757 /* Action */,
+			);
+			path = BasicList;
+			sourceTree = "<group>";
+		};
+		C0FFB77E29ED645B00870757 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB77F29ED645B00870757 /* BasicListFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C0FFB78029ED645B00870757 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB78129ED645B00870757 /* BasicListState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C0FFB78229ED645B00870757 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB78329ED645B00870757 /* BasicListAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C0FFB78729ED646500870757 /* SheetDeferredTransition */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB7AC29ED64DD00870757 /* View */,
+				C0FFB78829ED646500870757 /* Reducer */,
+				C0FFB78A29ED646500870757 /* State */,
+				C0FFB78C29ED646500870757 /* Action */,
+			);
+			path = SheetDeferredTransition;
+			sourceTree = "<group>";
+		};
+		C0FFB78829ED646500870757 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB78929ED646500870757 /* SheetDeferredTransitionFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C0FFB78A29ED646500870757 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB78B29ED646500870757 /* SheetDeferredTransitionState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C0FFB78C29ED646500870757 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB78D29ED646500870757 /* SheetDeferredTransitionAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C0FFB79129ED647D00870757 /* InteractiveList */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB7A929ED64BA00870757 /* View */,
+				C0FFB79229ED647D00870757 /* Reducer */,
+				C0FFB79429ED647D00870757 /* State */,
+				C0FFB79629ED647D00870757 /* Action */,
+				C0FFB79829ED647D00870757 /* Submodules */,
+			);
+			path = InteractiveList;
+			sourceTree = "<group>";
+		};
+		C0FFB79229ED647D00870757 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB79329ED647D00870757 /* InteractiveListFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C0FFB79429ED647D00870757 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB79529ED647D00870757 /* InteractiveListState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C0FFB79629ED647D00870757 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB79729ED647D00870757 /* InteractiveListAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C0FFB79829ED647D00870757 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB79929ED647D00870757 /* InteractiveListItem */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		C0FFB79929ED647D00870757 /* InteractiveListItem */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB7A629ED648500870757 /* View */,
+				C0FFB79A29ED647D00870757 /* Reducer */,
+				C0FFB79C29ED647D00870757 /* State */,
+				C0FFB79E29ED647D00870757 /* Action */,
+			);
+			path = InteractiveListItem;
+			sourceTree = "<group>";
+		};
+		C0FFB79A29ED647D00870757 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB79B29ED647D00870757 /* InteractiveListItemFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C0FFB79C29ED647D00870757 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB79D29ED647D00870757 /* InteractiveListItemState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C0FFB79E29ED647D00870757 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB79F29ED647D00870757 /* InteractiveListItemAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C0FFB7A629ED648500870757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB7A729ED64B300870757 /* InteractiveListItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0FFB7A929ED64BA00870757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB7AA29ED64D700870757 /* InteractiveListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0FFB7AC29ED64DD00870757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB7AD29ED64F300870757 /* SheetDeferredTransitionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0FFB7AF29ED64F800870757 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFB7B029ED650600870757 /* BasicListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1442,6 +1655,9 @@
 		DEEDB7BF2970718800CB20F3 /* Intermediate */ = {
 			isa = PBXGroup;
 			children = (
+				C0FFB79129ED647D00870757 /* InteractiveList */,
+				C0FFB78729ED646500870757 /* SheetDeferredTransition */,
+				C0FFB77D29ED645B00870757 /* BasicList */,
 				C01EB0AF29E80C2400E84E1B /* SheetInstantTransition */,
 				C01EB0A229E808DC00E84E1B /* DeferredTransition */,
 				C01EB09529E8038500E84E1B /* InstantTransition */,
@@ -1556,13 +1772,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB270379297932A300943540 /* EffectCancellationView.swift in Sources */,
+				C0FFB7A529ED647D00870757 /* InteractiveListItemAction.swift in Sources */,
 				C01EB09029E7F22600E84E1B /* TimersState.swift in Sources */,
+				C0FFB7A329ED647D00870757 /* InteractiveListItemFeature.swift in Sources */,
 				DEBD8D062975652F00E6FE89 /* StepperView.swift in Sources */,
 				DEBD8D5629758A6D00E6FE89 /* FibonacciCounterState.swift in Sources */,
 				C01EB07729E5B7CE00E84E1B /* LongLivingEffectAction.swift in Sources */,
 				C01EB07529E5B7CE00E84E1B /* LongLivingEffectFeature.swift in Sources */,
 				DEBD8D072975652F00E6FE89 /* CounterExampleView.swift in Sources */,
+				C0FFB78629ED645B00870757 /* BasicListAction.swift in Sources */,
 				DEBD8D48297586F000E6FE89 /* AnalyzableCounterFeature.swift in Sources */,
+				C0FFB7B129ED650600870757 /* BasicListView.swift in Sources */,
 				DEEDB7C82970718800CB20F3 /* CGFloat.swift in Sources */,
 				C01EB0B829E80C2400E84E1B /* SheetInstantTransitionAction.swift in Sources */,
 				DEEDB71A297062F700CB20F3 /* User.swift in Sources */,
@@ -1585,6 +1805,7 @@
 				DEBD8D042975652F00E6FE89 /* CounterState.swift in Sources */,
 				C01EB06D29E5B42200E84E1B /* EffectThrottleView.swift in Sources */,
 				DEEDB75C2970708F00CB20F3 /* ImageServiceImplementation.swift in Sources */,
+				C0FFB7AE29ED64F300870757 /* SheetDeferredTransitionView.swift in Sources */,
 				DEEDB7CE2970718800CB20F3 /* UIViewRepresented.swift in Sources */,
 				DEEDB7C92970718800CB20F3 /* Text.swift in Sources */,
 				C01EB06A29E5B3FD00E84E1B /* EffectThrottleAction.swift in Sources */,
@@ -1598,11 +1819,14 @@
 				CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */,
 				C01EB05A29E4290100E84E1B /* EffectDebounceState.swift in Sources */,
 				DEBD8D032975652F00E6FE89 /* CounterFeature.swift in Sources */,
+				C0FFB7A029ED647D00870757 /* InteractiveListFeature.swift in Sources */,
 				DEEDB75D2970708F00CB20F3 /* BookService.swift in Sources */,
 				CB2703452978169600943540 /* SimpleBindingsReducer.swift in Sources */,
+				C0FFB7A229ED647D00870757 /* InteractiveListAction.swift in Sources */,
 				C01EB06929E5B3FD00E84E1B /* EffectThrottleState.swift in Sources */,
 				DEBD8D4C2975870C00E6FE89 /* AnalyzableCounterView.swift in Sources */,
 				DEEDB719297062F700CB20F3 /* Palette.swift in Sources */,
+				C0FFB7A429ED647D00870757 /* InteractiveListItemState.swift in Sources */,
 				DEEDB7612970708F00CB20F3 /* UserService.swift in Sources */,
 				DEBD8D5529758A6D00E6FE89 /* FibonacciCounterFeature.swift in Sources */,
 				CB27035B297817AA00943540 /* SimpleBindingsView.swift in Sources */,
@@ -1614,6 +1838,7 @@
 				DEBD8D5729758A6D00E6FE89 /* FibonacciCounterAction.swift in Sources */,
 				C01EB08429E6B7E200E84E1B /* AnimationsAction.swift in Sources */,
 				C01EB08F29E7F22600E84E1B /* TimersFeature.swift in Sources */,
+				C0FFB7AB29ED64D700870757 /* InteractiveListView.swift in Sources */,
 				CB27035D297817D900943540 /* SimpleOptionalView.swift in Sources */,
 				DEBD8D49297586F000E6FE89 /* AnalyzableCounterState.swift in Sources */,
 				DEEDB7072970628300CB20F3 /* ContentView.swift in Sources */,
@@ -1621,6 +1846,7 @@
 				CB27034E2978169600943540 /* SimpleOptionalAction.swift in Sources */,
 				DEEDB7642970708F00CB20F3 /* NewsService.swift in Sources */,
 				C01EB06029E5B37600E84E1B /* EffectDebounceView.swift in Sources */,
+				C0FFB7A129ED647D00870757 /* InteractiveListState.swift in Sources */,
 				DEEDB75E2970708F00CB20F3 /* BookServiceImplementation.swift in Sources */,
 				DEEDB7592970708F00CB20F3 /* PaletteServiceImplementation.swift in Sources */,
 				DEEDB71B297062F700CB20F3 /* Book.swift in Sources */,
@@ -1659,17 +1885,23 @@
 				C01EB05929E4290100E84E1B /* EffectDebounceFeature.swift in Sources */,
 				CB2703422978169600943540 /* FocusStateReducer.swift in Sources */,
 				DEBD8D632975A43F00E6FE89 /* ScramblerState.swift in Sources */,
+				C0FFB78529ED645B00870757 /* BasicListState.swift in Sources */,
 				C01EB07A29E5B7EF00E84E1B /* LongLivingEffectView.swift in Sources */,
+				C0FFB78F29ED646500870757 /* SheetDeferredTransitionState.swift in Sources */,
 				CB2703592978179400943540 /* FocusStateView.swift in Sources */,
 				CB270374297931D900943540 /* EffectCancellationReducer.swift in Sources */,
 				DEEDB7392970707800CB20F3 /* String.swift in Sources */,
 				DEEDB7602970708F00CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
+				C0FFB7A829ED64B300870757 /* InteractiveListItemView.swift in Sources */,
+				C0FFB78429ED645B00870757 /* BasicListFeature.swift in Sources */,
 				DEBD8D082975652F00E6FE89 /* SimpleCounterView.swift in Sources */,
 				DEBD8D642975A43F00E6FE89 /* ScramblerAction.swift in Sources */,
 				C01EB07629E5B7CE00E84E1B /* LongLivingEffectState.swift in Sources */,
 				CB2703442978169600943540 /* FocusStateAction.swift in Sources */,
 				C01EB0AE29E808F900E84E1B /* DeferredTransitionView.swift in Sources */,
 				C01EB0BB29E80C3900E84E1B /* SheetInstantTransitionView.swift in Sources */,
+				C0FFB79029ED646500870757 /* SheetDeferredTransitionAction.swift in Sources */,
+				C0FFB78E29ED646500870757 /* SheetDeferredTransitionFeature.swift in Sources */,
 				DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

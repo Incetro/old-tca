@@ -1,5 +1,5 @@
 //
-//  SheetInstantTransitionFeature.swift
+//  SheetDeferredTransitionFeature.swift
 //  verse-examples
 //
 //  Created by incetro on 10/11/2021.
@@ -9,32 +9,32 @@
 import TCA
 import Foundation
 
-// MARK: - SheetInstantTransitionFeature
+// MARK: - SheetDeferredTransitionFeature
 
-public struct SheetInstantTransitionFeature: ReducerProtocol {
+public struct SheetDeferredTransitionFeature: ReducerProtocol {
     
     // MARK: - ReducerProtocol
     
-    public var body: some ReducerProtocol<SheetInstantTransitionState, SheetInstantTransitionAction> {
+    public var body: some ReducerProtocol<SheetDeferredTransitionState, SheetDeferredTransitionAction> {
         Reduce { state, action in
             switch action {
             case .counter:
                 return .none
             case .setSheet(isPresented: true):
-                state.isSheetPresented = true
-                return Effect(value: .loadingCompleted)
+                state.isLoading = true
+                return Effect(value: SheetDeferredTransitionAction.loadingCompleted)
                     .delay(for: 1, scheduler: DispatchQueue.main)
                     .eraseToEffect()
             case .setSheet(isPresented: false):
-                state.isSheetPresented = false
                 state.counter = nil
                 return .none
             case .loadingCompleted:
+                state.isLoading = false
                 state.counter = CounterState()
-                return .none
             }
+            return .none
         }
-        .ifLet(\.counter, action: /SheetInstantTransitionAction.counter) {
+        .ifLet(\.counter, action: /SheetDeferredTransitionAction.counter) {
             CounterFeature()
         }
     }
