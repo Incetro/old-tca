@@ -1,9 +1,8 @@
 //
 //  TimersState.swift
-//  verse-examples
+//  tca-university-swiftui
 //
-//  Created by incetro on 06/11/2021.
-//  Copyright © 2021 Incetro Inc. All rights reserved.
+//  Created by Kazakh on 17.04.2023.
 //
 
 import Foundation
@@ -19,8 +18,8 @@ public struct TimersState: Equatable {
     // MARK: - Properties
 
     /// True if timer is active
-    var isTimerActive = false
+    public var isTimerActive = false
 
     /// Current progress value
-    var progress: Double = 0
+    public var progress: Double = 0
 }

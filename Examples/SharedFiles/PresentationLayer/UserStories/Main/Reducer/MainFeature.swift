@@ -72,7 +72,6 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.sheetInstantTransition, action: /MainAction.sheetInstantTransition) {
             SheetInstantTransitionFeature()
         }
-        
         Scope(state: \.sheetDeferredTransition, action: /MainAction.sheetDeferredTransition) {
             SheetDeferredTransitionFeature()
         }

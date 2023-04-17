@@ -12,7 +12,7 @@ import UIKit
 
 public struct LongLivingEffectFeature: ReducerProtocol {
     
-    // MARK: - Identifiars
+    // MARK: - Identifiers
     
     private struct UserDidTakeScreenshotID: Hashable {}
     

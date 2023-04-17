@@ -21,6 +21,8 @@ import Foundation
 /// and the action that occurs when we receive a response from the fact API request.
 public enum SimpleOptionalAction: Equatable {
     
+    // MARK: - Cases
+    
     /// Toggles optional state
     case toggleOptional
     

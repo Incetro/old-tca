@@ -1,9 +1,8 @@
 //
 //  DeferredTransitionState.swift
-//  verse-examples
+//  tca-university-swiftui
 //
-//  Created by incetro on 08/11/2021.
-//  Copyright © 2021 Incetro Inc. All rights reserved.
+//  Created by Kazakh on 17.04.2023.
 //
 
 import Foundation
@@ -19,15 +18,15 @@ public struct DeferredTransitionState: Equatable {
     // MARK: - Properties
 
     /// True if we are in loading state
-    var isLoading = false
+    public var isLoading = false
 
     /// True if navigation is active at the moment
-    var isNavigationActive: Bool {
+    public var isNavigationActive: Bool {
         counter != nil
     }
     
     // MARK: - Children
     
     /// CounterState instance
-    var counter: CounterState?
+    public var counter: CounterState?
 }
