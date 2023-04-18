@@ -19,7 +19,7 @@ public struct TimersView: View {
 
     // MARK: - Properties
 
-    /// The store powering the `EffectDebounce` feature
+    /// The store powering the `Timers` feature
     public let store: StoreOf<TimersFeature>
     
     // MARK: - View

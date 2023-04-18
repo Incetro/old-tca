@@ -19,7 +19,7 @@ public struct EffectThrottleView: View {
 
     // MARK: - Properties
 
-    /// The store powering the `EffectDebounce` feature
+    /// The store powering the `EffectThrottle` feature
     public let store: StoreOf<EffectThrottleFeature>
 
     // MARK: - View

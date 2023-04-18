@@ -19,7 +19,7 @@ public struct BasicListView: View {
 
     // MARK: - Properties
 
-    /// The store powering the `EffectDebounce` feature
+    /// The store powering the `BasicList` feature
     public let store: StoreOf<BasicListFeature>
 
     // MARK: - View

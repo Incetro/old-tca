@@ -12,14 +12,14 @@ import SwiftUI
 
 /// A visual representation of `InteractiveList` module.
 /// Here we define the view that displays the feature.
-/// It holds onto a `Store<InteractiveListState, InteractiveListAction>` so that it can observe
+/// It holds onto a `StoreOf<InteractiveListState, InteractiveListAction>` so that it can observe
 /// all changes to the state and re-render, and we can send all user actions
 /// to the store so that state changes.
 public struct InteractiveListView: View {
 
     // MARK: - Properties
 
-    /// The store powering the `EffectDebounce` feature
+    /// The store powering the `InteractiveList` feature
     public let store: StoreOf<InteractiveListFeature>
 
     // MARK: - View

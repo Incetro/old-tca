@@ -19,7 +19,7 @@ public struct DeferredTransitionView: View {
 
     // MARK: - Properties
 
-    /// The store powering the `EffectDebounce` feature
+    /// The store powering the `DeferredTransition` feature
     public let store: StoreOf<DeferredTransitionFeature>
     
     // MARK: - View
