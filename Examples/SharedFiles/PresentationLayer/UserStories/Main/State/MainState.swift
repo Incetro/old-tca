@@ -88,4 +88,7 @@ public struct MainState: Equatable {
     
     /// ListInstantTransitionState instance
     public var listInstantTransition = ListInstantTransitionState()
+    
+    /// ListDeferredTransitionState instance
+    public var listDeferredTransition = ListDeferredTransitionState()
 }

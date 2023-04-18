@@ -43,6 +43,11 @@
 		C0F400F129EEA2280001F35E /* ListInstantTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F400ED29EEA2280001F35E /* ListInstantTransitionState.swift */; };
 		C0F400F229EEA2280001F35E /* ListInstantTransitionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F400EF29EEA2280001F35E /* ListInstantTransitionAction.swift */; };
 		C0F400F529EEA2490001F35E /* ListInstantTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F400F429EEA2490001F35E /* ListInstantTransitionView.swift */; };
+		C0F400FD29EECB4B0001F35E /* ListDeferredTransitionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F400F829EECB4B0001F35E /* ListDeferredTransitionFeature.swift */; };
+		C0F400FE29EECB4B0001F35E /* ListDeferredTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F400FA29EECB4B0001F35E /* ListDeferredTransitionState.swift */; };
+		C0F400FF29EECB4B0001F35E /* ListDeferredTransitionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F400FC29EECB4B0001F35E /* ListDeferredTransitionAction.swift */; };
+		C0F4010229EECB6A0001F35E /* ListDeferredTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4010129EECB6A0001F35E /* ListDeferredTransitionView.swift */; };
+		C0F4012F29EEE3280001F35E /* DependencyValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4012E29EEE3280001F35E /* DependencyValues.swift */; };
 		C0FFB78429ED645B00870757 /* BasicListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB77F29ED645B00870757 /* BasicListFeature.swift */; };
 		C0FFB78529ED645B00870757 /* BasicListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78129ED645B00870757 /* BasicListState.swift */; };
 		C0FFB78629ED645B00870757 /* BasicListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78329ED645B00870757 /* BasicListAction.swift */; };
@@ -185,6 +190,11 @@
 		C0F400ED29EEA2280001F35E /* ListInstantTransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInstantTransitionState.swift; sourceTree = "<group>"; };
 		C0F400EF29EEA2280001F35E /* ListInstantTransitionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInstantTransitionAction.swift; sourceTree = "<group>"; };
 		C0F400F429EEA2490001F35E /* ListInstantTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListInstantTransitionView.swift; path = "tca-university-swiftui/ExampleViews/ListInstantTransitionView.swift"; sourceTree = SOURCE_ROOT; };
+		C0F400F829EECB4B0001F35E /* ListDeferredTransitionFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDeferredTransitionFeature.swift; sourceTree = "<group>"; };
+		C0F400FA29EECB4B0001F35E /* ListDeferredTransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDeferredTransitionState.swift; sourceTree = "<group>"; };
+		C0F400FC29EECB4B0001F35E /* ListDeferredTransitionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDeferredTransitionAction.swift; sourceTree = "<group>"; };
+		C0F4010129EECB6A0001F35E /* ListDeferredTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListDeferredTransitionView.swift; path = "tca-university-swiftui/ExampleViews/ListDeferredTransitionView.swift"; sourceTree = SOURCE_ROOT; };
+		C0F4012E29EEE3280001F35E /* DependencyValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyValues.swift; sourceTree = "<group>"; };
 		C0FFB77F29ED645B00870757 /* BasicListFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListFeature.swift; sourceTree = "<group>"; };
 		C0FFB78129ED645B00870757 /* BasicListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListState.swift; sourceTree = "<group>"; };
 		C0FFB78329ED645B00870757 /* BasicListAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListAction.swift; sourceTree = "<group>"; };
@@ -689,6 +699,58 @@
 				C0F400F429EEA2490001F35E /* ListInstantTransitionView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C0F400F629EECB4B0001F35E /* ListDeferredTransition */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4010029EECB4E0001F35E /* View */,
+				C0F400F729EECB4B0001F35E /* Reducer */,
+				C0F400F929EECB4B0001F35E /* State */,
+				C0F400FB29EECB4B0001F35E /* Action */,
+			);
+			name = ListDeferredTransition;
+			path = "../Upper-intermediate/ListDeferredTransition";
+			sourceTree = "<group>";
+		};
+		C0F400F729EECB4B0001F35E /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C0F400F829EECB4B0001F35E /* ListDeferredTransitionFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C0F400F929EECB4B0001F35E /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C0F400FA29EECB4B0001F35E /* ListDeferredTransitionState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C0F400FB29EECB4B0001F35E /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C0F400FC29EECB4B0001F35E /* ListDeferredTransitionAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C0F4010029EECB4E0001F35E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4010129EECB6A0001F35E /* ListDeferredTransitionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0F4013029EEE33F0001F35E /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4012E29EEE3280001F35E /* DependencyValues.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		C0FFB77D29ED645B00870757 /* BasicList */ = {
@@ -1535,6 +1597,7 @@
 		DEEDB7422970708F00CB20F3 /* BusinessLayer */ = {
 			isa = PBXGroup;
 			children = (
+				C0F4013029EEE33F0001F35E /* Dependencies */,
 				DEEDB7432970708F00CB20F3 /* Services */,
 			);
 			name = BusinessLayer;
@@ -1673,6 +1736,7 @@
 		DEEDB7BB2970718800CB20F3 /* Upper-Intermediate */ = {
 			isa = PBXGroup;
 			children = (
+				C0F400F629EECB4B0001F35E /* ListDeferredTransition */,
 				C0F400E929EEA2280001F35E /* ListInstantTransition */,
 			);
 			path = "Upper-Intermediate";
@@ -1832,6 +1896,7 @@
 				DEBD8D5629758A6D00E6FE89 /* FibonacciCounterState.swift in Sources */,
 				C01EB07729E5B7CE00E84E1B /* LongLivingEffectAction.swift in Sources */,
 				C01EB07529E5B7CE00E84E1B /* LongLivingEffectFeature.swift in Sources */,
+				C0F400FF29EECB4B0001F35E /* ListDeferredTransitionAction.swift in Sources */,
 				C0F400F029EEA2280001F35E /* ListInstantTransitionFeature.swift in Sources */,
 				DEBD8D072975652F00E6FE89 /* CounterExampleView.swift in Sources */,
 				C0FFB78629ED645B00870757 /* BasicListAction.swift in Sources */,
@@ -1851,6 +1916,7 @@
 				CB27034B2978169600943540 /* AlertAndSheetAction.swift in Sources */,
 				C01EB08329E6B7E200E84E1B /* AnimationsState.swift in Sources */,
 				DEEDB75A2970708F00CB20F3 /* PaletteService.swift in Sources */,
+				C0F400FE29EECB4B0001F35E /* ListDeferredTransitionState.swift in Sources */,
 				DEBD8D622975A43F00E6FE89 /* ScramblerFeature.swift in Sources */,
 				DEBD8D052975652F00E6FE89 /* CounterAction.swift in Sources */,
 				CB27034A2978169600943540 /* AlertAndSheetState.swift in Sources */,
@@ -1868,6 +1934,7 @@
 				C01EB06829E5B3FD00E84E1B /* EffectThrottleFeature.swift in Sources */,
 				DEEDB7622970708F00CB20F3 /* UserServiceImplementation.swift in Sources */,
 				C01EB0AA29E808DC00E84E1B /* DeferredTransitionState.swift in Sources */,
+				C0F400FD29EECB4B0001F35E /* ListDeferredTransitionFeature.swift in Sources */,
 				CB2703672979235600943540 /* SimpleEffectState.swift in Sources */,
 				C01EB09C29E8038600E84E1B /* InstantTransitionFeature.swift in Sources */,
 				CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */,
@@ -1905,6 +1972,7 @@
 				DEEDB7592970708F00CB20F3 /* PaletteServiceImplementation.swift in Sources */,
 				DEEDB71B297062F700CB20F3 /* Book.swift in Sources */,
 				CB270376297931D900943540 /* EffectCancellationAction.swift in Sources */,
+				C0F4010229EECB6A0001F35E /* ListDeferredTransitionView.swift in Sources */,
 				DEEDB7652970708F00CB20F3 /* NumberFactService.swift in Sources */,
 				CB2703482978169600943540 /* SimpleBindingsAction.swift in Sources */,
 				DEBD8D3D2975824000E6FE89 /* DoubleCounterAction.swift in Sources */,
@@ -1958,6 +2026,7 @@
 				C01EB0AE29E808F900E84E1B /* DeferredTransitionView.swift in Sources */,
 				C01EB0BB29E80C3900E84E1B /* SheetInstantTransitionView.swift in Sources */,
 				C0FFB79029ED646500870757 /* SheetDeferredTransitionAction.swift in Sources */,
+				C0F4012F29EEE3280001F35E /* DependencyValues.swift in Sources */,
 				C0FFB78E29ED646500870757 /* SheetDeferredTransitionFeature.swift in Sources */,
 				DEEDB7052970628300CB20F3 /* TCAUniversitySwiftUIApp.swift in Sources */,
 			);

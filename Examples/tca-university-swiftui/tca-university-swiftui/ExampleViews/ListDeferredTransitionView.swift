@@ -1,5 +1,5 @@
 //
-//  ListInstantTransitionView.swift
+//  ListDeferredTransitionView.swift
 //  tca-university-swiftui
 //
 //  Created by Kazakh on 18.04.2023.
@@ -8,19 +8,19 @@
 import TCA
 import SwiftUI
 
-// MARK: - ListInstantTransitionView
+// MARK: - ListDeferredTransitionView
 
-/// A visual representation of `ListInstantTransition` module.
+/// A visual representation of `ListDeferredTransition` module.
 /// Here we define the view that displays the feature.
-/// It holds onto a `Store<ListInstantTransitionState, ListInstantTransitionAction>` so that it can observe
+/// It holds onto a `Store<ListDeferredTransitionState, ListDeferredTransitionAction>` so that it can observe
 /// all changes to the state and re-render, and we can send all user actions
 /// to the store so that state changes.
-public struct ListInstantTransitionView: View {
+public struct ListDeferredTransitionView: View {
 
     // MARK: - Properties
 
-    /// The store powering the `ListInstantTransition` feature
-    public let store: StoreOf<ListInstantTransitionFeature>
+    /// The store powering the `ListDeferredTransition` feature
+    public let store: StoreOf<ListDeferredTransitionFeature>
 
     // MARK: - View
 
@@ -33,7 +33,7 @@ public struct ListInstantTransitionView: View {
                             destination: IfLetStore(
                                 store.scope(
                                     state: { $0.selection?.value },
-                                    action: ListInstantTransitionAction.counter
+                                    action: ListDeferredTransitionAction.counter
                                 ),
                                 then: CounterView.init,
                                 else: ActivityIndicator()
@@ -41,7 +41,7 @@ public struct ListInstantTransitionView: View {
                             tag: row.id,
                             selection: viewStore.binding(
                                 get: { $0.selection?.id },
-                                send: ListInstantTransitionAction.setNavigation
+                                send: ListDeferredTransitionAction.setNavigation
                             )
                         ) {
                             HStack {
@@ -51,28 +51,32 @@ public struct ListInstantTransitionView: View {
                                 Text("\(row.title)")
                                     .standard
                                 Spacer()
+                                if row.isLoading {
+                                    ActivityIndicator()
+                                }
                                 Text("\(row.count)")
                                     .standard
                             }
                         }
                     }
                 }.textCase(nil)
-            }.navigationBarTitle("List instant transition")
+            }.navigationBarTitle("List deferred transition")
         }
     }
 }
 
 // MARK: - Constants
 
-extension ListInstantTransitionView {
+extension ListDeferredTransitionView {
 
     private enum Constants {
 
         static let summary = """
-        This screen demonstrates instant transition that depends on loading optional state form a list element.
+        This screen demonstrates deferred transition that depends on loading optional state form a list element.
 
-        Tapping on a row simultaneously navigates to a screen that depends on optional \
-        counter state and fires off an effect that will load this state a second later.
+        Tapping a row fires off an effect that will load its associated counter state a second later. \
+        When the counter state is present, you will be programmatically navigated to the screen that \
+        depends on this data.
 
         """
     }

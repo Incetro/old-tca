@@ -273,6 +273,16 @@ public struct MainView: View {
                         ) {
                             Text("List instant transition").standard
                         }
+                        NavigationLink(
+                            destination: ListDeferredTransitionView(
+                                store: store.scope(
+                                    state: \.listDeferredTransition,
+                                    action: MainAction.listDeferredTransition
+                                )
+                            )
+                        ) {
+                            Text("List deferred transition").standard
+                        }
                     }
                     Section(header: Text("👨🏻‍🎓 Advanced")) {
                     }

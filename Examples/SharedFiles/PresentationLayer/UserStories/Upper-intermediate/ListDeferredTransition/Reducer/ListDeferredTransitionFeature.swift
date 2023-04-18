@@ -1,5 +1,5 @@
 //
-//  ListInstantTransitionFeature.swift
+//  ListDeferredTransitionFeature.swift
 //  tca-university-swiftui
 //
 //  Created by Kazakh on 18.04.2023.
@@ -8,9 +8,9 @@
 import TCA
 import Foundation
 
-// MARK: - ListInstantTransitionFeature
+// MARK: - ListDeferredTransitionFeature
 
-public struct ListInstantTransitionFeature: ReducerProtocol {
+public struct ListDeferredTransitionFeature: ReducerProtocol {
     
     // MARK: - Identifiers
     
@@ -18,14 +18,16 @@ public struct ListInstantTransitionFeature: ReducerProtocol {
     
     // MARK: - Feature
     
-    public var body: some ReducerProtocol<ListInstantTransitionState, ListInstantTransitionAction> {
+    public var body: some ReducerProtocol<ListDeferredTransitionState, ListDeferredTransitionAction> {
         Reduce { state, action in
             switch action {
             case .counter:
                 return .none
             case let .setNavigation(selection: .some(id)):
-                state.selection = Identified(nil, id: id)
-                return Effect(value: .loadingCompleted)
+                for index in state.items.indices {
+                    state.items[index].isLoading = state.items[index].id == id
+                }
+                return Effect(value: .loadingCompleted(id))
                     .delay(for: 1, scheduler: DispatchQueue.main)
                     .eraseToEffect()
                     .cancellable(id: CancellationID())
@@ -35,15 +37,18 @@ public struct ListInstantTransitionFeature: ReducerProtocol {
                 }
                 state.selection = nil
                 return .cancel(id: CancellationID())
-            case .loadingCompleted:
-                guard let id = state.selection?.id else { return .none }
-                state.selection?.value = CounterState(count: state.items[id: id]?.count ?? 0)
+            case .loadingCompleted(let id):
+                state.items[id: id]?.isLoading = false
+                state.selection = Identified(
+                    CounterState(count: state.items[id: id]?.count ?? 0),
+                    id: id
+                )
                 return .none
             }
         }
-        .ifLet(\ListInstantTransitionState.selection, action: /ListInstantTransitionAction.counter) {
+        .ifLet(\ListDeferredTransitionState.selection, action: /ListDeferredTransitionAction.counter) {
             EmptyReducer()
-                .ifLet(\Identified<ListInstantTransitionState.Item.ID, CounterState?>.value, action: .self) {
+                .ifLet(\Identified<ListDeferredTransitionState.Item.ID, CounterState?>.value, action: .self) {
                     CounterFeature()
                 }
         }

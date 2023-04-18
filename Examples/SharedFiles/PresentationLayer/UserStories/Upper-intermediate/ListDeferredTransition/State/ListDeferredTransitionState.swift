@@ -1,5 +1,5 @@
 //
-//  ListInstantTransitionState.swift
+//  ListDeferredTransitionState.swift
 //  tca-university-swiftui
 //
 //  Created by Kazakh on 18.04.2023.
@@ -8,18 +8,16 @@
 import TCA
 import Foundation
 
-// MARK: - ListInstantTransitionState
+// MARK: - ListDeferredTransitionState
 
-/// `ListInstantTransition` module state
+/// `ListDeferredTransition` module state
 ///
-/// Basically, `ListInstantTransitionState` is a type that describes the data
-/// `ListInstantTransition` feature needs to perform its logic and render its UI.
-public struct ListInstantTransitionState: Equatable {
+/// Basically, `ListDeferredTransitionState` is a type that describes the data
+/// `ListDeferredTransition` feature needs to perform its logic and render its UI.
+public struct ListDeferredTransitionState: Equatable {
 
     // MARK: - Item
 
-    /// An item within the list, identified by a UUID.
-    /// Equatable and Identifiable for easy comparison and indexing.
     public struct Item: Equatable, Identifiable {
 
         // MARK: - Properties
@@ -35,6 +33,9 @@ public struct ListInstantTransitionState: Equatable {
 
         /// An integer representing a count.
         public var count: Int
+        
+        /// Indicates if module is loading
+        public var isLoading = false
     }
 
     // MARK: - Properties

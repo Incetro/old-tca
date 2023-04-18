@@ -202,4 +202,11 @@ public enum MainAction: Equatable {
     /// In short, the `listInstantTransition` case means that every action in `ListInstantTransition` module
     /// will be sent to current module through it
     case listInstantTransition(ListInstantTransitionAction)
+    
+    /// Child action for `ListDeferredTransition` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `listDeferredTransition` case means that every action in `ListDeferredTransition` module
+    /// will be sent to current module through it
+    case listDeferredTransition(ListDeferredTransitionAction)
 }
