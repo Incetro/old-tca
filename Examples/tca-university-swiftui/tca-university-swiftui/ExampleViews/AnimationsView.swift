@@ -19,7 +19,7 @@ public struct AnimationsView: View {
 
     // MARK: - Properties
 
-    /// The store powering the `EffectDebounce` feature
+    /// The store powering the `Animations` feature
     public let store: StoreOf<AnimationsFeature>
 
     // MARK: - View

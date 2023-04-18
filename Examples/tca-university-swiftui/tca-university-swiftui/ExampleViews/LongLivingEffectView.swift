@@ -20,7 +20,7 @@ public struct LongLivingEffectView: View {
 
     // MARK: - Properties
 
-    /// The store powering the `SimpleEffect` feature
+    /// The store powering the `LongLivingEffect` feature
     public let store: StoreOf<LongLivingEffectFeature>
 
     // MARK: - View

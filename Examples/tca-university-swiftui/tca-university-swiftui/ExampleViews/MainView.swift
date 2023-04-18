@@ -263,6 +263,16 @@ public struct MainView: View {
                         }
                     }
                     Section(header: Text("👨🏻‍🏫 Upper intermediate")) {
+                        NavigationLink(
+                            destination: ListInstantTransitionView(
+                                store: store.scope(
+                                    state: \.listInstantTransition,
+                                    action: MainAction.listInstantTransition
+                                )
+                            )
+                        ) {
+                            Text("List instant transition").standard
+                        }
                     }
                     Section(header: Text("👨🏻‍🎓 Advanced")) {
                     }

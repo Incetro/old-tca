@@ -85,4 +85,7 @@ public struct MainState: Equatable {
     
     /// InteractiveListState instance
     public var interactiveList = InteractiveListState()
+    
+    /// ListInstantTransitionState instance
+    public var listInstantTransition = ListInstantTransitionState()
 }

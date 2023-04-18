@@ -19,7 +19,7 @@ public struct SheetInstantTransitionView: View {
 
     // MARK: - Properties
 
-    /// The store powering the `EffectDebounce` feature
+    /// The store powering the `SheetInstantTransition` feature
     public let store: StoreOf<SheetInstantTransitionFeature>
 
     // MARK: - View

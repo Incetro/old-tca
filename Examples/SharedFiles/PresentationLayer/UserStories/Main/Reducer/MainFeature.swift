@@ -81,6 +81,9 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.interactiveList, action: /MainAction.interactiveList) {
             InteractiveListFeature()
         }
+        Scope(state: \.listInstantTransition, action: /MainAction.listInstantTransition) {
+            ListInstantTransitionFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:

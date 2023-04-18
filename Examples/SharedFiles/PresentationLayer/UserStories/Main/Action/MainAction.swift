@@ -99,7 +99,8 @@ public enum MainAction: Equatable {
     /// will be sent to current module through it
     case focusState(FocusStateAction)
     
-    // MARK: - Pre intermediate
+    // MARK: - PreIntermediate
+    
     /// Child action for `SimpleEffect` module.
     ///
     /// It's necessary as we use `Scope` builder in current module's reducer.
@@ -192,4 +193,13 @@ public enum MainAction: Equatable {
     /// In short, the `interactiveList` case means that every action in `InteractiveList` module
     /// will be sent to current module through it
     case interactiveList(InteractiveListAction)
+    
+    // MARK: - UpperIntermediate
+    
+    /// Child action for `ListInstantTransition` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `listInstantTransition` case means that every action in `ListInstantTransition` module
+    /// will be sent to current module through it
+    case listInstantTransition(ListInstantTransitionAction)
 }

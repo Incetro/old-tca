@@ -20,7 +20,7 @@ public struct InteractiveListItemView: View {
 
     // MARK: - Properties
 
-    /// The store powering the `EffectDebounce` feature
+    /// The store powering the `InteractiveListItem` feature
     public let store: StoreOf<InteractiveListItemFeature>
 
     // MARK: - View

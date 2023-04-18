@@ -39,6 +39,10 @@
 		C01EB0B729E80C2400E84E1B /* SheetInstantTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0B329E80C2400E84E1B /* SheetInstantTransitionState.swift */; };
 		C01EB0B829E80C2400E84E1B /* SheetInstantTransitionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0B529E80C2400E84E1B /* SheetInstantTransitionAction.swift */; };
 		C01EB0BB29E80C3900E84E1B /* SheetInstantTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01EB0BA29E80C3900E84E1B /* SheetInstantTransitionView.swift */; };
+		C0F400F029EEA2280001F35E /* ListInstantTransitionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F400EB29EEA2280001F35E /* ListInstantTransitionFeature.swift */; };
+		C0F400F129EEA2280001F35E /* ListInstantTransitionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F400ED29EEA2280001F35E /* ListInstantTransitionState.swift */; };
+		C0F400F229EEA2280001F35E /* ListInstantTransitionAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F400EF29EEA2280001F35E /* ListInstantTransitionAction.swift */; };
+		C0F400F529EEA2490001F35E /* ListInstantTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F400F429EEA2490001F35E /* ListInstantTransitionView.swift */; };
 		C0FFB78429ED645B00870757 /* BasicListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB77F29ED645B00870757 /* BasicListFeature.swift */; };
 		C0FFB78529ED645B00870757 /* BasicListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78129ED645B00870757 /* BasicListState.swift */; };
 		C0FFB78629ED645B00870757 /* BasicListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78329ED645B00870757 /* BasicListAction.swift */; };
@@ -177,6 +181,10 @@
 		C01EB0B329E80C2400E84E1B /* SheetInstantTransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetInstantTransitionState.swift; sourceTree = "<group>"; };
 		C01EB0B529E80C2400E84E1B /* SheetInstantTransitionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetInstantTransitionAction.swift; sourceTree = "<group>"; };
 		C01EB0BA29E80C3900E84E1B /* SheetInstantTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SheetInstantTransitionView.swift; path = "tca-university-swiftui/ExampleViews/SheetInstantTransitionView.swift"; sourceTree = SOURCE_ROOT; };
+		C0F400EB29EEA2280001F35E /* ListInstantTransitionFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInstantTransitionFeature.swift; sourceTree = "<group>"; };
+		C0F400ED29EEA2280001F35E /* ListInstantTransitionState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInstantTransitionState.swift; sourceTree = "<group>"; };
+		C0F400EF29EEA2280001F35E /* ListInstantTransitionAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInstantTransitionAction.swift; sourceTree = "<group>"; };
+		C0F400F429EEA2490001F35E /* ListInstantTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListInstantTransitionView.swift; path = "tca-university-swiftui/ExampleViews/ListInstantTransitionView.swift"; sourceTree = SOURCE_ROOT; };
 		C0FFB77F29ED645B00870757 /* BasicListFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListFeature.swift; sourceTree = "<group>"; };
 		C0FFB78129ED645B00870757 /* BasicListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListState.swift; sourceTree = "<group>"; };
 		C0FFB78329ED645B00870757 /* BasicListAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListAction.swift; sourceTree = "<group>"; };
@@ -635,6 +643,50 @@
 			isa = PBXGroup;
 			children = (
 				C01EB0BA29E80C3900E84E1B /* SheetInstantTransitionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0F400E929EEA2280001F35E /* ListInstantTransition */ = {
+			isa = PBXGroup;
+			children = (
+				C0F400F329EEA22D0001F35E /* View */,
+				C0F400EA29EEA2280001F35E /* Reducer */,
+				C0F400EC29EEA2280001F35E /* State */,
+				C0F400EE29EEA2280001F35E /* Action */,
+			);
+			name = ListInstantTransition;
+			path = "../Upper-intermediate/ListInstantTransition";
+			sourceTree = "<group>";
+		};
+		C0F400EA29EEA2280001F35E /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C0F400EB29EEA2280001F35E /* ListInstantTransitionFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C0F400EC29EEA2280001F35E /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C0F400ED29EEA2280001F35E /* ListInstantTransitionState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C0F400EE29EEA2280001F35E /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C0F400EF29EEA2280001F35E /* ListInstantTransitionAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C0F400F329EEA22D0001F35E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0F400F429EEA2490001F35E /* ListInstantTransitionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1621,6 +1673,7 @@
 		DEEDB7BB2970718800CB20F3 /* Upper-Intermediate */ = {
 			isa = PBXGroup;
 			children = (
+				C0F400E929EEA2280001F35E /* ListInstantTransition */,
 			);
 			path = "Upper-Intermediate";
 			sourceTree = "<group>";
@@ -1779,6 +1832,7 @@
 				DEBD8D5629758A6D00E6FE89 /* FibonacciCounterState.swift in Sources */,
 				C01EB07729E5B7CE00E84E1B /* LongLivingEffectAction.swift in Sources */,
 				C01EB07529E5B7CE00E84E1B /* LongLivingEffectFeature.swift in Sources */,
+				C0F400F029EEA2280001F35E /* ListInstantTransitionFeature.swift in Sources */,
 				DEBD8D072975652F00E6FE89 /* CounterExampleView.swift in Sources */,
 				C0FFB78629ED645B00870757 /* BasicListAction.swift in Sources */,
 				DEBD8D48297586F000E6FE89 /* AnalyzableCounterFeature.swift in Sources */,
@@ -1874,6 +1928,7 @@
 				DEEDB71C297062F700CB20F3 /* LoremPicsumImage.swift in Sources */,
 				C01EB0A929E808DC00E84E1B /* DeferredTransitionFeature.swift in Sources */,
 				CB27034C2978169600943540 /* SimpleOptionalReducer.swift in Sources */,
+				C0F400F129EEA2280001F35E /* ListInstantTransitionState.swift in Sources */,
 				C01EB08229E6B7E200E84E1B /* AnimationsFeature.swift in Sources */,
 				C01EB05B29E4290100E84E1B /* EffectDebounceAction.swift in Sources */,
 				CB2703572978177300943540 /* FlexibleBindingsView.swift in Sources */,
@@ -1882,6 +1937,7 @@
 				C01EB08729E6B81800E84E1B /* AnimationsView.swift in Sources */,
 				C01EB0A129E8039900E84E1B /* InstantTransitionView.swift in Sources */,
 				DEEDB7662970708F00CB20F3 /* NumberFactServiceImplementation.swift in Sources */,
+				C0F400F229EEA2280001F35E /* ListInstantTransitionAction.swift in Sources */,
 				C01EB05929E4290100E84E1B /* EffectDebounceFeature.swift in Sources */,
 				CB2703422978169600943540 /* FocusStateReducer.swift in Sources */,
 				DEBD8D632975A43F00E6FE89 /* ScramblerState.swift in Sources */,
@@ -1893,6 +1949,7 @@
 				DEEDB7392970707800CB20F3 /* String.swift in Sources */,
 				DEEDB7602970708F00CB20F3 /* ScrambleServiceImplementation.swift in Sources */,
 				C0FFB7A829ED64B300870757 /* InteractiveListItemView.swift in Sources */,
+				C0F400F529EEA2490001F35E /* ListInstantTransitionView.swift in Sources */,
 				C0FFB78429ED645B00870757 /* BasicListFeature.swift in Sources */,
 				DEBD8D082975652F00E6FE89 /* SimpleCounterView.swift in Sources */,
 				DEBD8D642975A43F00E6FE89 /* ScramblerAction.swift in Sources */,
