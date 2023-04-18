@@ -39,7 +39,7 @@ extension DependencyValues {
     
     /// Dependecy key for `PaletteServiceKey` instance
     private enum ImageServiceKey: DependencyKey {
-        static let liveValue: ImageService = ImageServiceImplementation(session: .shared)
+        static let liveValue: ImageService = ImageServiceImplementation(session: Dependency(\.urlSession).wrappedValue)
     }
     
     // MARK: - BookService
