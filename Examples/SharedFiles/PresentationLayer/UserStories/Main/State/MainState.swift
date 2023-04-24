@@ -94,4 +94,7 @@ public struct MainState: Equatable {
     
     /// LifecycleTimer state
     public var lifecycleTimer = LifecycleTimerState()
+    
+    /// RecursiveTreeState instance
+    public var recursiveTree = RecursiveTreeState.random()
 }

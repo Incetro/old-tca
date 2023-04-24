@@ -295,6 +295,16 @@ public struct MainView: View {
                         ) {
                             Text("Lifecycle timer").standard
                         }
+                        NavigationLink(
+                            destination: RecursiveTreeView(
+                                store: store.scope(
+                                    state: \.recursiveTree,
+                                    action: MainAction.recursiveTree
+                                )
+                            )
+                        ) {
+                            Text("Recursion").standard
+                        }
                     }
                     Section(header: Text("🥷🏻 Proficient")) {
                     }

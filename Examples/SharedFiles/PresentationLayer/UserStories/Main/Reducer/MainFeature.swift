@@ -90,6 +90,9 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.lifecycleTimer, action: /MainAction.lifecycleTimer) {
             LifecycleTimerFeature()
         }
+        Scope(state: \.recursiveTree, action: /MainAction.recursiveTree) {
+            RecursiveTreeFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:

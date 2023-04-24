@@ -215,7 +215,16 @@ public enum MainAction: Equatable {
     /// Child action for `LifecycleTimerAction` module.
     ///
     /// It's necessary as we use `Scope` builder in current module's reducer.
-    /// In short, the `lifecycleTimer` case means that every action in `LifecycleTimerAction` module
+    /// In short, the `lifecycleTimer` case means that every action in `LifecycleTimer` module
     /// will be sent to current module through it
     case lifecycleTimer(LifecycleTimerAction)
+    
+    // MARK: - Advanced
+    
+    /// Child action for `RecursiveTree` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `recursiveTree` case means that every action in `RecursiveTree` module
+    /// will be sent to current module through it
+    case recursiveTree(RecursiveTreeAction)
 }

@@ -57,6 +57,10 @@
 		C0F4014629F013300001F35E /* TimerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4014529F013300001F35E /* TimerFeature.swift */; };
 		C0F4014829F013390001F35E /* TimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4014729F013390001F35E /* TimerAction.swift */; };
 		C0F4014D29F28F3F0001F35E /* LifecycleTimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4014C29F28F3F0001F35E /* LifecycleTimerState.swift */; };
+		C0F4015629F7091C0001F35E /* RecursiveTreeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4015129F7091C0001F35E /* RecursiveTreeFeature.swift */; };
+		C0F4015729F7091C0001F35E /* RecursiveTreeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4015329F7091C0001F35E /* RecursiveTreeState.swift */; };
+		C0F4015829F7091C0001F35E /* RecursiveTreeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4015529F7091C0001F35E /* RecursiveTreeAction.swift */; };
+		C0F4015B29F7092F0001F35E /* RecursiveTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4015A29F7092F0001F35E /* RecursiveTreeView.swift */; };
 		C0FFB78429ED645B00870757 /* BasicListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB77F29ED645B00870757 /* BasicListFeature.swift */; };
 		C0FFB78529ED645B00870757 /* BasicListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78129ED645B00870757 /* BasicListState.swift */; };
 		C0FFB78629ED645B00870757 /* BasicListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78329ED645B00870757 /* BasicListAction.swift */; };
@@ -213,6 +217,10 @@
 		C0F4014529F013300001F35E /* TimerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFeature.swift; sourceTree = "<group>"; };
 		C0F4014729F013390001F35E /* TimerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAction.swift; sourceTree = "<group>"; };
 		C0F4014C29F28F3F0001F35E /* LifecycleTimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleTimerState.swift; sourceTree = "<group>"; };
+		C0F4015129F7091C0001F35E /* RecursiveTreeFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveTreeFeature.swift; sourceTree = "<group>"; };
+		C0F4015329F7091C0001F35E /* RecursiveTreeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveTreeState.swift; sourceTree = "<group>"; };
+		C0F4015529F7091C0001F35E /* RecursiveTreeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveTreeAction.swift; sourceTree = "<group>"; };
+		C0F4015A29F7092F0001F35E /* RecursiveTreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecursiveTreeView.swift; path = "tca-university-swiftui/ExampleViews/RecursiveTreeView.swift"; sourceTree = SOURCE_ROOT; };
 		C0FFB77F29ED645B00870757 /* BasicListFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListFeature.swift; sourceTree = "<group>"; };
 		C0FFB78129ED645B00870757 /* BasicListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListState.swift; sourceTree = "<group>"; };
 		C0FFB78329ED645B00870757 /* BasicListAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListAction.swift; sourceTree = "<group>"; };
@@ -848,6 +856,49 @@
 				C0F4014C29F28F3F0001F35E /* LifecycleTimerState.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		C0F4014F29F7091C0001F35E /* RecursiveTree */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4015929F709200001F35E /* View */,
+				C0F4015029F7091C0001F35E /* Reducer */,
+				C0F4015229F7091C0001F35E /* State */,
+				C0F4015429F7091C0001F35E /* Action */,
+			);
+			path = RecursiveTree;
+			sourceTree = "<group>";
+		};
+		C0F4015029F7091C0001F35E /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4015129F7091C0001F35E /* RecursiveTreeFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C0F4015229F7091C0001F35E /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4015329F7091C0001F35E /* RecursiveTreeState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		C0F4015429F7091C0001F35E /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4015529F7091C0001F35E /* RecursiveTreeAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C0F4015929F709200001F35E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4015A29F7092F0001F35E /* RecursiveTreeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C0FFB77D29ED645B00870757 /* BasicList */ = {
@@ -1827,6 +1878,7 @@
 		DEEDB7B92970718800CB20F3 /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				C0F4014F29F7091C0001F35E /* RecursiveTree */,
 				C0F4013329EFEE010001F35E /* LifecycleTimer */,
 			);
 			path = Advanced;
@@ -2079,6 +2131,7 @@
 				CB270376297931D900943540 /* EffectCancellationAction.swift in Sources */,
 				C0F4010229EECB6A0001F35E /* ListDeferredTransitionView.swift in Sources */,
 				DEEDB7652970708F00CB20F3 /* NumberFactService.swift in Sources */,
+				C0F4015729F7091C0001F35E /* RecursiveTreeState.swift in Sources */,
 				CB2703482978169600943540 /* SimpleBindingsAction.swift in Sources */,
 				DEBD8D3D2975824000E6FE89 /* DoubleCounterAction.swift in Sources */,
 				CB27036B297923E700943540 /* SimpleEffectView.swift in Sources */,
@@ -2089,6 +2142,7 @@
 				DEEDB7CA2970718800CB20F3 /* Color.swift in Sources */,
 				DEBD8D3B2975824000E6FE89 /* DoubleCounterFeature.swift in Sources */,
 				DEEDB7CD2970718800CB20F3 /* ProgressRingView.swift in Sources */,
+				C0F4015829F7091C0001F35E /* RecursiveTreeAction.swift in Sources */,
 				DEBD8D162975690500E6FE89 /* MainAction.swift in Sources */,
 				DEBD8D3C2975824000E6FE89 /* DoubleCounterState.swift in Sources */,
 				CB2703662979235600943540 /* SimpleEffectReducer.swift in Sources */,
@@ -2130,9 +2184,11 @@
 				DEBD8D082975652F00E6FE89 /* SimpleCounterView.swift in Sources */,
 				DEBD8D642975A43F00E6FE89 /* ScramblerAction.swift in Sources */,
 				C01EB07629E5B7CE00E84E1B /* LongLivingEffectState.swift in Sources */,
+				C0F4015629F7091C0001F35E /* RecursiveTreeFeature.swift in Sources */,
 				CB2703442978169600943540 /* FocusStateAction.swift in Sources */,
 				C01EB0AE29E808F900E84E1B /* DeferredTransitionView.swift in Sources */,
 				C01EB0BB29E80C3900E84E1B /* SheetInstantTransitionView.swift in Sources */,
+				C0F4015B29F7092F0001F35E /* RecursiveTreeView.swift in Sources */,
 				C0FFB79029ED646500870757 /* SheetDeferredTransitionAction.swift in Sources */,
 				C0F4012F29EEE3280001F35E /* ServiceDependencies.swift in Sources */,
 				C0FFB78E29ED646500870757 /* SheetDeferredTransitionFeature.swift in Sources */,
