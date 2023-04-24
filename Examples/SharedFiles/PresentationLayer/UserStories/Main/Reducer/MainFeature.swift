@@ -87,6 +87,9 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.listDeferredTransition, action: /MainAction.listDeferredTransition) {
             ListDeferredTransitionFeature()
         }
+        Scope(state: \.lifecycleTimer, action: /MainAction.lifecycleTimer) {
+            LifecycleTimerFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:

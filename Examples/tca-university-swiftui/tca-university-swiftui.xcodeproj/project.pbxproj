@@ -49,6 +49,14 @@
 		C0F4010229EECB6A0001F35E /* ListDeferredTransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4010129EECB6A0001F35E /* ListDeferredTransitionView.swift */; };
 		C0F4012F29EEE3280001F35E /* ServiceDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4012E29EEE3280001F35E /* ServiceDependencies.swift */; };
 		C0F4013229EEF5530001F35E /* NetworkDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4013129EEF5530001F35E /* NetworkDependencies.swift */; };
+		C0F4013829EFEE010001F35E /* LifecycleTimerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4013529EFEE010001F35E /* LifecycleTimerFeature.swift */; };
+		C0F4013929EFEE010001F35E /* LifecycleTimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4013729EFEE010001F35E /* LifecycleTimerAction.swift */; };
+		C0F4013C29EFEE240001F35E /* LifecycleTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4013B29EFEE240001F35E /* LifecycleTimerView.swift */; };
+		C0F4014129F012940001F35E /* LifecycleFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4014029F012940001F35E /* LifecycleFeature.swift */; };
+		C0F4014429F012A20001F35E /* LifecycleAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4014329F012A20001F35E /* LifecycleAction.swift */; };
+		C0F4014629F013300001F35E /* TimerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4014529F013300001F35E /* TimerFeature.swift */; };
+		C0F4014829F013390001F35E /* TimerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4014729F013390001F35E /* TimerAction.swift */; };
+		C0F4014D29F28F3F0001F35E /* LifecycleTimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4014C29F28F3F0001F35E /* LifecycleTimerState.swift */; };
 		C0FFB78429ED645B00870757 /* BasicListFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB77F29ED645B00870757 /* BasicListFeature.swift */; };
 		C0FFB78529ED645B00870757 /* BasicListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78129ED645B00870757 /* BasicListState.swift */; };
 		C0FFB78629ED645B00870757 /* BasicListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFB78329ED645B00870757 /* BasicListAction.swift */; };
@@ -197,6 +205,14 @@
 		C0F4010129EECB6A0001F35E /* ListDeferredTransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListDeferredTransitionView.swift; path = "tca-university-swiftui/ExampleViews/ListDeferredTransitionView.swift"; sourceTree = SOURCE_ROOT; };
 		C0F4012E29EEE3280001F35E /* ServiceDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDependencies.swift; sourceTree = "<group>"; };
 		C0F4013129EEF5530001F35E /* NetworkDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDependencies.swift; sourceTree = "<group>"; };
+		C0F4013529EFEE010001F35E /* LifecycleTimerFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifecycleTimerFeature.swift; sourceTree = "<group>"; };
+		C0F4013729EFEE010001F35E /* LifecycleTimerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifecycleTimerAction.swift; sourceTree = "<group>"; };
+		C0F4013B29EFEE240001F35E /* LifecycleTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LifecycleTimerView.swift; path = "tca-university-swiftui/ExampleViews/LifecycleTimerView.swift"; sourceTree = SOURCE_ROOT; };
+		C0F4014029F012940001F35E /* LifecycleFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleFeature.swift; sourceTree = "<group>"; };
+		C0F4014329F012A20001F35E /* LifecycleAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleAction.swift; sourceTree = "<group>"; };
+		C0F4014529F013300001F35E /* TimerFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFeature.swift; sourceTree = "<group>"; };
+		C0F4014729F013390001F35E /* TimerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAction.swift; sourceTree = "<group>"; };
+		C0F4014C29F28F3F0001F35E /* LifecycleTimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifecycleTimerState.swift; sourceTree = "<group>"; };
 		C0FFB77F29ED645B00870757 /* BasicListFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListFeature.swift; sourceTree = "<group>"; };
 		C0FFB78129ED645B00870757 /* BasicListState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListState.swift; sourceTree = "<group>"; };
 		C0FFB78329ED645B00870757 /* BasicListAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicListAction.swift; sourceTree = "<group>"; };
@@ -754,6 +770,84 @@
 				C0F4013129EEF5530001F35E /* NetworkDependencies.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		C0F4013329EFEE010001F35E /* LifecycleTimer */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4014A29F28F150001F35E /* State */,
+				C0F4013A29EFEE070001F35E /* View */,
+				C0F4013429EFEE010001F35E /* Reducer */,
+				C0F4013629EFEE010001F35E /* Action */,
+			);
+			path = LifecycleTimer;
+			sourceTree = "<group>";
+		};
+		C0F4013429EFEE010001F35E /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4013529EFEE010001F35E /* LifecycleTimerFeature.swift */,
+			);
+			path = Reducer;
+			sourceTree = "<group>";
+		};
+		C0F4013629EFEE010001F35E /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4013729EFEE010001F35E /* LifecycleTimerAction.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		C0F4013A29EFEE070001F35E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4013B29EFEE240001F35E /* LifecycleTimerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0F4013D29F012320001F35E /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4014529F013300001F35E /* TimerFeature.swift */,
+				C0F4014729F013390001F35E /* TimerAction.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		C0F4013E29F012770001F35E /* Composable */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4013D29F012320001F35E /* Timer */,
+				C0F4013F29F012810001F35E /* Lifecycle */,
+			);
+			path = Composable;
+			sourceTree = "<group>";
+		};
+		C0F4013F29F012810001F35E /* Lifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4014029F012940001F35E /* LifecycleFeature.swift */,
+				C0F4014329F012A20001F35E /* LifecycleAction.swift */,
+			);
+			path = Lifecycle;
+			sourceTree = "<group>";
+		};
+		C0F4014929F013980001F35E /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4013E29F012770001F35E /* Composable */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C0F4014A29F28F150001F35E /* State */ = {
+			isa = PBXGroup;
+			children = (
+				C0F4014C29F28F3F0001F35E /* LifecycleTimerState.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 		C0FFB77D29ED645B00870757 /* BasicList */ = {
@@ -1717,6 +1811,7 @@
 		DEEDB7B82970718800CB20F3 /* UserStories */ = {
 			isa = PBXGroup;
 			children = (
+				C0F4014929F013980001F35E /* General */,
 				DEBD8D0A2975690500E6FE89 /* Main */,
 				DEEDB7C12970718800CB20F3 /* Elementary */,
 				DEEDB7BE2970718800CB20F3 /* Beginner */,
@@ -1732,6 +1827,7 @@
 		DEEDB7B92970718800CB20F3 /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				C0F4013329EFEE010001F35E /* LifecycleTimer */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -1906,10 +2002,12 @@
 				DEBD8D48297586F000E6FE89 /* AnalyzableCounterFeature.swift in Sources */,
 				C0FFB7B129ED650600870757 /* BasicListView.swift in Sources */,
 				DEEDB7C82970718800CB20F3 /* CGFloat.swift in Sources */,
+				C0F4014129F012940001F35E /* LifecycleFeature.swift in Sources */,
 				C01EB0B829E80C2400E84E1B /* SheetInstantTransitionAction.swift in Sources */,
 				DEEDB71A297062F700CB20F3 /* User.swift in Sources */,
 				CB2703682979235600943540 /* SimpleEffectAction.swift in Sources */,
 				DEBD8D142975690500E6FE89 /* MainFeature.swift in Sources */,
+				C0F4014429F012A20001F35E /* LifecycleAction.swift in Sources */,
 				DEEDB7632970708F00CB20F3 /* NewsServiceImplementation.swift in Sources */,
 				DEEDB75F2970708F00CB20F3 /* ScrambleService.swift in Sources */,
 				C01EB09D29E8038600E84E1B /* InstantTransitionState.swift in Sources */,
@@ -1931,6 +2029,7 @@
 				C0FFB7AE29ED64F300870757 /* SheetDeferredTransitionView.swift in Sources */,
 				DEEDB7CE2970718800CB20F3 /* UIViewRepresented.swift in Sources */,
 				DEEDB7C92970718800CB20F3 /* Text.swift in Sources */,
+				C0F4014829F013390001F35E /* TimerAction.swift in Sources */,
 				C01EB06A29E5B3FD00E84E1B /* EffectThrottleAction.swift in Sources */,
 				DEBD8D4A297586F000E6FE89 /* AnalyzableCounterAction.swift in Sources */,
 				DEBD8D5929758A9100E6FE89 /* FibonacciCounterView.swift in Sources */,
@@ -1939,10 +2038,12 @@
 				C01EB0AA29E808DC00E84E1B /* DeferredTransitionState.swift in Sources */,
 				C0F400FD29EECB4B0001F35E /* ListDeferredTransitionFeature.swift in Sources */,
 				CB2703672979235600943540 /* SimpleEffectState.swift in Sources */,
+				C0F4013C29EFEE240001F35E /* LifecycleTimerView.swift in Sources */,
 				C01EB09C29E8038600E84E1B /* InstantTransitionFeature.swift in Sources */,
 				CB2703412978169600943540 /* FlexibleBindingsAction.swift in Sources */,
 				C01EB05A29E4290100E84E1B /* EffectDebounceState.swift in Sources */,
 				DEBD8D032975652F00E6FE89 /* CounterFeature.swift in Sources */,
+				C0F4013929EFEE010001F35E /* LifecycleTimerAction.swift in Sources */,
 				C0FFB7A029ED647D00870757 /* InteractiveListFeature.swift in Sources */,
 				DEEDB75D2970708F00CB20F3 /* BookService.swift in Sources */,
 				CB2703452978169600943540 /* SimpleBindingsReducer.swift in Sources */,
@@ -1954,6 +2055,7 @@
 				DEEDB7612970708F00CB20F3 /* UserService.swift in Sources */,
 				DEBD8D5529758A6D00E6FE89 /* FibonacciCounterFeature.swift in Sources */,
 				CB27035B297817AA00943540 /* SimpleBindingsView.swift in Sources */,
+				C0F4014D29F28F3F0001F35E /* LifecycleTimerState.swift in Sources */,
 				DEBD8D3F2975828300E6FE89 /* DoubleCounterView.swift in Sources */,
 				CB2703552978173500943540 /* AlertAndSheetView.swift in Sources */,
 				CB2703432978169600943540 /* FocusStateState.swift in Sources */,
@@ -2001,6 +2103,7 @@
 				C0F4013229EEF5530001F35E /* NetworkDependencies.swift in Sources */,
 				CB27034C2978169600943540 /* SimpleOptionalReducer.swift in Sources */,
 				C0F400F129EEA2280001F35E /* ListInstantTransitionState.swift in Sources */,
+				C0F4014629F013300001F35E /* TimerFeature.swift in Sources */,
 				C01EB08229E6B7E200E84E1B /* AnimationsFeature.swift in Sources */,
 				C01EB05B29E4290100E84E1B /* EffectDebounceAction.swift in Sources */,
 				CB2703572978177300943540 /* FlexibleBindingsView.swift in Sources */,
@@ -2015,6 +2118,7 @@
 				DEBD8D632975A43F00E6FE89 /* ScramblerState.swift in Sources */,
 				C0FFB78529ED645B00870757 /* BasicListState.swift in Sources */,
 				C01EB07A29E5B7EF00E84E1B /* LongLivingEffectView.swift in Sources */,
+				C0F4013829EFEE010001F35E /* LifecycleTimerFeature.swift in Sources */,
 				C0FFB78F29ED646500870757 /* SheetDeferredTransitionState.swift in Sources */,
 				CB2703592978179400943540 /* FocusStateView.swift in Sources */,
 				CB270374297931D900943540 /* EffectCancellationReducer.swift in Sources */,

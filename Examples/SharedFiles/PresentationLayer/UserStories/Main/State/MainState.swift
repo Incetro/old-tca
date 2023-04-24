@@ -91,4 +91,7 @@ public struct MainState: Equatable {
     
     /// ListDeferredTransitionState instance
     public var listDeferredTransition = ListDeferredTransitionState()
+    
+    /// LifecycleTimer state
+    public var lifecycleTimer = LifecycleTimerState()
 }

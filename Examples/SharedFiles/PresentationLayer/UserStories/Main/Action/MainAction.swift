@@ -209,4 +209,13 @@ public enum MainAction: Equatable {
     /// In short, the `listDeferredTransition` case means that every action in `ListDeferredTransition` module
     /// will be sent to current module through it
     case listDeferredTransition(ListDeferredTransitionAction)
+    
+    // MARK: - Advanced
+    
+    /// Child action for `LifecycleTimerAction` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `lifecycleTimer` case means that every action in `LifecycleTimerAction` module
+    /// will be sent to current module through it
+    case lifecycleTimer(LifecycleTimerAction)
 }

@@ -285,6 +285,16 @@ public struct MainView: View {
                         }
                     }
                     Section(header: Text("👨🏻‍🎓 Advanced")) {
+                        NavigationLink(
+                            destination: LifecycleTimerView(
+                                store: store.scope(
+                                    state: \.lifecycleTimer,
+                                    action: MainAction.lifecycleTimer
+                                )
+                            )
+                        ) {
+                            Text("Lifecycle timer").standard
+                        }
                     }
                     Section(header: Text("🥷🏻 Proficient")) {
                     }
