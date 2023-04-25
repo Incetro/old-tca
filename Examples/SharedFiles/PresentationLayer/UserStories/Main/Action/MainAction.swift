@@ -219,7 +219,6 @@ public enum MainAction: Equatable {
     /// will be sent to current module through it
     case lifecycleTimer(LifecycleTimerAction)
     
-    // MARK: - Advanced
     
     /// Child action for `RecursiveTree` module.
     ///
@@ -227,4 +226,11 @@ public enum MainAction: Equatable {
     /// In short, the `recursiveTree` case means that every action in `RecursiveTree` module
     /// will be sent to current module through it
     case recursiveTree(RecursiveTreeAction)
+    
+    /// Child action for `FavoriteComposition` module.
+    ///
+    /// It's necessary as we use `Scope` builder in current module's reducer.
+    /// In short, the `favoriteComposition` case means that every action in `FavoriteComposition` module
+    /// will be sent to current module through it
+    case favoriteComposition(FavoriteCompositionAction)
 }

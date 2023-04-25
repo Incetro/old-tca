@@ -93,6 +93,9 @@ public struct MainFeature: ReducerProtocol {
         Scope(state: \.recursiveTree, action: /MainAction.recursiveTree) {
             RecursiveTreeFeature()
         }
+        Scope(state: \.favoriteComposition, action: /MainAction.favoriteComposition) {
+            FavoriteCompositionFeature()
+        }
         Reduce { state, action in
             switch action {
             case .onAppear:

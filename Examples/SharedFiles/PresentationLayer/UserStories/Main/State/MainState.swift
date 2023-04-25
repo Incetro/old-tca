@@ -97,4 +97,7 @@ public struct MainState: Equatable {
     
     /// RecursiveTreeState instance
     public var recursiveTree = RecursiveTreeState.random()
+    
+    /// FavoriteComposition instance
+    public var favoriteComposition = FavoriteCompositionState.default
 }

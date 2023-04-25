@@ -305,6 +305,16 @@ public struct MainView: View {
                         ) {
                             Text("Recursion").standard
                         }
+                        NavigationLink(
+                            destination: FavoriteCompositionView(
+                                store: store.scope(
+                                    state: \.favoriteComposition,
+                                    action: MainAction.favoriteComposition
+                                )
+                            )
+                        ) {
+                            Text("Favoriting").standard
+                        }
                     }
                     Section(header: Text("🥷🏻 Proficient")) {
                     }
