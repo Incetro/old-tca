@@ -91,4 +91,13 @@ public struct MainState: Equatable {
     
     /// ListDeferredTransitionState instance
     public var listDeferredTransition = ListDeferredTransitionState()
+    
+    /// LifecycleTimer state
+    public var lifecycleTimer = LifecycleTimerState()
+    
+    /// RecursiveTreeState instance
+    public var recursiveTree = RecursiveTreeState.random()
+    
+    /// FavoriteComposition instance
+    public var favoriteComposition = FavoriteCompositionState.default
 }

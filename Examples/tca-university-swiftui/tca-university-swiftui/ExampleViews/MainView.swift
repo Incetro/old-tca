@@ -285,6 +285,36 @@ public struct MainView: View {
                         }
                     }
                     Section(header: Text("👨🏻‍🎓 Advanced")) {
+                        NavigationLink(
+                            destination: LifecycleTimerView(
+                                store: store.scope(
+                                    state: \.lifecycleTimer,
+                                    action: MainAction.lifecycleTimer
+                                )
+                            )
+                        ) {
+                            Text("Lifecycle timer").standard
+                        }
+                        NavigationLink(
+                            destination: RecursiveTreeView(
+                                store: store.scope(
+                                    state: \.recursiveTree,
+                                    action: MainAction.recursiveTree
+                                )
+                            )
+                        ) {
+                            Text("Recursion").standard
+                        }
+                        NavigationLink(
+                            destination: FavoriteCompositionView(
+                                store: store.scope(
+                                    state: \.favoriteComposition,
+                                    action: MainAction.favoriteComposition
+                                )
+                            )
+                        ) {
+                            Text("Favoriting").standard
+                        }
                     }
                     Section(header: Text("🥷🏻 Proficient")) {
                     }
