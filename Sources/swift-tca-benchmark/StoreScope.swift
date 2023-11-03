@@ -1,5 +1,5 @@
 import Benchmark
-import TCA
+import OldTCA
 
 private struct Counter: ReducerProtocol {
   typealias State = Int

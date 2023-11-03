@@ -1,7 +1,7 @@
 #if DEBUG
   import XCTest
 
-  @testable import TCA
+  @testable import OldTCA
 
   @MainActor
   class EffectOperationTests: XCTestCase {

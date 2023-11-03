@@ -1,6 +1,6 @@
 import Benchmark
 import Combine
-import TCA
+import OldTCA
 import Foundation
 
 let effectSuite = BenchmarkSuite(name: "Effects") {

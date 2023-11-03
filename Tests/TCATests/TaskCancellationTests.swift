@@ -1,7 +1,7 @@
 #if DEBUG
   import Combine
   import XCTest
-  @_spi(Internals) import TCA
+  @_spi(Internals) import OldTCA
 
   final class TaskCancellationTests: XCTestCase {
     func testCancellation() async throws {

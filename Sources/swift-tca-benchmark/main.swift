@@ -1,5 +1,5 @@
 import Benchmark
-import TCA
+import OldTCA
 
 Benchmark.main([
   defaultBenchmarkSuite,

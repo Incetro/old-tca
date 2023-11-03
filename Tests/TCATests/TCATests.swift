@@ -1,6 +1,6 @@
 import Combine
 import CombineSchedulers
-import TCA
+import OldTCA
 import XCTest
 
 @MainActor
