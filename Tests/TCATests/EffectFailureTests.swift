@@ -1,6 +1,6 @@
 #if DEBUG
   import Combine
-  import TCA
+  import OldTCA
   import XCTest
 
   @MainActor

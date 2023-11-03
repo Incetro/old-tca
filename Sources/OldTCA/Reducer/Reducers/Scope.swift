@@ -142,18 +142,18 @@ public struct Scope<ParentState, ParentAction, Child: ReducerProtocol>: ReducerP
   ///   - toChildState: A writable key path from parent state to a property containing child state.
   ///   - toChildAction: A case path from parent action to a case containing child actions.
   ///   - child: A reducer that will be invoked with child actions against child state.
-  @inlinable
-  public init(
-    state toChildState: WritableKeyPath<ParentState, Child.State>,
-    action toChildAction: CasePath<ParentAction, Child.Action>,
-    @ReducerBuilderOf<Child> _ child: () -> Child
-  ) {
-    self.init(
-      toChildState: .keyPath(toChildState),
-      toChildAction: toChildAction,
-      child: child()
-    )
-  }
+    @inlinable
+    public init<ChildState, ChildAction>(
+        state toChildState: WritableKeyPath<ParentState, ChildState>,
+        action toChildAction: CasePath<ParentAction, ChildAction>,
+        @ReducerBuilder<ChildState, ChildAction> child: () -> Child
+    ) where ChildState == Child.State, ChildAction == Child.Action {
+        self.init(
+            toChildState: .keyPath(toChildState),
+            toChildAction: toChildAction,
+            child: child()
+        )
+    }
 
   /// Initializes a reducer that runs the given child reducer against a slice of parent state and
   /// actions.

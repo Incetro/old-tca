@@ -5,7 +5,7 @@
 //  Created by Kazakh on 24.04.2023.
 //
 
-import TCA
+import OldTCA
 import SwiftUI
 import Foundation
 

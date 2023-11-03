@@ -1,5 +1,5 @@
 import Combine
-@_spi(Canary) import TCA
+@_spi(Canary) import OldTCA
 import XCTest
 
 @MainActor

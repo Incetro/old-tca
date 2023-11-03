@@ -129,11 +129,11 @@
 		CB270375297931D900943540 /* EffectCancellationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB270371297931D900943540 /* EffectCancellationState.swift */; };
 		CB270376297931D900943540 /* EffectCancellationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB270373297931D900943540 /* EffectCancellationAction.swift */; };
 		CB270379297932A300943540 /* EffectCancellationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB270378297932A300943540 /* EffectCancellationView.swift */; };
-		DEBD8CEC29755F3700E6FE89 /* TCA in Frameworks */ = {isa = PBXBuildFile; productRef = DEBD8CEB29755F3700E6FE89 /* TCA */; };
+		CB61CBDA2AF532300033A5AF /* OldTCA in Frameworks */ = {isa = PBXBuildFile; productRef = CB61CBD92AF532300033A5AF /* OldTCA */; };
 		DEBD8D032975652F00E6FE89 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CF72975652F00E6FE89 /* CounterFeature.swift */; };
 		DEBD8D042975652F00E6FE89 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CF92975652F00E6FE89 /* CounterState.swift */; };
 		DEBD8D052975652F00E6FE89 /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CFB2975652F00E6FE89 /* CounterAction.swift */; };
-		DEBD8D062975652F00E6FE89 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CFD2975652F00E6FE89 /* StepperView.swift */; };
+		DEBD8D062975652F00E6FE89 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CFD2975652F00E6FE89 /* CounterView.swift */; };
 		DEBD8D072975652F00E6FE89 /* CounterExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CFE2975652F00E6FE89 /* CounterExampleView.swift */; };
 		DEBD8D082975652F00E6FE89 /* SimpleCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8CFF2975652F00E6FE89 /* SimpleCounterView.swift */; };
 		DEBD8D142975690500E6FE89 /* MainFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBD8D0D2975690500E6FE89 /* MainFeature.swift */; };
@@ -317,7 +317,7 @@
 		DEBD8CF72975652F00E6FE89 /* CounterFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		DEBD8CF92975652F00E6FE89 /* CounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
 		DEBD8CFB2975652F00E6FE89 /* CounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
-		DEBD8CFD2975652F00E6FE89 /* StepperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
+		DEBD8CFD2975652F00E6FE89 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		DEBD8CFE2975652F00E6FE89 /* CounterExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterExampleView.swift; sourceTree = "<group>"; };
 		DEBD8CFF2975652F00E6FE89 /* SimpleCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCounterView.swift; sourceTree = "<group>"; };
 		DEBD8D0D2975690500E6FE89 /* MainFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFeature.swift; sourceTree = "<group>"; };
@@ -380,7 +380,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEBD8CEC29755F3700E6FE89 /* TCA in Frameworks */,
+				CB61CBDA2AF532300033A5AF /* OldTCA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1724,42 +1724,18 @@
 		DEBD8CF32975652F00E6FE89 /* Counter */ = {
 			isa = PBXGroup;
 			children = (
-				DEBD8CF62975652F00E6FE89 /* Reducer */,
-				DEBD8CF82975652F00E6FE89 /* State */,
-				DEBD8CFA2975652F00E6FE89 /* Action */,
+				DEBD8CFD2975652F00E6FE89 /* CounterView.swift */,
+				DEBD8CF92975652F00E6FE89 /* CounterState.swift */,
+				DEBD8CF72975652F00E6FE89 /* CounterFeature.swift */,
+				DEBD8CFB2975652F00E6FE89 /* CounterAction.swift */,
 				DEBD8CFC2975652F00E6FE89 /* View */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
 		};
-		DEBD8CF62975652F00E6FE89 /* Reducer */ = {
-			isa = PBXGroup;
-			children = (
-				DEBD8CF72975652F00E6FE89 /* CounterFeature.swift */,
-			);
-			path = Reducer;
-			sourceTree = "<group>";
-		};
-		DEBD8CF82975652F00E6FE89 /* State */ = {
-			isa = PBXGroup;
-			children = (
-				DEBD8CF92975652F00E6FE89 /* CounterState.swift */,
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
-		DEBD8CFA2975652F00E6FE89 /* Action */ = {
-			isa = PBXGroup;
-			children = (
-				DEBD8CFB2975652F00E6FE89 /* CounterAction.swift */,
-			);
-			path = Action;
-			sourceTree = "<group>";
-		};
 		DEBD8CFC2975652F00E6FE89 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DEBD8CFD2975652F00E6FE89 /* StepperView.swift */,
 				DEBD8CFE2975652F00E6FE89 /* CounterExampleView.swift */,
 				DEBD8CFF2975652F00E6FE89 /* SimpleCounterView.swift */,
 			);
@@ -2303,7 +2279,7 @@
 			);
 			name = "tca-university-swiftui";
 			packageProductDependencies = (
-				DEBD8CEB29755F3700E6FE89 /* TCA */,
+				CB61CBD92AF532300033A5AF /* OldTCA */,
 			);
 			productName = "tca-university-swiftui";
 			productReference = DEEDB7012970628300CB20F3 /* tca-university-swiftui.app */;
@@ -2365,7 +2341,7 @@
 				C01EB09029E7F22600E84E1B /* TimersState.swift in Sources */,
 				C0F4018F29F71B8F0001F35E /* BookFeature.swift in Sources */,
 				C0FFB7A329ED647D00870757 /* InteractiveListItemFeature.swift in Sources */,
-				DEBD8D062975652F00E6FE89 /* StepperView.swift in Sources */,
+				DEBD8D062975652F00E6FE89 /* CounterView.swift in Sources */,
 				DEBD8D5629758A6D00E6FE89 /* FibonacciCounterState.swift in Sources */,
 				C01EB07729E5B7CE00E84E1B /* LongLivingEffectAction.swift in Sources */,
 				C01EB07529E5B7CE00E84E1B /* LongLivingEffectFeature.swift in Sources */,
@@ -2665,7 +2641,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tca-university-swiftui/Preview Content\"";
-				DEVELOPMENT_TEAM = B7P5N87PQY;
+				DEVELOPMENT_TEAM = HFD95R9VP2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "tca-university-swiftui/Info.plist";
@@ -2742,9 +2718,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DEBD8CEB29755F3700E6FE89 /* TCA */ = {
+		CB61CBD92AF532300033A5AF /* OldTCA */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = TCA;
+			productName = OldTCA;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

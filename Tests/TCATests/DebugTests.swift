@@ -3,7 +3,7 @@
   import CustomDump
   import XCTest
 
-  @testable import TCA
+  @testable import OldTCA
 
   final class DebugTests: XCTestCase {
     func testDebugCaseOutput() {

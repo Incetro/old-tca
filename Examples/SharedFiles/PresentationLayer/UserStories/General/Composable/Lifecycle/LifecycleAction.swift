@@ -5,7 +5,7 @@
 //  Created by Kazakh on 19.04.2023.
 //
 
-import TCA
+import OldTCA
 import Foundation
 
 public enum LifecycleAction<Action: Equatable>: Equatable {

@@ -536,7 +536,6 @@ extension Publisher {
         outputType: NewOutput.Type = NewOutput.self,
         failureType: NewFailure.Type = NewFailure.self
     ) -> EffectPublisher<NewOutput, NewFailure> {
-        return
         self
             .flatMap { _ in Empty<NewOutput, Failure>() }
             .catch { _ in Empty() }

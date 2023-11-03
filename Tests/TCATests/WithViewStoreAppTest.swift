@@ -1,6 +1,6 @@
 // NB: This file gathers coverage of various `WithViewStore` conformances.
 
-import TCA
+import OldTCA
 import SwiftUI
 
 @available(iOS 14, macOS 11, tvOS 14, watchOS 7, *)

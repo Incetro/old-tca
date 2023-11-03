@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import TCA
+import OldTCA
 
 struct ContentView: View {
     var body: some View {

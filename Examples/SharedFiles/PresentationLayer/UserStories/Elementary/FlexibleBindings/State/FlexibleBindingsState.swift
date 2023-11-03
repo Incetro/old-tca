@@ -8,7 +8,7 @@
 
 import Foundation
 import SwiftUI
-import TCA
+import OldTCA
 
 // MARK: - FlexibleBindingsState
 

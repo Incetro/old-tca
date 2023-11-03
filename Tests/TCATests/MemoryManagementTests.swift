@@ -1,5 +1,5 @@
 import Combine
-import TCA
+import OldTCA
 import XCTest
 
 final class MemoryManagementTests: XCTestCase {

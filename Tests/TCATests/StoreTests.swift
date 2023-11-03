@@ -1,5 +1,5 @@
 import Combine
-@_spi(Internals) import TCA
+@_spi(Internals) import OldTCA
 import XCTest
 
 @MainActor

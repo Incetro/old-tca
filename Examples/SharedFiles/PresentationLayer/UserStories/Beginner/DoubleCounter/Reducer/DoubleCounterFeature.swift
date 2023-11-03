@@ -6,7 +6,7 @@
 //  Copyright © 2021 Incetro Inc. All rights reserved.
 //
 
-import TCA
+import OldTCA
 
 // MARK: - DoubleCounterFeature
 
@@ -23,3 +23,4 @@ public struct DoubleCounterFeature: ReducerProtocol {
         }
     }
 }
+

@@ -26,5 +26,5 @@ public struct SimpleOptionalState: Equatable {
     // MARK: - Children
     
     /// Optional CounterState instance
-    public var counter: CounterState? = CounterState()
+    public var counter: CounterState?
 }
